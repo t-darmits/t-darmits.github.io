@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1">
+	<title>Admin panel</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/common.css">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- begin main-area -->
+	<div class="main-area clearfix">
+		<!-- begin sidebar -->
+		<div class="sidebar pull-left">
+
+			<!-- begin sidebar-title -->
+			<div class="sidebar-title clearfix">
+				<span>NAVIGATION</span>
+				<i class="fa fa-bars"></i>
+			</div>
+			<!-- End sidebar-title -->
+
+			<ul>
+				<li><a href="#"><div><i class="fa fa-home"></i><span>Main Page</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-file-text"></i><span>Orders</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-users"></i><span>Customers</span></div></a></li>
+				<li><a href="#" class="active"><div><i class="fa fa-user-plus"></i><span>Users</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-list-alt"></i><span>Products</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-cogs"></i><span>Constructor</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-list"></i><span>Coupons</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-line-chart"></i><span>Activity</span></div></a></li>
+				<li><a href="#"><div><i class="fa fa-edit"></i><span>Settings</span></div></a></li>
+			</ul>
+
+		</div>
+		<!-- End sidebar -->
+
+		<!-- begin content -->
+		<div class="content pull-left">
+			<!-- begin content-header -->
+			<div class="content-header clearfix">
+
+				<div class="c-title pull-left">
+					<div class="align-it">
+						users
+						<button class="dwld-btn green-btn" data-toggle="modal" data-target="#addUser" type="button">
+							ADD NEW USER
+						</button>
+					</div>
+				</div>
+
+				<div class="c-user pull-right">
+					<div class="align-it">
+						<div class="u-img">
+							<img src="img/user-img.png" alt="user-img">
+						</div>
+						<span class="u-name">Alexandr</span>
+						<div class="exit"><a href="#"><i class="fa fa-sign-out"></i></a></div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End content-header -->
+
+			<div class="users">
+				<table class="c-table table">
+					<thead>
+						<tr>
+							<th>Employee Name</th>
+							<th>Phone</th>
+							<th>E-mail</th>
+							<th>Group</th>
+							<th width="100"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Alexandr Samodin</td>
+							<td>+1 (314) 349-45-47</td>
+							<td> <a href="#">alex@chocolatebox.gift</a> </td>
+							<td>Administrator</td>
+							<td width="100"><div class="prod-controls"><a href="#"><i class="fa fa-cog"></i></a><a href="#"><i class="fa fa-close"></i></a></div></td>
+						</tr>
+						<tr>
+							<td>Dmitrii Manovtcev</td>
+							<td>+1 (252) 305-28-16</td>
+							<td> <a href="#">dmitrii@chocolatebox.gift</a> </td>
+							<td>Administrator</td>
+							<td width="100"><div class="prod-controls"><a href="#"><i class="fa fa-cog"></i></a><a href="#"><i class="fa fa-close"></i></a></div></td>
+						</tr>
+						<tr>
+							<td>Jeff Brown</td>
+							<td>+1 (123) 456-78-90</td>
+							<td> <a href="#">brownfamily@gmail.com</a> </td>
+							<td>Manager</td>
+							<td width="100"><div class="prod-controls"><a href="#"><i class="fa fa-cog"></i></a><a href="#"><i class="fa fa-close"></i></a></div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<!-- End content -->
+	</div>
+	<!-- End main-area -->
+
+	<!-- BEGIN MODALS -->
+
+	<div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span>Close</button>
+					<h4 class="modal-title" id="myModalLabel">Add New User</h4>
+				</div>
+				<div class="modal-body modal-padding">
+					<form action="/">
+
+						<div class="modal-row">
+							<div class="m-title">
+								Name
+							</div>
+							<div class="m-area">
+								<input type="text" class="input-control" placeholder="Jeff Oliver">
+							</div>
+						</div>
+
+						<div class="modal-row">
+							<div class="m-title">
+								Phone
+							</div>
+							<div class="m-area">
+								<input type="text" class="input-control" placeholder="+1 (252) 525-35-45">
+							</div>
+						</div>
+
+						<div class="modal-row">
+							<div class="m-title">
+								E-mail
+							</div>
+							<div class="m-area">
+								<input type="text" class="input-control" placeholder="JeffOliver@hotmail.com">
+							</div>
+						</div>
+
+						<div class="modal-row">
+							<div class="m-title">
+								Photo
+							</div>
+							<div class="m-area">
+								<input type="file" data-placeholder="Upload Photo" data-browse=" ">
+							</div>
+						</div>
+
+						<div class="modal-row">
+							<div class="m-title">
+								Group
+							</div>
+							<div class="m-area">
+								<select>
+									<option value="0" selected="">Select Group</option>
+									<option value="1">Select Group1</option>
+									<option value="2">Select Group2</option>
+									<option value="3">Select Group3</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="add_box">
+							<button type="submit" class="btn print-btn">ADD USER</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- END MODALS -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/filterForTable.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

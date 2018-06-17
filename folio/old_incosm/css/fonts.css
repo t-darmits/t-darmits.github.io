@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'arimoregular';
+	src: url('../fonts/arimo-regular.eot');
+	src: url('../fonts/arimo-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arimo-regular.woff') format('woff'),
+		url('../fonts/arimo-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'arimobold';
+	src: url('../fonts/arimo-bold.eot');
+	src: url('../fonts/arimo-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arimo-bold.woff') format('woff'),
+		url('../fonts/arimo-bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'arimoitalic';
+	src: url('../fonts/arimo-italic.eot');
+	src: url('../fonts/arimo-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arimo-italic.woff') format('woff'),
+		url('../fonts/arimo-italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'arimobold_italic';
+	src: url('../fonts/arimo-bolditalic.eot');
+	src: url('../fonts/arimo-bolditalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arimo-bolditalic.woff') format('woff'),
+		url('../fonts/arimo-bolditalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

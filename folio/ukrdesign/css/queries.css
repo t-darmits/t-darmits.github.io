@@ -1,0 +1,246 @@
+/*Media 1200px*/
+@media screen and (min-width: 1200px) {
+	.flag {
+		display: block;
+	}
+}
+/*Media 1199*/
+@media screen and (max-width: 1199px) {
+	.bid-text:after {
+		right: 0;
+	}
+	.price-content {
+		padding: 10px;
+	}
+	.price .container .row > ul > li {
+		padding: 0 10px;
+	}
+	.discount {
+		background: #fff474;
+		border: dashed 5px #f9d03b;
+	}
+	.stat-block span.stat-title {
+		font-size: 14px;
+	}
+	.stat-block {
+		padding: 30px 10px;
+	}
+}
+/*Media 991px*/
+@media screen and (max-width: 991px) {
+	.lays {
+		display: block;
+		width: 970px;
+		left: 50%;
+		margin-left: -485px;
+	}
+	.layer-two {
+		display: none !important;
+	}
+	.bottom-header {
+		text-align: center;
+	}
+	.bottom-header ul {
+		text-align: left;
+		max-width: 490px;
+		margin: 0 auto 60px;
+	}
+	.why-table tr {
+		border: none;
+	}
+	.why-table tr td {
+		/*display: block;*/
+		width: 100%;
+		float: left;
+		border: none;
+		border-top: solid 1px #ebebeb;
+		padding-right: 20px;
+	}
+	.why-table tr:first-child td:first-child {
+		border: none;
+	}
+	.why-table td:nth-of-type(2n) {
+		padding: 40px 20px 40px 0;
+	}
+	.why-table tr td:nth-of-type(2n) .block-img {
+		text-align: left;
+	}
+	.bid-text:after {
+		display: none;
+	}
+	.bid-text h4 {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.bid-text h4 span {
+		display: inline-block;
+	}
+	.bid {
+		height: auto;
+		background-repeat: repeat-y;
+	}
+	.price .container .row > ul > li {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.discount .form-group {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+	.discount {
+		padding: 40px;
+	}
+	.gallery li {
+		width: 25%;
+	}
+	.fancy-img,
+	.fancy-text {
+		width: 100%;
+		float: none;
+	}
+	.statistic .row > ul li {
+		width: 33.3%;
+	}
+}
+/*Media 767px*/
+@media screen and (max-width: 768px) {
+	.logo a {
+		font-size: 13px;
+	}
+	.layer-one {
+		-webkit-transform: translate3d(0px, 0px, 0px) !important;
+		-ms-transform: translate3d(0px, 0px, 0px) !important;
+		-o-transform: translate3d(0px, 0px, 0px) !important;
+		transform: translate3d(0px, 0px, 0px) !important;
+	}
+	.bottom-header ul {
+		max-width: 290px;
+	}
+	.bottom-header h1 {
+		font-size: 20px;
+	}
+	.bottom-header ul li {
+		font-size: 14px;
+	}
+	.bottom-header ul li:before {
+		margin-right: 5px;
+		width: 10px;
+	}
+	.btn-head,
+	.btn-headtwo {
+		margin-bottom: 20px;
+	}
+	.block-img {
+		font-size: 30px;
+		width: auto;
+	}
+	.text-block {
+		padding-left: 50px;
+		font-size: 13px;
+	}
+	.text-block h4 {
+		font-size: 16px;
+	}
+	.why-table tr td {
+		padding: 20px 20px 20px 0;
+	}
+	.why-table td:nth-of-type(2n) {
+		padding: 20px 20px 20px 0;
+	}
+	section .h2 {
+		font-size: 25px;
+		margin: 40px 0 20px;
+	}
+	.section-title {
+		margin-bottom: 40px;
+	}
+	.price-block {
+		border: solid 1px #2991d6;
+	}
+	.block-img {
+		top: 20px;
+	}
+	.bid .form-group {
+		width: 100%;
+		float: none;
+	}
+	.price .container .row > ul > li {
+		width: 100%;
+		float: none;
+	}
+	.shadow {
+		display: none;
+	}
+	.discount .form-group {
+		width: 100%;
+	}
+	.discount {
+		padding: 40px 20px;
+	}
+	.gallery li {
+		width: 33.3%;
+	}
+	.fancy-text p {
+		display: none;
+	}
+	.goto-site {
+		margin: 0;
+		border-color: #000;
+	}
+	.fancybox-skin {
+		padding: 0 !important;
+	}
+	.fancybox-nav {
+		display: none;
+	}
+	.fancy-text {
+		padding: 0;
+	}
+	.statistic .row > ul li {
+		width: 100%;
+	}
+	.carousel-block {
+		padding-left: 150px;
+	}
+	.top-footer .form-group,
+	.top-footer .form-group-area {
+		width: 100%;
+		float: none;
+	}
+	.top-footer h3 {
+		display: block;
+		text-align: center;
+	}
+	.top-footer .form-inline {
+		margin: 0;
+	}
+	.top-footer .form-group,
+	.form-group-area {
+		padding: 0;
+	}
+	.bottom-footer,
+	.foot-flag {
+		text-align: center;
+	}
+	.foot-flag {
+		padding-top: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.form-inline .form-control {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 460px) {
+	.gallery li {
+		width: 50%;
+	}
+	.carousel-img {
+		position: static;
+		margin: 0 auto 10px;
+	}
+	.carousel-block {
+		padding-left: 0;
+	}
+}

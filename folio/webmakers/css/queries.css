@@ -1,0 +1,128 @@
+/*Media 1200*/
+@media screen and (min-width: 1200px) {
+	.bottom-header {
+		background: url(../img/header-bg.png) no-repeat 15px 100%;
+	}
+	.bottom-header h1 {
+		padding: 20% 0 110px 47%;
+		text-align: left;
+	}
+}
+/*Media 1199px*/
+@media screen and (max-width: 1199px) {
+	.bottom-header {
+		background: url(../img/bg-withoutshadow.png) no-repeat center 120px;
+	}
+	.bottom-header h1 {
+		padding: 430px 0 20px;
+		font-size: 35px;
+	}
+	.folio-block {
+		height: 270px;
+	}
+}
+/*Media 991px*/
+@media screen and (max-width: 991px) {
+	.folio-block {
+		height: 210px;
+	}
+}
+/*Media 767px*/
+@media screen and (min-width: 768px) {
+	.navbar-nav > li.active:after,
+	.navbar-nav > li.active:before {
+		width: 50.5%;
+		height: 20%;
+		position: absolute;
+		bottom: 100%;
+		content: "";
+	}
+	.navbar-nav > li.active:before {
+		top: 101%;
+		background: -webkit-linear-gradient(right top, #f6cd1a 50%, transparent 50%);
+		background: -o-linear-gradient(right top, #f6cd1a 50%, transparent 50%);
+		background: linear-gradient(to bottom left, #f6cd1a 50%, transparent 50%);
+		left: 0;
+	}
+	.navbar-nav > li.active:after {
+		top: 101%;
+		right: 0;
+		background: -webkit-linear-gradient(top left, #f6cd1a 50%, transparent 50%);
+		background: -o-linear-gradient(top left, #f6cd1a 50%, transparent 50%);
+		background: linear-gradient(to bottom right, #f6cd1a 50%, transparent 50%);
+	}
+}
+@media screen and (max-width: 767px) {
+	.nav {
+		float: none;
+	}
+	.navbar-nav > li > a {
+		padding: 15px 0 15px 15px;
+	}
+	.navbar-toggle {
+		margin-top: 18px;
+	}
+	.nav > li {
+		border-bottom: solid 1px #2EA3FF;
+	}
+	.nav > li:last-child {
+		border: none;
+	}
+	.bottom-header h1 {
+		font-size: 25px;
+	}
+	.services img {
+		display: block;
+		float: left;
+		margin: 0 25px 20px 0;
+	}
+	.serv-content {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.serv-text {
+		margin: 0;
+		max-width: 100%;
+	}
+	.serv-title {
+		margin-top: 0;
+	}
+	section h2 {
+		font-size: 24px;
+	}
+	.folio-block {
+		height: 200px;
+		margin: 0 auto;
+		max-width: 320px;
+	}
+	.review-content {
+		max-width: 100%;
+	}
+	footer {
+		text-align: center;
+	}
+	.social {
+		float: none;
+	}
+	.review {
+		padding-left: 120px;
+	}
+	.btn-send {
+		padding: 10px 30px;
+	}
+	.services img {
+		max-width: 120px;
+		height: auto;
+	}
+}
+/*media 640*/
+@media screen and (max-width: 540px) {
+	.bottom-header {
+		background: none;
+		height: auto;
+		padding: 100px 0 50px;
+	}
+	.bottom-header h1 {
+		padding: 0 0 30px;
+	}
+}

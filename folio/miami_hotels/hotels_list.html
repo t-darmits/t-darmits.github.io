@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Miami Hotel Search</title>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="search_result">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>MiamiHotelSearch</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+						<span class="cng">Open menu</span>
+						<i class="glyphicon glyphicon-menu-down"></i>
+					</button>
+				</div><!-- End navbar-header -->
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="search_result.html">About</a></li>
+						<li><a href="hotels_list.html">Hotels List</a></li>
+						<li><a href="inside.html">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!-- End navbar-collapse -->
+				<form action="/" class="search-form">
+					<div class="form-block">
+						<input class="showme" type="text" placeholder="Search">
+						<button type="submit"><span class="fa fa-search"></span></button>
+						<span class="fa fa-search show-search"></span>
+					</div>
+				</form>
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</nav>
+
+	<div class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h2"><span><b>ALL HOTELS</b> in miami</span></h2>
+				</div>
+				<div class="col-md-12">
+					<div class="hotels-list">
+						<div class="list-filter">
+							<div class="aside-filter">
+								<div id="open_filter" class="visible-xs">Click here for open/close filter <span class="fa fa-hand-pointer-o"></span></div>
+								<h2>FIND YOUR HOTEL</h2>
+								<form action="/">
+									<div class="filter-control">
+										<label>Place</label>
+										<select class="js-slct">
+											<option value="1">South Miami1</option>
+											<option value="2">South Miami2</option>
+											<option value="3">South Miami3</option>
+											<option value="4">South Miami4</option>
+										</select>
+									</div>
+									<div class="filter-control">
+										<label>Price</label>
+										<div class="filter-row clearfix">
+											<div class="input-block">
+												<input type="text" class="js-input-from" value="0" readonly>
+											</div>
+											<div class="input-block">
+												<input type="text" class="js-input-to" value="0" readonly>
+											</div>
+										</div>
+										<input type="text" class="js-range-slider" value="" />
+									</div>
+									<div class="preferences">
+										<div class="p-title">Preferences <i class="fa fa-angle-down pull-right"></i></div>
+										<div class="pref-block">
+											<label for="ck1"><input class="c_check" type="checkbox" value="1" id="ck1"> Air Conditioning</label>
+											<label for="ck2"><input class="c_check" type="checkbox" id="ck2" value="2"> Pick and Drop</label>
+											<label for="ck3"><input class="c_check" type="checkbox" id="ck3"> Room Service</label>
+											<label for="ck4"><input class="c_check" type="checkbox" id="ck4"> Breakfast</label>
+										</div>
+									</div>
+									<button type="submit" class="filter-search">SEARCH</button>
+								</form>
+							</div><!-- End aside-filter -->
+							<div class="toggle_filter"><span class="fa fa-gear"></span></div>
+						</div><!-- End list-filter -->
+						<form action="/">
+							<ul class="hotels">
+								<li class="clearfix">
+									<div class="h-img">
+										<img width="120" src="img/hilton.png" alt="hilton">
+									</div>
+									<div class="h-info">
+										<select class="star-bars">
+											<option value="1" data-html="too bad">1</option>
+											<option value="2" data-html="bad">2</option>
+											<option value="3" data-html="not bad">3</option>
+											<option value="4" data-html="good">4</option>
+											<option value="5" data-html="best">5</option>
+										</select>
+										<div class="h-title">The Setai</div>
+										<div class="h-text">The Sailing Hotel features 200 comfortable rooms, almost with a private balcony overlooking the beautiful charming garden.</div>
+									</div>
+									<div class="h-price clearfix">
+										<div class="pull-left"><span>$125</span> <br> FROM</div>
+										<div class="pull-right"><a href="#">booking</a></div>
+									</div>
+									<div class="popup">
+										<div class="overview">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="h-img">
+										<img width="120" src="img/hilton.png" alt="hilton">
+									</div>
+									<div class="h-info">
+										<select class="star-bars">
+											<option value="1" data-html="too bad">1</option>
+											<option value="2" data-html="bad">2</option>
+											<option value="3" data-html="not bad">3</option>
+											<option value="4" data-html="good">4</option>
+											<option value="5" data-html="best">5</option>
+										</select>
+										<div class="h-title">The Setai</div>
+										<div class="h-text">The Sailing Hotel features 200 comfortable rooms, almost with a private balcony overlooking the beautiful charming garden.</div>
+									</div>
+									<div class="h-price clearfix">
+										<div class="pull-left"><span>$125</span> <br> FROM</div>
+										<div class="pull-right"><a href="#">booking</a></div>
+									</div>
+									<div class="popup">
+										<div class="overview">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="h-img">
+										<img width="120" src="img/hilton.png" alt="hilton">
+									</div>
+									<div class="h-info">
+										<select class="star-bars">
+											<option value="1" data-html="too bad">1</option>
+											<option value="2" data-html="bad">2</option>
+											<option value="3" data-html="not bad">3</option>
+											<option value="4" data-html="good">4</option>
+											<option value="5" data-html="best">5</option>
+										</select>
+										<div class="h-title">The Setai</div>
+										<div class="h-text">The Sailing Hotel features 200 comfortable rooms, almost with a private balcony overlooking the beautiful charming garden.</div>
+									</div>
+									<div class="h-price clearfix">
+										<div class="pull-left"><span>$125</span> <br> FROM</div>
+										<div class="pull-right"><a href="#">booking</a></div>
+									</div>
+									<div class="popup">
+										<div class="overview">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="h-img">
+										<img width="120" src="img/hilton.png" alt="hilton">
+									</div>
+									<div class="h-info">
+										<select class="star-bars">
+											<option value="1" data-html="too bad">1</option>
+											<option value="2" data-html="bad">2</option>
+											<option value="3" data-html="not bad">3</option>
+											<option value="4" data-html="good">4</option>
+											<option value="5" data-html="best">5</option>
+										</select>
+										<div class="h-title">The Setai</div>
+										<div class="h-text">The Sailing Hotel features 200 comfortable rooms, almost with a private balcony overlooking the beautiful charming garden.</div>
+									</div>
+									<div class="h-price clearfix">
+										<div class="pull-left"><span>$125</span> <br> FROM</div>
+										<div class="pull-right"><a href="#">booking</a></div>
+									</div>
+									<div class="popup">
+										<div class="overview">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="h-img">
+										<img width="120" src="img/hilton.png" alt="hilton">
+									</div>
+									<div class="h-info">
+										<select class="star-bars">
+											<option value="1" data-html="too bad">1</option>
+											<option value="2" data-html="bad">2</option>
+											<option value="3" data-html="not bad">3</option>
+											<option value="4" data-html="good">4</option>
+											<option value="5" data-html="best">5</option>
+										</select>
+										<div class="h-title">The Setai</div>
+										<div class="h-text">The Sailing Hotel features 200 comfortable rooms, almost with a private balcony overlooking the beautiful charming garden.</div>
+									</div>
+									<div class="h-price clearfix">
+										<div class="pull-left"><span>$125</span> <br> FROM</div>
+										<div class="pull-right"><a href="#">booking</a></div>
+									</div>
+									<div class="popup">
+										<div class="overview">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+											<img src="img/test-list.jpg" alt="test-list">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button class="load-more"><i class="fa fa-refresh"></i><span>Show me more hotels</span></button>
+						</form>
+					</div><!-- End hotels-list -->
+				</div><!-- End col-md-12 -->
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</div><!-- End main-content -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">(c) MiamiHotelSearch.com</p>
+				</div>
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</footer>
+	<div class="overlay"></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.barrating.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>RichStyle</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,700italic,500italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<div class="bg_video">
+				<div class="bg_image" style="background: url('img/main-car-bg.jpg') no-repeat"></div>
+				<video autoplay muted preload="img/man-bg.jpg" id="bgvid" loop>
+					<source src="Richstyle-1.webm" type="video/webm">
+					<source src="Richstyle-1.mp4" type="video/mp4">
+				</video>
+				<div class="overlay-img"></div>
+			</div><!-- End bg_video -->
+
+			<div class="promo">
+				<div class="container clearfix">
+					<ul class="pull-left foot-faq_links">
+						<li><a href="#" data-faq="fq_3" data-offcanvas-open="m-help" title="Контакты">Контакты</a></li>
+						<li><a href="#" data-faq="fq_2" data-offcanvas-open="m-help" title="Адрес">Адрес <span>г.Киев <i class="icon pointer"></i> ул. Карпенко 31</span></a></li>
+					</ul>
+					<ul class="pull-right">
+						<li><a href="#" data-remodal-target="register-modal" title="Регистрация">Регистрация</a></li>
+						<li><a href="#" data-remodal-target="enter-modal" title="Войти">Войти</a></li>
+					</ul>
+				</div><!-- End container -->
+				<div class="rich-table">
+					<div class="rich-container">
+						<div class="container text-center">
+							<p class="logo"><a href="#" title="logo"><img src="img/rich-logo.png" alt=""></a></p>
+							<p class="h1">Открытие нового “Luxury Boutique”</p>
+							<p class="description">Давайте знакомиться! Для начала активируйте ваш  персональный ключ с конверта</p>
+							<div class="act-shop">
+								<a href="#" title="Активировать ключ" class="btn active-shop scroll-to">Активировать ключ</a>
+								<span>Нажмите эту кнопку <i class="icon arrow-right"></i></span>
+							</div>
+							<div>
+								<a href="#" title="Открыть магазин" class="btn open-shop scroll-to">Открыть магазин <i class="icon s-bag"></i></a>
+								<span><i class="icon arrow-left"></i> Нажмите эту кнопку</span>
+							</div>
+							<!-- <button>Pause</button> -->
+						</div><!-- End container -->
+					</div><!-- End rich-container -->
+				</div><!-- End rich-table -->
+			</div><!-- End promo -->
+
+			<!-- main menu burger -->
+			<div class="main-menu offcanvas" id="custom">
+				<div class="menu-container">
+					<div class="head-menu text-center">
+						<div class="title">Добро пожаловать</div>
+						<div class="user-control">
+							<a href="#" data-remodal-target="enter-modal" title="Войти">Войти</a>
+							<a href="#" data-remodal-target="register-modal" ttile="Регистрация">Регистрация</a>
+						</div>
+					</div>
+					<ul>
+						<li><a href="#" data-remodal-target="cart-modal" title="Моя корзина">Моя корзина <span class="cart-count">12</span></a></li>
+						<li><a href="#" data-remodal-target="liked-modal" title="Мои закладки">Мои закладки <span class="fav-count">12</span></a></li>
+						<li><a href="#" title="Мои скидки">Мои скидки</a></li>
+					</ul>
+					<ul class="help-padding">
+						<li><a href="#" title="Помощь">Помощь</a></li>
+						<li><a href="#" title="Инструкции">Инструкции</a></li>
+					</ul>
+				</div><!-- End menu-container -->
+				<div class="bott-menu">
+					<a href="#" class="btn">Выйти</a>
+				</div>
+			</div><!-- End main-menu -->
+			<!-- END main menu burger -->
+
+			<div class="overlay_menu" data-offcanvas-close="custom" id="over_1"></div>
+			<div class="overlay_menu" data-offcanvas-close="m-help" id="over_2"></div>
+
+			<!-- FAQ MENU -->
+			<div class="faq-menu offcanvas" id="m-help">
+				<div class="header-faq">
+					Информер для новых посетителей
+					<a class="back-arrow" data-offcanvas-close="m-help" title="back" href="#">
+						<i class="icon grey-back"></i>
+					</a>
+				</div>
+				<div class="faq-area clearfix">
+					<div class="pull-left faq-nav">
+						<ul>
+							<li>Помощь
+								<ul class="faq-tabs">
+									<li><a class="active" data-faq="fq_2" href="#" title="Адрес магазина">Адрес магазина</a></li>
+									<li><a data-faq="fq_3" href="#" title="Контакты">Контакты</a></li>
+								</ul>
+							</li>
+							<li>Инструкции
+								<ul class="faq-tabs">
+									<li><a href="#" data-faq="fq_4" title="Поиск товара">Поиск товара</a></li>
+									<li><a href="#" data-faq="fq_5" title="Оформление заказа">Оформление заказа</a></li>
+									<!-- <li><a href="#" data-faq="fq_6" title="Доставка и оплата">Доставка и оплата</a></li>
+									<li><a href="#" data-faq="fq_7" title="Возврат товара">Возврат товара</a></li>
+									<li><a href="#" data-faq="fq_8" title="Выбор размера">Выбор размера</a></li>
+									<li><a href="#" data-faq="fq_9" title="Скидки, акции">Скидки, акции</a></li> -->
+								</ul>
+							</li>
+						</ul>
+						<p class="faq-copy">
+							©2016  Rich style <br> Интернет-магазин <br> одежды и обуви Украина
+						</p><!-- End faq-copy -->
+					</div>
+					<div class="pull-right faq-content">
+						<div class="faq-block current" id="fq_2">
+							<div id="map"></div>
+							<div class="map-info">
+								<div class="map-logo">
+									<img src="img/map-logo.png" alt="map-logo">
+								</div>
+								<div class="map-text">
+									<b>Страна:</b> Украина <br>
+									<b>Город:</b> Киев <br>
+									<b>Проспект:</b> оболонский 26
+									ЖК Obolon Residences
+								</div>
+								<div class="hide-button">
+									<a href="#" title="Свернуть"><span>Свернуть</span> <i class="icon map-arrow-down"></i></a>
+								</div>
+							</div>
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_3">
+							<div class="contact-title">Телефоны</div>
+							<div class="contact-block">
+								<a href="#" title="+38 044 33-32-39">+38 044 33-32-39</a>
+								<a href="#" title="+38 095 344-56-89">+38 095 344-56-89</a>
+							</div>
+							<div class="contact-title">Электронная почта</div>
+							<div class="contact-block">
+								<a href="mailto:hello@rich.butique" title="hello@rich.butique">hello@rich.butique</a>
+							</div>
+							<div class="contact-title">Для углублённых вопросов</div>
+							<form action="/">
+								<p>С удовольствием ответим на интересующий Вас вопрос!</p>
+								<div class="contact-row"><input placeholder="Введите имя" type="text" class="input-control"></div>
+								<div class="contact-row"><input placeholder="Введите фамилию" type="text" class="input-control"></div>
+								<div class="contact-row"><input placeholder="Введите email" type="text" class="input-control"></div>
+								<div class="contact-row tel-block">
+									<span>+38</span>
+									<input class="tel input-control" type="text" placeholder="Телефон для связи" maxlength="14">
+								</div>
+								<div class="contact-row another-dropdown">
+									<div class="drop-select">
+										<div class="line-block simple">
+											<p class="text-line"><input disabled="disabled" type="text" placeholder="Тема вопроса"></p>
+											<i class="icon down-arr"></i>
+											<i class="icon remove-ico"></i>
+										</div>
+										<div class="drop-area">
+											<div class="custom_scroll">
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Акции, скидки" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Акции, скидки
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Товары" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Товары
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Сотрудничество" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Сотрудничество
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Возврат" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Возврат
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Жалоба" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Жалоба
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Другой вопрос" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Другой вопрос
+													</label>
+												</div>
+											</div><!-- End custom_scroll -->
+										</div><!-- End drop-area -->
+									</div><!-- End drop-select -->
+								</div>
+								<div class="contact-row">
+									<textarea placeholder="Текст" class="input-control"></textarea>
+								</div>
+								<div class="contact-row">
+									<input type="submit" class="btn another-btn" value="Отправить">
+								</div>
+							</form>
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_4">
+							<div class="faq-line">
+								<div class="faq-title">1. Поиск товара</div>
+								<p class="faq-text">
+									Интересующий вас товар можно найти с помощью поисковой строки,  которая удобно расположена верхней части сайта на любых товарных страницах нашего интернет-магазина
+								</p>
+								<div class="faq-show">
+									<img src="img/faq-img-5.jpg" alt="faq-img">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+							<div class="faq-line">
+								<div class="faq-title">1.1 Фильтры</div>
+								<p class="faq-text">
+									Дальше, по Вашему желанию, следует задать точные корректировки для найденного товара. Вы можете распределить товары по характеристикам, выставить диапазон цен, и многое другое
+								</p>
+								<div class="faq-show">
+									<img src="img/faq-img-6.jpg" alt="faq-img">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_5">
+							<div class="faq-line">
+								<div class="faq-title">1. Оформление заказа</div>
+								<p class="faq-text">
+									Для начала вам надо добавить понравившуюся  вещь в корзину сделать это можно двумя способами: <br><br>
+									1. Через каталог товаров
+								</p>
+								<div class="faq-show">
+									<img src="img/faq-img-1.jpg" alt="faq-img">
+									<img style="top: 20%; left: 40%;" class="faq-zoom" src="img/faq-img-1-zoom.png">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+							<div class="faq-line">
+								<p class="faq-text">
+									2. Или через карточку товара
+								</p>
+								<div class="faq-show">
+									<img src="img/faq-img-2.jpg" alt="faq-img">
+									<img style="top: 45%; right: 30%" class="faq-zoom" src="img/faq-img-2-zoom.png">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+							<div class="faq-line">
+								<p class="faq-text">
+									После чего можно зайти в личную корзину, где вам будет доступна возможность оформления заказа. <br> Далее в обязательном порядке необходимо указать свои ФИО, способ доставки, адрес доставки, электронную почту и телефон.
+								</p>
+								<div class="faq-show">
+									<img src="img/faq-img-3.jpg" alt="faq-img">
+									<img style="top: 50%; right: 20%;" class="faq-zoom" src="img/faq-img-3-zoom.png">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+							<div class="faq-line">
+								<div class="faq-show">
+									<img src="img/faq-img-4.jpg" alt="faq-img">
+									<img style="top: 5%;right:15%" class="faq-zoom" src="img/faq-img-4-zoom.png">
+									<a href="#" class="btn show-zoom" title="show">Подсмотреть <i class="icon eye-icon"></i></a>
+								</div>
+							</div><!-- End faq-line -->
+							<p class="text-center" style="padding: 0 20px">
+								Когда вы оформляете заказ в интернет-магазине Rich.butique вы полностью саглашаетесь с правилами, ценами, акциями, бутика RICH STYLE. <br> Приятных покупок! <br>
+								<a href="#" class="def-link">Посмотреть адрес бутика</a> <br>
+								<a href="#" class="btn another-btn" style="margin-top: 20px">Перейти к покупкам</a>
+							</p>
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_6">
+							66
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_7">
+							77
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_8">
+							88
+						</div><!-- End faq-content -->
+						<div class="faq-block" id="fq_9">
+							99
+						</div><!-- End faq-content -->
+					</div>
+				</div><!-- End faq-area -->
+			</div><!-- End help-menu -->
+			<!-- END FAQ MENU -->
+
+			<div class="main-content" id="scrollbar">
+				<header>
+					<div class="nav-container clearfix">
+						<div class="control-logo pull-left">
+							<span id="control-btn" class="icon pause"></span>
+							<a href="#"><img src="img/mini-logo.png" alt="minilogo"></a>
+						</div><!-- End control logo -->
+						<form action="/" class="form-search pull-left text-center">
+							<div class="search">
+								<input type="text" placeholder="Поиск...">
+								<div>
+									<button type="submit"><i class="icon search-ico"></i></button>
+									<span class="close-c icon"></span>
+								</div>
+							</div><!-- End search -->
+							<div class="category-btn">
+								<a href="#" class="open_mobile" title="Мужское"><i class="icon arrow-left"></i> Каталог</a>
+							</div><!-- End category-btn -->
+						</form><!-- End form-search -->
+						<div class="navbar-control pull-right">
+							<ul>
+								<li>
+									<a href="#" data-remodal-target="liked-modal" title="избранное"><i class="icon heart-ico"></i><span class="fav-count">12</span></a>
+								</li>
+								<li>
+									<a href="#" data-remodal-target="cart-modal" title="корзина"><i class="icon s-bag"></i><span class="cart-count">12</span></a>
+								</li>
+								<li>
+									<a href="#" data-offcanvas-open="custom" title="меню"><i class="icon menu-ico"></i></a>
+								</li>
+							</ul>
+						</div><!-- End navbar-control -->
+						<nav id="mobile_menu">
+							<ul class="category-menu clearfix">
+								<li>
+									<a class="help_control" href="#" title="женское">ЖЕНСКОЕ</a>
+								</li>
+								<li>
+									<a class="help_control" href="#" title="мужское">МУЖСКОЕ</a>
+									<div class="drop-menu">
+										<div class="drop-title">
+											<p>MEN CLOTHES</p>
+											<span>Enjoy shopping</span>
+										</div>
+										<ul class="level_1">
+											<li>
+												<a href="#" title="Мужская одежда">мужская одежда</a>
+												<ul class="level_2">
+													<li>
+														<a href="#" title="Мужская одежда">Мужская одежда</a>
+														<ul class="level_3">
+															<li><a href="#">Верхняя одежда</a></li>
+															<li><a href="#">Футболки и поло</a></li>
+															<li><a href="#">Джемперы и кардиганы</a></li>
+															<li><a href="#">Джинсы</a></li>
+															<li><a href="#">Рубашки</a></li>
+															<li><a href="#">Брюки</a></li>
+															<li><a href="#">Толстовки и олимпийки</a></li>
+															<li><a href="#">Спортивные костюмы</a></li>
+															<li><a href="#">Нижнее белье</a></li>
+															<li><a href="#">Носки и гетры</a></li>
+															<li><a href="#" class="show-all">...</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#" title="ОДЕЖДА ПО БРЕНДАМ">ОДЕЖДА ПО БРЕНДАМ</a>
+														<ul class="level_3">
+															<li><a href="#">Bugatti</a></li>
+															<li><a href="#">Camel Active</a></li>
+															<li><a href="#">Diesel</a></li>
+															<li><a href="#">Gino Rossi</a></li>
+															<li><a href="#">Guess Jeans</a></li>
+															<li><a href="#">Hilfiger Denim</a></li>
+															<li><a href="#">Jack & Jones</a></li>
+															<li><a href="#">MEDICINE</a></li>
+															<li><a href="#" class="show-all">...</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#" title="ПРЕДЛОЖЕНИЕ">ПРЕДЛОЖЕНИЕ</a>
+														<ul class="level_3">
+															<li><a href="#">Новинки</a></li>
+															<li><a href="#">Мы открылись</a></li>
+															<li><a href="#">Новая коллекция LEVI’S</a></li>
+															<li><a href="#">Совсместная скидка</a></li>
+															<li><a href="#">Мужские парки -50%</a></li>
+															<li><a href="#" class="show-all">...</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#" title="обувь">обувь</a>
+												<ul class="level_2">
+													<li>
+														<a href="#" title="">lorem</a>
+														<ul class="level_3">
+															<li><a href="#" title="">lorem</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#" title="аксессуары">аксессуары</a>
+												<ul class="level_2">
+													<li>
+														<a href="#" title="">lorem</a>
+														<ul class="level_3">
+															<li><a href="#" title="">lorem</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#" title="новинки">новинки</a>
+												<ul class="level_2">
+													<li>
+														<a href="#" title="">lorem</a>
+														<ul class="level_3">
+															<li><a href="#" title="">lorem</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- End drop-menu -->
+								</li>
+							</ul><!-- End category-menu -->
+						</nav>
+					</div><!-- End nav-container -->
+				</header>
+				<div class="main-container">
+
+					<div class="big-slider">
+						<div class="item-wrapp">
+							<div class="slider-item">
+								<div class="label">Для неё</div>
+								<div class="item-content">
+									<div class="slider-title">Summer with luxury</div>
+									<div class="slider-description">Самые актуальные летние наряды</div>
+									<a href="#" title="#">Посмотреть</a>
+								</div>
+								<img src="img/big-slide-img.jpg" alt="big-slide">
+								<div class="overlay-bg"></div>
+							</div>
+							<div class="slider-item">
+								<div class="label">Для него</div>
+								<div class="item-content">
+									<div class="slider-title">Summer with luxury</div>
+									<div class="slider-description">Самые актуальные летние наряды</div>
+									<a href="#" title="#">Посмотреть</a>
+								</div>
+								<img src="img/big-slide-img.jpg" alt="big-slide">
+								<div class="overlay-bg"></div>
+							</div>
+						</div><!-- End item-wrapp -->
+					</div><!-- End slider -->
+
+					<div class="container">
+						<div class="action-row two-item">
+							<ul class="clearfix">
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>DELIVERY</h2>
+											<div class="mini-description">
+												БЕСПЛАТНАЯ ДОСТАВКА <br> И ВОЗВРАТА ПО КИЕВУ
+											</div>
+											<p class="action-text">
+												По Украине при оплате с карточки <br> или покупки <br> товара от 1500 грн
+											</p>
+										</div>
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>WINTER SALE</h2>
+											<div class="mini-description">
+												Женские парки осень-зима <br> со скидкой до 50% 
+											</div>
+										</div>
+										<div class="action-links">
+											<ul>
+												<li><a href="#" title="Женское">Женское</a></li>
+												<li><a href="#" title="Мужское">Мужское</a></li>
+											</ul>
+											<div class="time-block">
+												Осталось время <i class="icon time-ico"></i> <div id="timer">10:32:20</div>
+											</div>
+										</div>
+										<img src="img/action-img.jpg" alt="action-img">
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+							</ul>
+						</div><!-- End action-block -->
+						<div class="action-row two-big-item">
+							<ul class="clearfix">
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>LUXURY SHOES 2016</h2>
+											<div class="mini-description">
+												Обувь которая непременно <br> впишется в твой стиль!
+											</div>
+										</div>
+										<div class="action-links">
+											<ul>
+												<li><a href="#" title="Женское">Женское</a></li>
+												<li><a href="#" title="Мужское">Мужское</a></li>
+											</ul>
+										</div>
+										<img src="img/action-img2.jpg" alt="action-img">
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>gift</h2>
+											<p class="action-text">
+												ПОДАРОК 150 ГРН НА ПОКУПКУ <br> В НАШЕМ БУТИКЕ <br><br>
+												Скупляйтесь в <br> интернет-магазине и получите в подарок 150 грн на <br> повторные покупки
+											</p>
+										</div>
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+							</ul>
+						</div><!-- End action-block -->
+						<div class="action-row three-item">
+							<ul class="clearfix">
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>LEVIS</h2>
+											<div class="mini-description">
+												Новая коллекция <br> мужских  джинсов
+											</div>
+										</div>
+										<div class="action-links">
+											<ul>
+												<li><a href="#" title="Женское">Женское</a></li>
+												<li><a href="#" title="Мужское">Мужское</a></li>
+											</ul>
+										</div>
+										<img src="img/action-img3.jpg" alt="action-img">
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>accessories</h2>
+											<div class="mini-description">
+												Широкий выбор <br> аксессуаров
+											</div>
+										</div>
+										<div class="action-links">
+											<ul>
+												<li><a href="#" title="Женское">Женское</a></li>
+												<li><a href="#" title="Мужское">Мужское</a></li>
+											</ul>
+										</div>
+										<img src="img/action-img4.jpg" alt="action-img">
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+								<li>
+									<div class="action-block">
+										<div class="action-content">
+											<h2>DISCOUNTS</h2>
+											<div class="action-text">
+												СОВМЕСТНАЯ СКИДКА В БУТИКЕ <br> И ИНТЕРНЕТ-МАГАЗИНЕ <br><br>
+												Копите скидку в интернет-магазине и
+												применяйте их в нашем бутике. <br> Приятных покупок!
+											</div>
+										</div>
+										<div class="overlay-action"></div>
+									</div>
+								</li>
+							</ul>
+						</div><!-- End action-block -->
+					</div><!-- End container -->
+
+					<div class="container">
+						<div class="brand-slider">
+							<div class="brand-wrapp">
+								<div class="slider-item"><a href="#"><img src="img/brand-1.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-2.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-3.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-4.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-5.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-6.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-7.png" alt="brand"></a></div>
+								<div class="slider-item"><a href="#"><img src="img/brand-2.png" alt="brand"></a></div>
+							</div><!-- End brand-wrapp -->
+							<a href="#" class="brand-left"><i class="icon arrow-left"></i></a>
+						</div><!-- End brand-slider -->
+					</div><!-- End container -->
+					
+					<div class="container">
+						<ul class="vendors">
+							<li id="actually"><button class="active filter-products">СЕЙЧАС ПОКУПАЮТ</button></li>
+							<li id="popular"><button class="filter-products">ПОПУЛЯРНЫЕ</button></li>
+							<li id="recomended"><button class="filter-products">РЕКОМЕНДУЕМЫЕ</button></li>
+						</ul>
+						<div class="popular-slider">
+							<div class="popular-wrapp">
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">2,490 UAH</p>
+										<span class="mark">NEW</span>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">PUMA</p>
+										<p><a href="#">Кеды Bombato SF</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">5,200 UAH</p>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img2.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">SOUL MEN</p>
+										<p><a href="#">Куртка кожаная</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">2,500 UAH</p>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">DOLDEN</p>
+										<p><a href="#">Легкие джинсы</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">3,259 UAH</p>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img2.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">LONDON MEN</p>
+										<p><a href="#">Полусапоги</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">1,650 UAH</p>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img5.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">LEVI’S</p>
+										<p><a href="#">Легкие джинсы</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-actually">
+									<div class="labels">
+										<p class="price">3,259 UAH</p>
+									</div>
+									<a class="img-block" href="#">
+										<img src="img/product-img.png" alt="product-img">
+									</a>
+									<div class="product-title">
+										<p class="brand-title">LONDON MEN</p>
+										<p><a href="#">Полусапоги</a></p>
+									</div>
+									<a href="#" class="like"></a>
+								</div><!-- End slider-item -->
+								<div class="slider-item filter-popular">2</div>
+								<div class="slider-item filter-popular">2</div>
+								<div class="slider-item filter-popular">2</div>
+								<div class="slider-item filter-recomended">3</div>
+								<div class="slider-item filter-recomended">3</div>
+								<div class="slider-item filter-recomended">3</div>
+							</div><!-- End popular-brand -->
+							<a href="#" class="popular-right"><i class="icon arrow-right"></i></a>
+						</div><!-- End popular-slider -->
+						<div class="clearfix"></div>
+					</div><!-- End container -->
+
+					<footer>
+						<div class="top-footer">
+							<div class="container clearfix">
+								<div class="foot-logo-block">
+									<a href="#" title="foot-logo" class="foot-logo">
+										<img src="img/rich-logo.png" alt="rich-logo">
+									</a>
+									<a href="#" title="map" class="map-point">
+										<img src="img/map-pointer.png" alt="map-pointer">
+									</a>
+								</div>
+								<div class="help-menu clearfix">
+									<div class="pull-left">
+										<h4>Инструкции</h4>
+										<ul class="foot-faq_links">
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_4" title="Доставка">Доставка</a></li>
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_5" title="Как оформить заказ">Как оформить заказ</a></li>
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_6" title="Возврат товара">Возврат товара</a></li>
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_7" title="Выбор размера">Выбор размера</a></li>
+										</ul>
+									</div>
+									<div class="pull-right">
+										<h4>Помощь</h4>
+										<ul class="foot-faq_links">
+											<li class="mail-link"><a href="mailto:help@rich.boutique" title="help@rich.boutique">help@rich.boutique</a></li>
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_2" title="Адрес магазина">Адрес магазина</a></li>
+											<li><a href="#" data-offcanvas-open="m-help" data-faq="fq_3" title="Контакты">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="newslatter">
+									<div class="clearfix visa">
+										<p class="pull-left text">
+											МЫ ПРИНИМАЕМ:
+										</p>
+										<p class="pull-right">
+											<img src="img/visa-img.png" alt="visa-img">
+										</p>
+									</div>
+									<form action="/">
+										<div class="clearfix">
+											<p class="pull-left text">NEWSLATTER</p>
+											<p class="pull-right radio">
+												<input id="male" checked type="radio" name="gender" value="male">
+												<label for="male">MEN</label>
+												<input id="female" type="radio" name="gender" value="female">
+												<label for="female">WOMEN</label>
+											</p>
+										</div>
+										<div class="clearfix subscription">
+											<p class="pull-left input-line"><input type="text" placeholder="Email"></p>
+											<p class="pull-right button-line"><input type="submit" value="JOIN"></p>
+										</div>
+									</form>
+								</div>
+							</div><!-- End container -->
+						</div><!-- End top-footer -->
+						<div class="bott-footer">
+							<div class="container clearfix">
+								<div class="incosm pull-left"><a href="http://incosm.com" title="incosm">Разработка incosm.com</a></div>
+								<div class="copy pull-left text-center">©2016  Rich style  Интернет-магазин одежды и обуви Украина</div>
+								<div class="help-mod pull-left text-right">
+									<div class="mod-butt">
+										<div class="popup-mod text-center">
+											<div class="popup-close">
+												<i class="icon"></i>
+											</div>
+											<div class="popup-txt">
+												Расcкажите, чтобы вы хотели <br> улучшить в <strong>Rich.butique?</strong> <br>
+												<a href="#" class="btn another-btn" title="Участвовать в опросе">Участвовать в опросе</a>
+											</div>
+											<span class="popup-triangle"></span>
+										</div><!-- End popup-mod -->
+										<span>Помогите улучшить нас</span>
+									</div>
+								</div><!-- End mod-butt -->
+							</div><!-- End container -->
+						</div><!-- End bott-footer -->
+					</footer>
+				</div><!-- End main-container -->
+			</div><!-- End main-content -->
+		</div><!-- End wrapper -->
+
+		<!-- ALL MODALS -->
+			<div class="remodal active-key" data-remodal-id="active-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Авторизация с ключом</div>
+				<div class="active-content text-center">
+					<h3>Мы рады приветствовать Вас!</h3>
+					<h4>Найдите свой ключ у себя в конверте</h4>
+					<img src="img/activation-img.png" alt="activation-img">
+				</div>
+				<form action="/">
+					<div class="key-area">
+					<div class="second">2</div>
+						<input type="text" placeholder="Введите ключ сюда">
+						<p><b>Нет ключа?</b> Перейти на страницу <a href="#" data-remodal-target="register-modal" title="регистрации">регистрации</a></p>
+					</div>
+					<div class="active-content text-center">
+						<div class="third">3</div>
+						<h3>И еще немного...</h3>
+						<h4>Для активации ключа, пожалуйста, <br> зарегистрируйтесь у нас в интернет-магазине</h4>
+						<div class="form-control"><input type="text" placeholder="Ваше имя"></div>
+						<div class="form-control"><input type="text" placeholder="Ваш email"></div>
+						<div class="form-control"><input type="text" placeholder="Пароль"></div>
+						<div class="form-control"><input type="text" placeholder="Подтвердите пароль"></div>
+						<div class="form-control">
+							<label>
+								<div class="checkbox">
+									<input type="checkbox" name="checkbox">
+									<div class="checkbox_div"></div>
+								</div>
+								Подписаться на новости
+							</label>
+						</div>
+					</div>
+					<div class="remodal-footer text-center">
+						<input type="submit" value="Активация" class="btn activate-btn">
+					</div>
+				</form>
+			</div><!-- End active-key -->
+
+			<div class="remodal register-modal" data-remodal-id="register-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Регистрация </div>
+				<form action="/">
+					<div class="remodal-content text-center">
+						<div class="form-control"><input type="text" placeholder="Ваше имя"></div>
+						<div class="form-control"><input type="text" placeholder="Ваш email"></div>
+						<div class="form-control"><input type="password" placeholder="Пароль"></div>
+						<div class="form-control"><input type="password" placeholder="Подтвердите пароль"></div>
+						<div class="form-control">
+							<label>
+								<div class="checkbox">
+									<input type="checkbox" name="checkbox">
+									<div class="checkbox_div"></div>
+								</div>
+								Подписаться на новости
+							</label>
+						</div>
+					</div>
+					<div class="remodal-footer text-center">
+						<input type="submit" value="Зарегистрироваться" class="btn activate-btn">
+					</div>
+				</form>
+			</div><!-- End active-key -->
+
+			<div class="remodal enter-modal" data-remodal-id="enter-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Вход в личный кабинет </div>
+				<form action="/">
+					<div class="remodal-content clearfix text-center">
+						<div class="pull-left">
+							<div class="form-control"><input type="text" placeholder="Введите email"></div>
+							<div class="form-control"><input type="password" placeholder="Введите пароль"></div>
+							<div class="form-control"><input type="submit" class="btn btn-enter" value="Войти"></div>
+							<a href="#" class="forget-link" title="Восстановить пароль?">Восстановить пароль?</a>
+						</div>
+						<div class="pull-right soc-enter">
+							<p class="text-center">Вы можете войти через соц. сети</p>
+							<ul>
+								<li><a href="#"><img src="img/fa-vk.png" alt="soc-icons"></a></li>
+								<li><a href="#"><img src="img/fa-facebook.png" alt="soc-icons"></a></li>
+								<li><a href="#"><img src="img/fa-google-plus.png" alt="soc-icons"></a></li>
+							</ul>
+							<p class="text-center" style="font-size: 16px;">Мы ценим вас больше всего, и не будем делать публикации от вашего имени. <br><br><b>Приятных покупок!</b></p>
+						</div>
+					</div>
+					<div class="remodal-footer text-center">
+						<a href="#" class="btn new-register" title="Новая регистрация">Новая регистрация</a>
+					</div>
+				</form>
+				<div class="another-register">
+					<form action="/">
+						<div class="remodal-content clearfix text-center">
+							<div class="pull-left">
+								<div class="form-control"><input type="text" placeholder="Ваше имя"></div>
+								<div class="form-control"><input type="text" placeholder="Ваш email"></div>
+								<div class="form-control"><input type="password" placeholder="Придумайте пароль"></div>
+								<div class="form-control"><input type="password" placeholder="Повторите пароль"></div>
+								<div>
+									<label>
+										<div class="checkbox">
+											<input type="checkbox" name="checkbox">
+											<div class="checkbox_div"></div>
+										</div>
+										Подписаться на новости
+									</label>
+								</div>
+							</div>
+							<div class="pull-right soc-enter">
+								<p class="text-center">Вам вручили конверт с приглашением на наш интернет-магазин ?</p>
+								<div class="activate-block">
+									<div class="form-control"><input type="text" placeholder="Пример: QEEe8347"></div>
+									<p>Введите его в форму и <br> получите скидку!</p>
+								</div>
+								<p class="not-req text-center" style="font-size: 16px;">Необезательное поле!</p>
+							</div>
+						</div>
+						<div class="remodal-footer text-center">
+							<button type="submit" class="btn another-btn">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div><!-- End active-key -->
+			<div class="remodal cart-modal" data-remodal-id="cart-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Ваша корзина </div>
+				<form action="/">
+					<div class="remodal-content clearfix">
+						<ul class="cart-item">
+							<li class="clearfix">
+								<div class="cart-img">
+									<a href="#" title="prod">
+										<img src="img/prod-thumb.png" alt="prod-thumb">
+									</a>
+								</div>
+								<div class="cart-col">
+									<p class="cart-name"><a href="#">DOLDEN -  Легкие джинсы</a></p>
+									<div class="cart-number">
+										<div class="num-block"><input class="number-filter" type="text" value="1"></div>
+										<span class="plus"><i class="icon plus-ico"></i></span>
+										<span class="minus"><i class="icon minus-ico"></i></span>
+									</div>
+								</div>
+								<div class="cart-price text-center">1,400 UAH</div>
+								<div class="cart-controls text-right">
+									<a href="#" title="liked">
+										<img src="img/liked-cart-img.png" alt="liked-cart-img">
+									</a>
+									<a href="#" title="delete">
+										<img src="img/delete-cart-img.png" alt="delete-cart-img">
+									</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="cart-img">
+									<a href="#" title="prod">
+										<img src="img/prod-thumb.png" alt="prod-thumb">
+									</a>
+								</div>
+								<div class="cart-col">
+									<p class="cart-name"><a href="#">DOLDEN -  Легкие джинсы</a></p>
+									<div class="cart-number">
+										<div class="num-block"><input class="number-filter" type="text" value="1"></div>
+										<span class="plus"><i class="icon plus-ico"></i></span>
+										<span class="minus"><i class="icon minus-ico"></i></span>
+									</div>
+								</div>
+								<div class="cart-price text-center">1,400 UAH</div>
+								<div class="cart-controls text-right">
+									<a href="#" title="liked">
+										<img src="img/liked-cart-img.png" alt="liked-cart-img">
+									</a>
+									<a href="#" title="delete">
+										<img src="img/delete-cart-img.png" alt="delete-cart-img">
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="locker"></div>
+					</div><!-- End remodal-content -->
+					<div class="remodal-footer text-right">
+						<span class="in-total">Итого: <b>4,659 UAH</b></span>
+						<button type="button" id="checkout" class="btn another-btn">Оформить заказ</button>
+					</div>
+					<div class="order-step" id="order">
+						<div class="remodal-content clearfix">
+							<div class="pull-right remodal-blocks">
+								<div class="remodal-row">
+									<div class="drop-select">
+										<div class="line-block simple">
+											<p class="text-line"><input disabled="disabled" type="text" placeholder="Выберите способ оплаты"></p>
+											<i class="icon down-arr"></i>
+											<i class="icon remove-ico"></i>
+										</div>
+										<div class="drop-area">
+											<div class="custom_scroll">
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Оплата при получении" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Оплата при получении
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Оплата Visa, Mastercard" name="radio">
+															<div class="checkbox_div"></div>
+														</div>
+														Оплата Visa, Mastercard
+													</label>
+												</div>
+											</div><!-- End custom_scroll -->
+										</div><!-- End drop-area -->
+									</div><!-- End drop-select -->
+								</div><!-- End remodal-row -->
+								<div class="remodal-row">
+									<div class="drop-select">
+										<div class="line-block simple">
+											<p class="text-line"><input disabled="disabled" type="text" placeholder="Выберите способ доставки"></p>
+											<i class="icon down-arr"></i>
+											<i class="icon remove-ico"></i>
+										</div>
+										<div class="drop-area">
+											<div class="custom_scroll">
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Самовывоз" name="radio1">
+															<div class="checkbox_div"></div>
+														</div>
+														Самовывоз
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Курьерская доставка (Только по Киеву)" name="radio1">
+															<div class="checkbox_div"></div>
+														</div>
+														Курьерская доставка (Только по Киеву)
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Курьерская доставка (Новая почта)" name="radio1">
+															<div class="checkbox_div"></div>
+														</div>
+														Курьерская доставка (Новая почта)
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Новая почта" name="radio1">
+															<div class="checkbox_div"></div>
+														</div>
+														Новая почта
+													</label>
+												</div>
+											</div><!-- End custom_scroll -->
+										</div><!-- End drop-area -->
+									</div><!-- End drop-select -->
+								</div><!-- End remodal-row -->
+								<div class="remodal-row">
+									<div class="drop-select">
+										<div class="line-block simple">
+											<p class="text-line"><input disabled="disabled" type="text" placeholder="Выберите отделение"></p>
+											<i class="icon down-arr"></i>
+											<i class="icon remove-ico"></i>
+										</div>
+										<div class="drop-area">
+											<div class="custom_scroll">
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Адрес склада Новай почты 1" name="radio2">
+															<div class="checkbox_div"></div>
+														</div>
+														Адрес склада Новай почты 1
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Адрес склада Новай почты 2" name="radio2">
+															<div class="checkbox_div"></div>
+														</div>
+														Адрес склада Новай почты 2
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Адрес склада Новай почты 3" name="radio2">
+															<div class="checkbox_div"></div>
+														</div>
+														Адрес склада Новай почты 3
+													</label>
+												</div>
+												<div class="filter-row">
+													<label>
+														<div class="radio-check">
+															<input type="radio" value="Адрес склада Новай почты 4" name="radio2">
+															<div class="checkbox_div"></div>
+														</div>
+														Адрес склада Новай почты 4
+													</label>
+												</div>
+											</div><!-- End custom_scroll -->
+										</div><!-- End drop-area -->
+									</div><!-- End drop-select -->
+								</div><!-- End remodal-row -->
+								<div class="remodal-row row-3 clearfix">
+									<div style="width: 50%">
+										<input class="input-control" type="text" placeholder="Ваша улица">
+									</div>
+									<div style="width: 25%">
+										<input class="input-control" type="text" placeholder="Дом">
+									</div>
+									<div style="width: 25%">
+										<input class="input-control" type="text" placeholder="Кв">
+									</div>
+								</div><!-- End remodal-row -->
+								<div class="remodal-row">
+									<input class="input-control" type="text" placeholder="Введите имя">
+								</div><!-- End remodal-row -->
+								<div class="remodal-row">
+									<input class="input-control" type="text" placeholder="Введите фамилию">
+								</div><!-- End remodal-row -->
+								<div class="remodal-row">
+									<input class="input-control" type="text" placeholder="Введите email">
+								</div><!-- End remodal-row -->
+								<div class="remodal-row tel-block">
+									<span>+38</span>
+									<input id="tel" maxlength="14" class="input-control" type="text" placeholder="Телефон для связи">
+								</div><!-- End remodal-row -->
+							</div><!-- End remodal-blocks -->
+							<div class="pull-left remodal-blocks">
+								<div class="pay-text">
+									<h3>Оплата</h3>
+									<p>Нет суммы миним.заказа. Перевод денежных средств на пластиковую карту ПриватБанка через отделение Приватбанк (наличными); Айбокс или через систему Приват 24; Реквизиты для оплаты Вы получаете в смс после </p>
+									<div class="text-center">
+										<img src="img/wallet.png" alt="wallets">
+										<img src="img/credit-card.png" alt="credit-card">
+									</div>
+								</div><!-- End pay-text -->
+								<div class="block-comment">
+									<textarea></textarea>
+								</div><!-- End block-comment -->
+							</div>
+							<div class="clearfix"></div>
+							<div class="text-center conf">
+								<label>
+									<div class="checkbox">
+										<input type="checkbox" name="checkbox">
+										<div class="checkbox_div"></div>
+									</div>
+									Я соглашаюсь с <a href="#" title="политикой конфиденциальности">политикой конфиденциальности</a>
+								</label>
+							</div>
+						</div><!-- End remoal-content -->
+						<div class="remodal-footer clearfix">
+							<div class="info-sum pull-left">
+								<p>2 товара на сумму:  <b>4,659 UAH</b></p>
+								<p>Доставка товара:  <b>45 UAH</b></p>
+							</div>
+							<div class="intotal-block pull-right">
+								<span class="in-total">Итого: <b>4,659 UAH</b></span>
+								<button type="submit" id="checkout" class="btn another-btn">Оформить заказ</button>
+							</div>
+						</div>
+					</div><!-- End order-step -->
+				</form>
+			</div><!-- End cart-modal -->
+
+			<div class="remodal cart-modal" data-remodal-id="liked-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Избранное</div>
+				<form action="/">
+					<div class="remodal-content clearfix">
+						<ul class="cart-item">
+							<li class="clearfix">
+								<div class="cart-img">
+									<a href="#" title="prod">
+										<img src="img/prod-thumb.png" alt="prod-thumb">
+									</a>
+								</div>
+								<div class="cart-col">
+									<p class="cart-name"><a href="#">DOLDEN -  Легкие джинсы</a></p>
+									<div class="cart-number">
+										<div class="drop-select">
+											<div class="line-block simple">
+												<p class="text-line"><input disabled="disabled" type="text" placeholder="Выбрать размер"></p>
+												<i class="icon down-arr"></i>
+												<i class="icon remove-ico"></i>
+											</div>
+											<div class="drop-area">
+												<div class="custom_scroll">
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="28" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															28
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="32" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															32
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="32" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															32
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="34" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															34
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="36" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															36
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+												</div><!-- End custom_scroll -->
+												<button class="aply" type="button">Применить</button>
+											</div><!-- End drop-area -->
+										</div><!-- End drop-select -->
+									</div>
+								</div>
+								<div class="cart-price text-center">
+									<p class="in_stock">Товар в наличии</p>
+									1,400 UAH
+								</div>
+								<div class="cart-controls text-right">
+									<a href="#" title="delete">
+										<img src="img/delete-cart-img.png" alt="delete-cart-img">
+									</a>
+									<a href="#" title="add">
+										<img src="img/add-cart-img.png" alt="add-cart-img">
+									</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="cart-img">
+									<a href="#" title="prod">
+										<img src="img/prod-thumb.png" alt="prod-thumb">
+									</a>
+								</div>
+								<div class="cart-col">
+									<p class="cart-name"><a href="#">DOLDEN -  Легкие джинсы</a></p>
+									<div class="cart-number">
+										<div class="drop-select">
+											<div class="line-block simple">
+												<p class="text-line"><input disabled="disabled" type="text" placeholder="Выбрать размер"></p>
+												<i class="icon down-arr"></i>
+												<i class="icon remove-ico"></i>
+											</div>
+											<div class="drop-area">
+												<div class="custom_scroll">
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="28" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															28
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="32" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															32
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="32" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															32
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="34" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															34
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="36" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															36
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+													<div class="filter-row">
+														<label>
+															<div class="checkbox">
+																<input type="checkbox" value="38" name="checkbox">
+																<div class="checkbox_div"></div>
+															</div>
+															38
+														</label>
+													</div>
+												</div><!-- End custom_scroll -->
+												<button class="aply" type="button">Применить</button>
+											</div><!-- End drop-area -->
+										</div><!-- End drop-select -->
+									</div>
+								</div>
+								<div class="cart-price text-center"><span class="empty">Товар отсутствует</span></div>
+								<div class="cart-controls text-right">
+									<a href="#" title="delete">
+										<img src="img/delete-cart-img.png" alt="delete-cart-img">
+									</a>
+									<a href="#" title="add">
+										<img src="img/add-cart-img.png" alt="add-cart-img">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div><!-- End remodal-content -->
+					<div class="remodal-footer text-right">
+						<span class="in-total">В Вашей корзине: <b>2 товара</b></span>
+						<button data-remodal-target="cart-modal" class="btn another-btn">Перейти в корзину</button>
+					</div>
+				</form>
+			</div><!-- End cart-modal -->
+
+			<div class="remodal empty-liked-modal" data-remodal-id="liked-empty-modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+				<button data-remodal-action="close" class="remodal-close"><i class="icon i-close"></i></button>
+				<div class="remodal-title">Избранное</div>
+				<div class="remodal-content clearfix">
+					<p class="text-center"><img src="img/big-heart.png" alt=""></p>
+					<p class="empty-txt text-center">Вы еще ничего не добавили сюда.</p>
+					<div class="empty-row clearfix">
+						<div class="pull-left">
+							Чтобы добавить понравившийся <br>
+							товар в «Избранное», нажмите на <br>
+							«сердце», которое распологаеться <br>
+							в левом углу карточки товара! <br>
+						</div>
+						<div class="pull-right">
+							<img src="img/empty-liked-picture.png" alt="empty-liked-picture">
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<p class="text-center" style="margin-top: 30px">
+						<a href="#" class="btn another-btn">Перейти к покупкам</a>
+					</p>
+				</div><!-- End remodal-content -->
+			</div><!-- End cart-modal -->
+			<div class="scrolltoTop"><i class="icon top-arrow"></i></div>
+		<!-- END ALL MODALS -->
+
+		<script src="js/jquery-2.2.2.min.js"></script>
+		<script src="js/iptools-jquery-offcanvas.min.js"></script>
+		<script src="js/jquery.mmenu.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.custom-scroll.min.js"></script>
+		<script src="js/remodal.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt_AUZBtg4RkyjEanRAVQrRp7w6eKDHDE&callback=initMap"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

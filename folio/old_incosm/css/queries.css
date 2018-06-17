@@ -1,0 +1,150 @@
+/*Media 1200*/
+@media screen and (min-width: 1200px) {
+	.item-content {
+		height: 268px;
+	}
+	.folio-view .container {
+		width: 1000px;
+	}
+}
+/*Media 1199px*/
+@media screen and (max-width: 1199px) {
+	.nav > li > a {
+		padding: 31px 15px 30px;
+	}
+	.item-content {
+		height: 230px;
+	}
+	.overlay-map > div {
+		width: 940px;
+	}
+	.control-map {
+		width: 940px;
+	}
+	.folio-view .container {
+		width: 800px;
+	}
+}
+/*Media 991px*/
+@media screen and (max-width: 991px) {
+	.nav > li > a {
+		font-size: 13px;
+		padding: 31px 8px 30px;
+	}
+	.navbar-brand {
+		padding: 25px 0 0;
+	}
+	.overlay-map > div {
+		width: 720px;
+	}
+	.control-map {
+		width: 720px;
+	}
+	.folio-view .container {
+		width: 580px;
+	}
+}
+/*Media 767px*/
+@media screen and (min-width: 768px) {
+	.navbar-nav {
+		float: right;
+	}
+	.navbar-fixed-top {
+		height: 87px;
+	}
+	.nav > li > a {
+		margin-bottom: -7px;
+		height: 87px;
+	}
+	.nav > li > a:hover {
+		background-color: transparent;
+		color: #f3f3f3;
+	}
+	.nav > li > a:focus {
+		background-color: transparent;
+		color: #f3f3f3;
+	}
+	.active a {
+		border-bottom: solid 7px #50bbb1;
+	}
+}
+@media screen and (max-width: 767px) {
+	.navbar-nav {
+		float: left;
+		margin: 10px 0 0;
+		width: 100%;
+	}
+	.navbar-brand {
+		padding: 15px 15px 12px;
+	}
+	.nav > li > a {
+		font-size: inherit;
+		padding: 15px 15px 15px 0;
+	}
+	.nav > li {
+		border-top: solid 1px #2e716a;
+	}
+	header {
+		padding-top: 30px;
+		height: 560px;
+	}
+	.navbar-fixed-top {
+		padding: 6px 15px;
+	}
+	nav {
+		margin: 0;
+	}
+	.description {
+		padding-top: 100px;
+	}
+	.navbar-toggle {
+		margin-top: 12px;
+	}
+	.top-about {
+		background: url(../img/computer-bg.png) no-repeat center 90px, #1c3634;
+	}
+	.item-content {
+		height: auto;
+		/*width: 230px;*/
+		/*margin: 0 auto 10px;*/
+	}
+	.portfolio-items li {
+		width: 33.3%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
+	/*.item-content > a > span.ico-pr {
+		margin-top: 20px;
+	}*/
+	.control-map {
+		width: 100%;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.socials {
+		float: none;
+		text-align: center;
+	}
+	.control-map {
+		display: none;
+	}
+	.folio-view .container {
+		width: 100%;
+	}
+	.folio-view {
+		width: 360px;
+	}
+	.folio-nav {
+		display: none;
+	}
+	.folio-content, .rails-div {
+		height: 420px;
+	}
+}
+/*media 640*/
+@media screen and (max-width: 640px) {
+	.portfolio-items li {
+		width: 50%;
+	}
+}
