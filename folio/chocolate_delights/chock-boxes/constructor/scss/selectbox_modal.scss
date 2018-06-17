@@ -1,0 +1,104 @@
+.boxes {
+	padding: 0;
+	margin: 0 -10px;
+	list-style: none;
+	font-size: 0 !important;
+	&:hover {
+		.box-img, .box-title, .box-price {
+			opacity: 0.2;
+		}
+	}
+	li {
+		display: inline-block;
+		width: 33.333%;
+		font-size: 16px;
+		padding: 0 10px;
+		.small-box {
+			a {
+				font-size: 15px;
+			}
+		}
+		.medium-box {
+			a {
+				font-size: 20px;
+			}
+		}
+		.large-box {
+			a {
+				font-size: 25px;
+			}
+		}
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+			color: #52545e;
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		.box-title {
+			display: block;
+			text-align: center;
+			margin-bottom: 20px;
+			transition: all 0.2s linear 0s;
+		}
+		.box-img {
+			width: 100%;
+			height: 100px;
+			border-radius: 2px;
+			display: block;
+			border: solid 2px #52545e;
+			position: relative;
+			transition: all 0.2s linear 0s;
+			margin-bottom: 20px;
+			// overflow: hidden;
+			&:after {
+				content: "";
+				width: 22px;
+				height: 22px;
+				background: url('../constructor/img/aply-box-bg.png') no-repeat 0 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				z-index: 1;
+				transition: all 0.3s linear 0s;
+			}
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.small-box {
+			img {
+				width: 40px;
+			}
+		}
+		.medium-box {
+			img {
+				width: 50px;
+			}
+		}
+		.box-price {
+			text-align: center;
+			font-size: 14px;
+			margin: 0;
+			transition: all 0.2s linear 0s;
+			span {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		&.hovered {
+			.box-img:after {
+				opacity: 1;
+			}
+			.box-img, .box-title, .box-price {
+				opacity: 1;
+			}
+		}
+	}
+}

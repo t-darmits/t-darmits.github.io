@@ -1,0 +1,30 @@
+@import 'sprite';
+
+.icon {
+	display: inline-block;
+	line-height: 1;
+}
+
+.close-icon {
+	@include sprite($s-close-icon);
+}
+
+.info-icon {
+	@include sprite($s-info-icon);
+}
+
+.size-icon {
+	@include sprite($s-size-icon);
+}
+
+.candie-icon {
+	@include sprite($s-candie-icon);
+}
+
+.pencil-icon {
+	@include sprite($s-pencil-icon);
+}
+
+.back-icon {
+	@include sprite($s-back-icon);
+}

@@ -1,0 +1,120 @@
+// =====================
+// STYLES FOR CONSTRUCTOR
+.is_constructor {
+	@import 'commercial_modal';
+	// variables
+	@import 'variables';
+	// icons styles
+	@import 'icons';
+	// styles for formsttyler
+	@import 'formstyler';
+	// styles for selectbox modals
+	@import 'selectbox_modal';
+	// styles for constructor modal
+	@import 'constructor_modal';
+	// styles for commercial modal
+	@import 'commercial_modal';
+	// styles for custom scrollbar
+	@import 'cScrollbar';
+	// ===========================
+	.cong-control {
+		list-style: none;
+		margin: 0 -10px;
+		padding: 0;
+		font-size: 0 !important;
+		li {
+			font-size: 16px;
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			padding: 30px 10px 0 10px;
+			a {
+				width: 100%;
+			}
+		}
+	}
+	// buttons
+	.red-btn {
+		background: #461e1e;
+		color: #fff;
+		text-transform: uppercase;
+		&:hover, &:focus {
+			color: #fff;
+			background: #6e3737;
+		}
+	}
+	.none-btn {
+		background: #e3bb7e;
+		color: #461e1e;
+		text-transform: uppercase;
+		&:hover, &:focus {
+			background: #d3a55e;
+		}
+	}
+	.btn {
+		font-family: 'montserratsemi_bold';
+		-moz-user-select: none;
+		background-image: none;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 12px;
+		line-height: 1.42857;
+		margin-bottom: 0;
+		padding: 15px 30px;
+		text-align: center;
+		vertical-align: middle;
+		white-space: nowrap;
+		outline: none;
+		transition: all 0.2s linear 0s;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+	.modal-dialog {
+		width: 550px;
+		.modal-content {
+			box-shadow: none;
+			border: 0;
+			border-radius: 0;
+		}
+	}
+	.modal-header {
+		padding: 20px 30px;
+		border-bottom: 0;
+		position: relative;
+		background: #e3bb7e;
+		height: 60px;
+	}
+	.modal-title {
+		font-size: 14px;
+		font-family: 'montserratregular';
+		color: #461e1e;
+	}
+	.modal-header .close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: 0;
+		border: 0;
+		padding: 0;
+		text-align: center;
+		outline: none;
+		color: #222;
+		width: 60px;
+		height: 60px;
+		border: 0;
+		border: 0;
+		transition: all 0.2s linear 0s;
+		background: #d7b077;
+		&:hover {
+			background: #be9253;
+		}
+	}
+	.modal-body {
+		padding: 30px;
+	}
+	// ===========================
+}
+// END STYLES FOR CONSTRUCTOR
+// =====================

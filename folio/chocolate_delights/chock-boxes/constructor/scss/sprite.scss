@@ -1,0 +1,139 @@
+$s-back-icon-name: 's-back-icon';
+$s-back-icon-x: 36px;
+$s-back-icon-y: 0px;
+$s-back-icon-offset-x: -36px;
+$s-back-icon-offset-y: 0px;
+$s-back-icon-width: 12px;
+$s-back-icon-height: 13px;
+$s-back-icon-total-width: 58px;
+$s-back-icon-total-height: 46px;
+$s-back-icon-image: '../constructor/img/sprite.png';
+$s-back-icon: (36px, 0px, -36px, 0px, 12px, 13px, 58px, 46px, '../constructor/img/sprite.png', 's-back-icon', );
+$s-candie-hover-icon-name: 's-candie-hover-icon';
+$s-candie-hover-icon-x: 0px;
+$s-candie-hover-icon-y: 0px;
+$s-candie-hover-icon-offset-x: 0px;
+$s-candie-hover-icon-offset-y: 0px;
+$s-candie-hover-icon-width: 15px;
+$s-candie-hover-icon-height: 15px;
+$s-candie-hover-icon-total-width: 58px;
+$s-candie-hover-icon-total-height: 46px;
+$s-candie-hover-icon-image: '../constructor/img/sprite.png';
+$s-candie-hover-icon: (0px, 0px, 0px, 0px, 15px, 15px, 58px, 46px, '../constructor/img/sprite.png', 's-candie-hover-icon', );
+$s-candie-icon-name: 's-candie-icon';
+$s-candie-icon-x: 18px;
+$s-candie-icon-y: 0px;
+$s-candie-icon-offset-x: -18px;
+$s-candie-icon-offset-y: 0px;
+$s-candie-icon-width: 15px;
+$s-candie-icon-height: 15px;
+$s-candie-icon-total-width: 58px;
+$s-candie-icon-total-height: 46px;
+$s-candie-icon-image: '../constructor/img/sprite.png';
+$s-candie-icon: (18px, 0px, -18px, 0px, 15px, 15px, 58px, 46px, '../constructor/img/sprite.png', 's-candie-icon', );
+$s-close-icon-name: 's-close-icon';
+$s-close-icon-x: 15px;
+$s-close-icon-y: 34px;
+$s-close-icon-offset-x: -15px;
+$s-close-icon-offset-y: -34px;
+$s-close-icon-width: 10px;
+$s-close-icon-height: 10px;
+$s-close-icon-total-width: 58px;
+$s-close-icon-total-height: 46px;
+$s-close-icon-image: '../constructor/img/sprite.png';
+$s-close-icon: (15px, 34px, -15px, -34px, 10px, 10px, 58px, 46px, '../constructor/img/sprite.png', 's-close-icon', );
+$s-info-icon-name: 's-info-icon';
+$s-info-icon-x: 51px;
+$s-info-icon-y: 0px;
+$s-info-icon-offset-x: -51px;
+$s-info-icon-offset-y: 0px;
+$s-info-icon-width: 7px;
+$s-info-icon-height: 12px;
+$s-info-icon-total-width: 58px;
+$s-info-icon-total-height: 46px;
+$s-info-icon-image: '../constructor/img/sprite.png';
+$s-info-icon: (51px, 0px, -51px, 0px, 7px, 12px, 58px, 46px, '../constructor/img/sprite.png', 's-info-icon', );
+$s-pencil-hover-icon-name: 's-pencil-hover-icon';
+$s-pencil-hover-icon-x: 0px;
+$s-pencil-hover-icon-y: 18px;
+$s-pencil-hover-icon-offset-x: 0px;
+$s-pencil-hover-icon-offset-y: -18px;
+$s-pencil-hover-icon-width: 13px;
+$s-pencil-hover-icon-height: 13px;
+$s-pencil-hover-icon-total-width: 58px;
+$s-pencil-hover-icon-total-height: 46px;
+$s-pencil-hover-icon-image: '../constructor/img/sprite.png';
+$s-pencil-hover-icon: (0px, 18px, 0px, -18px, 13px, 13px, 58px, 46px, '../constructor/img/sprite.png', 's-pencil-hover-icon', );
+$s-pencil-icon-name: 's-pencil-icon';
+$s-pencil-icon-x: 16px;
+$s-pencil-icon-y: 18px;
+$s-pencil-icon-offset-x: -16px;
+$s-pencil-icon-offset-y: -18px;
+$s-pencil-icon-width: 13px;
+$s-pencil-icon-height: 13px;
+$s-pencil-icon-total-width: 58px;
+$s-pencil-icon-total-height: 46px;
+$s-pencil-icon-image: '../constructor/img/sprite.png';
+$s-pencil-icon: (16px, 18px, -16px, -18px, 13px, 13px, 58px, 46px, '../constructor/img/sprite.png', 's-pencil-icon', );
+$s-size-hover-icon-name: 's-size-hover-icon';
+$s-size-hover-icon-x: 36px;
+$s-size-hover-icon-y: 16px;
+$s-size-hover-icon-offset-x: -36px;
+$s-size-hover-icon-offset-y: -16px;
+$s-size-hover-icon-width: 12px;
+$s-size-hover-icon-height: 12px;
+$s-size-hover-icon-total-width: 58px;
+$s-size-hover-icon-total-height: 46px;
+$s-size-hover-icon-image: '../constructor/img/sprite.png';
+$s-size-hover-icon: (36px, 16px, -36px, -16px, 12px, 12px, 58px, 46px, '../constructor/img/sprite.png', 's-size-hover-icon', );
+$s-size-icon-name: 's-size-icon';
+$s-size-icon-x: 0px;
+$s-size-icon-y: 34px;
+$s-size-icon-offset-x: 0px;
+$s-size-icon-offset-y: -34px;
+$s-size-icon-width: 12px;
+$s-size-icon-height: 12px;
+$s-size-icon-total-width: 58px;
+$s-size-icon-total-height: 46px;
+$s-size-icon-image: '../constructor/img/sprite.png';
+$s-size-icon: (0px, 34px, 0px, -34px, 12px, 12px, 58px, 46px, '../constructor/img/sprite.png', 's-size-icon', );
+$spritesheet-width: 58px;
+$spritesheet-height: 46px;
+$spritesheet-image: '../constructor/img/sprite.png';
+$spritesheet-sprites: ($s-back-icon, $s-candie-hover-icon, $s-candie-icon, $s-close-icon, $s-info-icon, $s-pencil-hover-icon, $s-pencil-icon, $s-size-hover-icon, $s-size-icon, );
+$spritesheet: (58px, 46px, '../constructor/img/sprite.png', $spritesheet-sprites, );
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
