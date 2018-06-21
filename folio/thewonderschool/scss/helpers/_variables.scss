@@ -1,0 +1,27 @@
+// grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 568px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+// main font variables
+$main_fontsize:  				16px;
+$main_font:      				"GothamProRegular", sans-serif;
+$main_medium:					"GothamProMedium", sans-serif;
+$main_bold:						"GothamProBold", sans-serif;
+
+// other fonts
+// Helvetica font
+$helvetica_font: 				"HelveticaRegular", sans-serif;
+$helvetica_thin_font: 			"HelveticaThin", sans-serif;
+$helvetica_light_font: 			"HelveticaLight", sans-serif;
+$helvetica_medium_font: 		"HelveticaMedium", sans-serif;
+$helvetica_bold_font: 			"HelveticaBold", sans-serif;
+// Unisans font
+$unisans_font: 	 				"UniSansThin", sans-serif;
+
+// default transition
+$d_transition:   				all 0.3s linear 0s;

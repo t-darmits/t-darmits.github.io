@@ -1,0 +1,214 @@
+.map-section {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	@include media-up(sm) {
+		padding: 15px 0 0;
+	}
+	@include media-up(md) {
+		background: url(../img/restaurant-section-bg.png) no-repeat center bottom;
+		background-size: cover;
+		padding: 35px 0 0;
+	}
+	@include media-up(lg) {
+		padding: 0 0 70px;
+	}
+	@include media-up(lp) {
+		padding: 10px 0 115px;
+	}
+	#map {
+		width: 100%;
+		flex-shrink: 0;
+		background: url(../img/map-bg.jpg) no-repeat center center;
+		background-size: cover;
+		height: 380px;
+		@include media-up(md) {
+			height: 500px;
+		}
+		@include media-up(lg) {
+			width: 49%;
+			height: 605px;
+		}
+		@include media-up(lp) {
+			height: 635px;
+		}
+	}
+	.contacts-info {
+		position: relative;
+		width: 100%;
+		order: -1;
+		@include media-up(lg) {
+			width: 51%;
+			order: 0;
+		}
+		.info-decorate {
+			position: absolute;
+			transform-origin: 100% 0;
+			transform: rotate(90deg) translateX(50%);
+			font-family: $marena_font;
+			color: #896e4a;
+			font-size: 48px;
+			right: rem(60);
+			top: 50%;
+			display: none;
+			@media all and (min-width: 1700px) {
+				display: block;
+			}
+		}
+	}
+	.contacts-container {
+		position: relative;
+		z-index: 1;
+		padding: 0 15px 15px;
+		@include media-up(md) {
+			padding: 0 15px 10px;
+		}
+		@include media-up(lg) {
+			padding: 40px 30px;
+		}
+		@include media-up(nt) {
+			padding: 90px 45px;
+		}
+		@include media-up(lp) {
+			max-width: 780px;
+			padding: 125px 65px;
+		}
+		.c-title {
+			font-size: 24px;
+			font-weight: 500;
+			color: #000;
+			margin: 0 0 15px;
+			text-transform: uppercase;
+			@include media-up(md) {
+				font-size: 48px;
+				margin: 0 0 25px;
+			}
+			@include media-up(lg) {
+				font-size: 36px;
+			}
+			@include media-up(xl) {
+				font-size: 48px;
+			}
+		}
+	}
+	.contacts-decorate {
+		z-index: -1;
+		position: absolute;
+		width: 82%;
+		height: 100%;
+		border-width: 2px 2px 2px 0;
+		border-style: solid;
+		border-color: #d7cdbc;
+		top: 0;
+		right: 15px;
+		display: none;
+		@include media-up(nt) {
+			display: block;
+		}
+		@include media-up(lp) {
+			width: 80%;
+		}
+		&:before,
+		&:after {
+			content: '';
+			width: 2px;
+			height: 62px;
+			background: #d7cdbc;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		&:after {
+			top: auto;
+			bottom: 0;
+		}
+	}
+	.c-text {
+		font-size: 14px;
+		color: #484747;
+		line-height: 30px;
+		margin: 0 0 15px;
+		font-weight: 300;
+		@include media-up(sm) {
+			margin: 0 0 25px;
+		}
+		@include media-up(md) {
+			font-size: 16px;
+			margin: 0 0 35px;
+		}
+	}
+	.location {
+		color: #816e4d;
+		font-size: 14px;
+		margin: 0 0 15px;
+		line-height: 25px;
+		position: relative;
+		padding-left: 20px;
+		@include media-up(sm) {
+			margin: 0 0 30px;
+		}
+		@include media-up(md) {
+			margin: 0 0 35px;
+			font-size: 16px;
+		}
+		svg {
+			fill: #816e4d;
+			position: absolute;
+			left: 0;
+			top: 5px;
+			font-size: 16px;
+		}
+	}
+	.row-contacts {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		.item {
+			padding: 0 15px 20px;
+			@include media-down(xs) {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			@include media-up(sm) {
+				padding: 0 15px 30px;
+			}
+			.item-name {
+				color: #816e4d;
+				font-weight: 500;
+				margin: 0 0 15px;
+				font-size: 14px;
+				@include media-up(md) {
+					font-size: 16px;
+				}
+				@include media-down(xs) {
+					width: 100%;
+				}
+			}
+			a {
+				color: #484747;
+				text-decoration: none;
+				font-size: 14px;
+				@include media-up(md) {
+					font-size: 16px;
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			.item-tel {
+				margin-bottom: 10px;
+				margin-right: 5px;
+				@include media-up(sm) {
+					margin-right: 0;
+				}
+				@include media-up(md) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}

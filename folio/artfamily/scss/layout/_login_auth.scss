@@ -1,0 +1,74 @@
+.login-auth {
+	position: relative;
+	margin: 30px 0;
+	ul {
+		z-index: 1;
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		@include media-down(xs) {
+			justify-content: center;
+		}
+		li {
+			margin-right: 10px;
+			&:last-child {
+				margin: 0;
+			}
+			a {
+				background: #084654;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				transition: $d_transition;
+				color: #fff;
+				svg {
+					fill: #fff;
+					font-size: 20px;
+				}
+				&:hover {
+					background: #d4311c;
+				}
+			}
+		}
+	}
+}
+.forget-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	@include media-down(xs) {
+		display: block;
+	}
+	.forget-pass {
+		a {
+			font-size: 16px;
+			color: #727983;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		@include media-down(xs) {
+			text-align: center;
+			margin-bottom: 30px;
+		}	
+	}
+}
+.forget-area {
+	padding: 25px;
+	@include media-up(sm) {
+		padding: 35px;
+	}
+}
+.forget-description {
+	text-align: center;
+	margin: 0 0 20px;
+	font-size: 14px;
+	@include media-up(sm) {
+		font-size: 16px;
+		margin: 0 0 30px;
+	}
+}

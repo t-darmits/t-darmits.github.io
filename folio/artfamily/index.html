@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main Page</title>
+	<!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body class="home">
+<svg width="0" height="0" style="position:absolute"><symbol viewBox="0 0 18 34" id="icon-arr-left"><path d="M.278 17.68l16.074 16.04a.977.977 0 0 0 1.364 0 .957.957 0 0 0 0-1.36L2.328 17 17.716 1.65a.969.969 0 0 0 0-1.37.99.99 0 0 0-.678-.28.948.948 0 0 0-.679.28L.285 16.32a.964.964 0 0 0-.007 1.36z"/></symbol><symbol viewBox="0 0 18 34" id="icon-arr-right"><path d="M17.72 16.32L1.65.28a.984.984 0 0 0-1.37 0 .972.972 0 0 0 0 1.36L15.67 17 .28 32.35A.97.97 0 0 0 .96 34a.9.9 0 0 0 .68-.29l16.07-16.03a.963.963 0 0 0 .01-1.36z"/></symbol><symbol viewBox="0 0 17 17" id="icon-calendar-icon"><path d="M15.58 1.59h-2.3V.53a.53.53 0 1 0-1.06 0v1.06H9.03V.53a.53.53 0 1 0-1.06 0v1.06H4.78V.53a.53.53 0 1 0-1.06 0v1.06h-2.3A1.419 1.419 0 0 0 0 3.01v12.57A1.413 1.413 0 0 0 1.42 17h14.16A1.413 1.413 0 0 0 17 15.58V3.01a1.419 1.419 0 0 0-1.42-1.42zm.36 13.99a.359.359 0 0 1-.36.36H1.42a.359.359 0 0 1-.36-.36V3.01a.35.35 0 0 1 .36-.35h2.3v1.06a.53.53 0 1 0 1.06 0V2.66h3.19v1.06a.53.53 0 1 0 1.06 0V2.66h3.19v1.06a.53.53 0 1 0 1.06 0V2.66h2.3a.35.35 0 0 1 .36.35v12.57zM3.72 6.37h2.12v1.6H3.72v-1.6zm0 2.66h2.12v1.59H3.72V9.03zm0 2.66h2.12v1.59H3.72v-1.59zm3.72 0h2.12v1.59H7.44v-1.59zm0-2.66h2.12v1.59H7.44V9.03zm0-2.66h2.12v1.6H7.44v-1.6zm3.72 5.32h2.12v1.59h-2.12v-1.59zm0-2.66h2.12v1.59h-2.12V9.03zm0-2.66h2.12v1.6h-2.12v-1.6z"/></symbol><symbol viewBox="0 0 14 13" id="icon-close"><path d="M14 .753L13.19 0 7 5.746.81 0 0 .754l6.19 5.747L0 12.246.81 13 7 7.254 13.19 13l.81-.754L7.81 6.5z"/></symbol><symbol viewBox="0 0 24 24" id="icon-close-thin"><path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"/></symbol><symbol viewBox="0 0 19 19" id="icon-exit-icon"><path d="M18.21 0H3.96a.788.788 0 0 0-.79.792v5.542a.79.79 0 1 0 1.58 0v-4.75h12.67v15.832H4.75v-4.75a.79.79 0 1 0-1.58 0v5.542a.788.788 0 0 0 .79.792h14.25a.788.788 0 0 0 .79-.792V.792A.788.788 0 0 0 18.21 0zM7.36 12.107a.792.792 0 0 0 1.12 1.12l3.16-3.166.06-.061a.05.05 0 0 1 .02-.028.062.062 0 0 1 .02-.034.062.062 0 0 0 .02-.035.057.057 0 0 0 .02-.032c.01-.012.01-.024.02-.036s.01-.023.01-.034.01-.023.02-.036.01-.025.01-.037.01-.024.01-.036.01-.026.01-.039a.066.066 0 0 1 .01-.042v-.033a.41.41 0 0 0 0-.156v-.035a.065.065 0 0 1-.01-.042c0-.014-.01-.026-.01-.039s-.01-.024-.01-.036-.01-.025-.01-.038-.01-.024-.02-.035-.01-.023-.01-.034-.01-.024-.02-.036a.056.056 0 0 0-.02-.032.062.062 0 0 0-.02-.035.061.061 0 0 1-.02-.034A.05.05 0 0 1 11.7 9l-.06-.058-3.16-3.167a.792.792 0 0 0-1.12 1.12L9.17 8.71H.79a.792.792 0 0 0 0 1.583h8.38z"/></symbol><symbol viewBox="0 0 96.124 96.123" id="icon-facebook"><path d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037a1.96 1.96 0 0 0-1.96 1.961v15.803a1.96 1.96 0 0 0 1.96 1.96H36.57v39.876a1.96 1.96 0 0 0 1.96 1.96h16.352a1.96 1.96 0 0 0 1.96-1.96V54.287h14.654a1.96 1.96 0 0 0 1.96-1.96l.006-15.803a1.963 1.963 0 0 0-1.961-1.961H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003a1.96 1.96 0 0 0 1.959-1.96V1.98A1.96 1.96 0 0 0 72.089.02z"/></symbol><symbol viewBox="0 0 475.092 475.092" id="icon-google-plus"><path d="M273.372 302.498a148.384 148.384 0 0 0-16.7-18.842c-6.091-5.804-12.183-11.088-18.271-15.845-6.092-4.757-11.659-9.329-16.702-13.709-5.042-4.374-9.135-8.945-12.275-13.702-3.14-4.757-4.711-9.61-4.711-14.558 0-6.855 2.19-13.278 6.567-19.274 4.377-5.996 9.707-11.799 15.986-17.417 6.28-5.617 12.559-11.753 18.844-18.415 6.276-6.665 11.604-15.465 15.985-26.412 4.373-10.944 6.563-23.458 6.563-37.542 0-16.75-3.713-32.835-11.136-48.25-7.423-15.418-17.89-27.412-31.405-35.976h38.54L303.2 0H178.441c-17.699 0-35.498 1.906-53.384 5.72-26.453 5.9-48.723 19.368-66.806 40.397-18.08 21.033-27.122 44.873-27.122 71.52 0 28.171 10.138 51.583 30.406 70.233 20.269 18.649 44.585 27.978 72.945 27.978 5.71 0 12.371-.478 19.985-1.427-.381 1.521-1.043 3.567-1.997 6.136s-1.715 4.62-2.286 6.14c-.57 1.521-1.047 3.375-1.425 5.566a38.99 38.99 0 0 0-.571 6.71c0 12.563 6.086 26.744 18.271 42.541-14.465.387-28.737 1.67-42.825 3.86-14.084 2.19-28.833 5.616-44.252 10.28-15.417 4.661-29.217 11.42-41.396 20.27-12.182 8.854-21.317 19.366-27.408 31.549C3.533 361.559.01 374.405.01 386.017c0 12.751 2.857 24.314 8.565 34.69 5.708 10.369 13.035 18.842 21.982 25.406 8.945 6.57 19.273 12.083 30.978 16.562 11.704 4.47 23.315 7.659 34.829 9.562 11.516 1.903 22.888 2.854 34.119 2.854 51.007 0 90.981-12.464 119.909-37.397 26.648-23.223 39.971-50.062 39.971-80.517 0-10.855-1.57-20.984-4.712-30.409-3.141-9.431-7.231-17.514-12.279-24.27zM163.311 198.722c-9.707 0-18.937-2.475-27.694-7.426-8.757-4.95-16.18-11.374-22.27-19.273-6.088-7.898-11.418-16.796-15.987-26.695-4.567-9.896-7.944-19.792-10.135-29.692-2.19-9.895-3.284-19.318-3.284-28.265 0-18.271 4.854-33.974 14.562-47.108 9.705-13.134 23.411-19.701 41.112-19.701 12.563 0 23.935 3.899 34.118 11.704 10.183 7.804 18.177 17.701 23.984 29.692a187.496 187.496 0 0 1 13.417 37.257c3.14 12.847 4.711 24.983 4.711 36.403 0 19.036-4.139 34.317-12.419 45.833-8.282 11.513-21.651 17.271-40.115 17.271zm78.94 214.401c-5.23 8.949-12.319 15.94-21.267 20.981-8.946 5.048-18.509 8.758-28.693 11.14-10.183 2.385-20.889 3.572-32.12 3.572-12.182 0-24.27-1.431-36.258-4.284-11.99-2.851-23.459-7.187-34.403-12.991-10.944-5.8-19.795-13.798-26.551-23.982-6.757-10.184-10.135-21.744-10.135-34.69 0-11.419 2.568-21.601 7.708-30.55 5.142-8.945 11.709-16.084 19.702-21.408 7.994-5.332 17.319-9.713 27.979-13.131 10.66-3.433 20.937-5.808 30.833-7.139 9.895-1.335 19.985-1.995 30.262-1.995 6.283 0 11.043.191 14.277.567 1.143.767 4.043 2.759 8.708 5.996s7.804 5.428 9.423 6.57c1.615 1.137 4.567 3.326 8.85 6.563 4.281 3.237 7.327 5.661 9.135 7.279 1.803 1.618 4.421 4.045 7.849 7.279 3.424 3.237 5.948 6.043 7.566 8.422a982.05 982.05 0 0 0 5.996 8.702c2.38 3.433 4.043 6.715 4.998 9.855a158.985 158.985 0 0 1 2.707 10.277c.855 3.72 1.283 7.569 1.283 11.57.005 11.987-2.613 22.456-7.849 31.397z"/><path d="M401.998 73.089V0h-36.549v73.089h-73.091v36.547h73.091v73.089h36.549v-73.089h73.083V73.089z"/></symbol><symbol viewBox="0 0 80 80" id="icon-instagram"><title>Instagram icon</title><path d="M16.126 10.646l-.056 9.537-.903.056c-.508.038-1.034-.037-1.185-.169-.225-.187-.263-1.69-.263-9.387 0-10.42.188-9.425-1.692-8.843l-1.034.338-.094 8.993-.094 9.012-.997.056c-.583.038-1.128-.037-1.278-.169-.226-.187-.263-1.539-.263-8.166 0-7.323-.02-7.96-.32-7.96-.17 0-1.128.825-2.144 1.839C4.186 7.416 3.867 7.867 3.04 9.594c-1.579 3.23-1.598 3.305-1.673 10.72l-.094 6.534h12.616c6.939 0 12.617-.075 12.617-.15 0-.244 2.237-2.009 3.591-2.816 1.636-.995 3.535-1.784 5.547-2.31 2.463-.638 6.393-.62 8.931.057 3.009.807 5.96 2.328 8.198 4.224l1.166.995h25.064l-.076-6.627c-.075-6.177-.112-6.703-.507-8.017-.79-2.666-1.749-4.206-4.043-6.496-2.294-2.272-3.817-3.23-6.505-4.055l-1.41-.432-22.507-.057-22.526-.056-.037 9.538-.057 9.537-.902.056c-.508.038-1.034-.037-1.185-.169-.225-.187-.263-1.708-.263-9.575V1.127h-2.82l-.038 9.519zm54-2.29c.32.168.734.619.941 1.032.338.676.376 1.107.376 5.2 0 6.459.207 6.252-6.186 6.252-4.851 0-5.434-.131-6.054-1.352-.358-.694-.376-1.032-.32-5.425l.056-4.713.696-.638.715-.638h4.606c3.78 0 4.72.056 5.17.281z"/><path d="M37.88 25.102c-6.618.92-11.996 6.215-13.067 12.88-.32 1.933-.15 5.069.376 6.89.733 2.572 1.73 4.187 3.948 6.383 2.2 2.216 3.63 3.136 5.867 3.849 8.8 2.779 17.825-2.103 20.1-10.89.507-1.952.545-5.632.094-7.415-.828-3.21-1.843-4.957-4.344-7.416-2.425-2.422-4.512-3.511-7.765-4.15-1.298-.244-3.892-.319-5.209-.13zm4.137 4.656c1.467.3 4.4 1.69 5.265 2.497 1.523 1.408 2.764 3.436 3.403 5.595.47 1.54.414 4.093-.094 5.708-1.429 4.524-5.754 7.753-10.36 7.753-1.692 0-2.99-.337-4.889-1.239-3.666-1.727-6.073-5.576-6.073-9.706-.019-5.05 3.648-9.5 8.724-10.589 1.58-.357 2.426-.357 4.024-.019z"/><path d="M1.347 47.632l.057 18.925.432 1.408c.827 2.684 1.786 4.205 4.061 6.496 2.332 2.309 3.893 3.266 6.619 4.055l1.485.432h52.083l1.486-.432c2.99-.864 5.076-2.16 7.314-4.544 1.56-1.652 2.84-3.867 3.554-6.195l.432-1.408.056-18.831.057-18.812H67.4c-10.078 0-11.563.037-11.563.281 0 .15.3.751.677 1.314 3.553 5.577 3.91 12.73.94 18.662-3.046 6.046-8.65 9.932-15.475 10.72-5.49.64-11.845-1.727-15.794-5.894-1.58-1.653-2.463-2.967-3.629-5.426-1.372-2.835-1.767-4.675-1.767-8.017 0-2.197.075-3.042.414-4.393.489-1.972 1.391-4.112 2.35-5.614.376-.6.696-1.202.696-1.352 0-.244-1.467-.281-11.47-.281H1.291l.056 18.906z"/></symbol><symbol viewBox="0 0 15 15" id="icon-tel"><path d="M12.627 8.941a1.576 1.576 0 0 0-1.141-.521 1.628 1.628 0 0 0-1.154.518L9.265 10c-.088-.047-.175-.091-.26-.134a4.409 4.409 0 0 1-.334-.178 11.571 11.571 0 0 1-2.778-2.52 6.793 6.793 0 0 1-.911-1.431c.277-.252.533-.514.783-.766.1-.094.189-.192.284-.286a1.538 1.538 0 0 0 0-2.325l-.922-.917c-.1-.1-.213-.212-.314-.32-.2-.208-.415-.423-.634-.625A1.6 1.6 0 0 0 3.048 0 1.66 1.66 0 0 0 1.9.494l-.006.007L.746 1.653a2.46 2.46 0 0 0-.733 1.563 5.864 5.864 0 0 0 .433 2.493A14.424 14.424 0 0 0 3.028 10a15.871 15.871 0 0 0 5.289 4.123 8.272 8.272 0 0 0 2.97.873c.071 0 .145.007.213.007a2.548 2.548 0 0 0 1.947-.833c0-.006.01-.01.014-.017a7.481 7.481 0 0 1 .591-.608c.145-.138.293-.282.438-.434a1.673 1.673 0 0 0 .51-1.162 1.612 1.612 0 0 0-.52-1.153zm1.208 3.539c-.131.141-.266.269-.411.41a8.8 8.8 0 0 0-.652.672 1.63 1.63 0 0 1-1.269.535h-.155a7.345 7.345 0 0 1-2.633-.786 14.984 14.984 0 0 1-4.982-3.884 13.641 13.641 0 0 1-2.43-4.029 4.771 4.771 0 0 1-.378-2.1 1.536 1.536 0 0 1 .466-1l1.151-1.145a.769.769 0 0 1 .513-.239.723.723 0 0 1 .492.235l.011.01c.205.191.4.39.607.6l.321.326.921.915a.639.639 0 0 1 0 1.041c-.1.1-.192.195-.29.289-.284.289-.554.558-.847.82a.069.069 0 0 0-.017.017.685.685 0 0 0-.176.763.318.318 0 0 1 .01.03 7.383 7.383 0 0 0 1.091 1.771 12.382 12.382 0 0 0 3 2.715 4.625 4.625 0 0 0 .416.225c.121.06.236.118.334.178.013.006.027.017.04.024a.736.736 0 0 0 .334.083.721.721 0 0 0 .513-.232l1.155-1.149a.766.766 0 0 1 .509-.252.687.687 0 0 1 .486.245l.007.007 1.86 1.852a.662.662 0 0 1 .003 1.053z"/></symbol><symbol viewBox="0 0 304.36 304.36" id="icon-vk"><path d="M261.945 175.576c10.096 9.857 20.752 19.131 29.807 29.982 4 4.822 7.787 9.798 10.684 15.394 4.105 7.955.387 16.709-6.746 17.184l-44.34-.02c-11.436.949-20.559-3.655-28.23-11.474-6.139-6.253-11.824-12.908-17.727-19.372-2.42-2.642-4.953-5.128-7.979-7.093-6.053-3.929-11.307-2.726-14.766 3.587-3.523 6.421-4.322 13.531-4.668 20.687-.475 10.441-3.631 13.186-14.119 13.664-22.414 1.057-43.686-2.334-63.447-13.641-17.422-9.968-30.932-24.04-42.691-39.971-22.895-31.021-40.428-65.108-56.186-100.15C-2.01 76.458.584 72.22 9.295 72.07c14.465-.281 28.928-.261 43.41-.02 5.879.086 9.771 3.458 12.041 9.012 7.826 19.243 17.402 37.551 29.422 54.521 3.201 4.518 6.465 9.036 11.113 12.216 5.142 3.521 9.057 2.354 11.476-3.374 1.535-3.632 2.207-7.544 2.553-11.434 1.146-13.383 1.297-26.743-.713-40.079-1.234-8.323-5.922-13.711-14.227-15.286-4.238-.803-3.607-2.38-1.555-4.799 3.564-4.172 6.916-6.769 13.598-6.769h50.111c7.889 1.557 9.641 5.101 10.721 13.039l.043 55.663c-.086 3.073 1.535 12.192 7.07 14.226 4.43 1.448 7.35-2.096 10.008-4.905 11.998-12.734 20.561-27.783 28.211-43.366 3.395-6.852 6.314-13.968 9.143-21.078 2.096-5.276 5.385-7.872 11.328-7.757l48.229.043c1.43 0 2.877.021 4.262.258 8.127 1.385 10.354 4.881 7.844 12.817-3.955 12.451-11.65 22.827-19.174 33.251-8.043 11.129-16.645 21.877-24.621 33.072-7.328 10.223-6.746 15.376 2.357 24.255zm0 0" fill-rule="evenodd" clip-rule="evenodd"/></symbol></svg>
+	<header>
+		<!-- begin top-head -->
+		<div class="top-head">
+			<!-- begin container -->
+			<div class="container">
+				<div class="flex-row">
+					<div class="item">
+						<button class="toggle-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="logo">
+							<a href="#">
+								<img class="main-logo" src="img/big-logo.png" alt="logo">
+							</a>
+							<a href="#">
+								<img class="fixed-logo" src="img/small-logo.png" alt="small-logo">
+							</a>
+						</div>
+						<div class="head-menu">
+							<ul id="headMenu">
+								<li><a href="#" class="active">Art-Отели</a></li>
+								<li><a href="#">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="controls">
+							<div class="entrance"><a href="#login-modal" data-toggle="modal"><svg class="i-svg icon-exit-icon"><use xlink:href="#icon-exit-icon"></use></svg> <span>Личный Кабинет</span></a></div>
+							<div class="lang"><a href="#">En</a></div>
+						</div>
+						<div class="booking-block">
+							<a href="#" class="btn red-border-btn show-booking">Забронировать</a>
+							<div class="booking-form">
+								<button class="close-booking"><svg class="i-svg icon-close"><use xlink:href="#icon-close"></use></svg></button>
+								<form action="/">
+									<div class="booking-control">
+										<select class="custom-select">
+											<option>Выберите отель</option>
+											<option value="1">Lorem</option>
+											<option value="2">Lorem Lorem Lorem</option>
+											<option value="3">Lorem Lorem</option>
+										</select>
+									</div>
+									<div class="booking-control">
+										<div class="date-block">
+											<input data-auto-close="true" type="text" placeholder="Дата заезда" class="datepicker-here">
+											<svg class="i-svg icon-calendar-icon"><use xlink:href="#icon-calendar-icon"></use></svg>
+										</div>
+									</div>
+									<div class="booking-control">
+										<div class="date-block">
+											<input data-auto-close="true" type="text" placeholder="Дата выезда" class="datepicker-here">
+											<svg class="i-svg icon-calendar-icon"><use xlink:href="#icon-calendar-icon"></use></svg>
+										</div>
+									</div>
+									<div class="booking-row">
+										<div class="booking-control">
+											<select class="custom-select">
+												<option value="1">1 взрослый</option>
+												<option value="2">2 взрослых</option>
+												<option value="3">3 взрослых</option>
+											</select>
+										</div>
+										<div class="booking-control">
+											<select class="custom-select">
+												<option value="1">0 детей</option>
+												<option value="2">1 ребенок</option>
+												<option value="3">2 ребенка</option>
+											</select>
+										</div>
+									</div>
+									<div class="booking-submit">
+										<div class="booking-row">
+											<div class="booking-control">
+												<input type="submit" value="Забронировать">
+											</div>
+										</div>
+									</div>
+									<!-- end booking-submit -->
+								</form>
+							</div>
+						</div>
+						<!-- end booking-block -->
+					</div>
+					<!-- end item -->
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end top-head -->
+		<!-- begin bottom-head -->
+		<div class="bottom-head">
+			<!-- begin container -->
+			<div class="container">
+				<ul class="bottom-navigation">
+					<li class="has-child">
+						<a href="#1">Москва</a>
+						<ul>
+							<li><a href="#1_1">Рубрика_1_1</a></li>
+							<li><a href="#1_2">Рубрика_1_2</a></li>
+							<li><a href="#1_3">Рубрика_1_3</a></li>
+							<li><a href="#1_4">Рубрика_1_4</a></li>
+						</ul>
+					</li>
+					<li class="has-child">
+						<a href="#2">Питер</a>
+						<ul>
+							<li><a href="2_1">Рубрика_2_1</a></li>
+							<li><a href="2_2">Рубрика_2_2</a></li>
+							<li><a href="2_3">Рубрика_2_3</a></li>
+							<li><a href="2_4">Рубрика_2_4</a></li>
+						</ul>
+					</li>
+					<li><a href="#3">Пермь</a></li>
+					<li><a href="#4">Новосибирск</a></li>
+					<li><a href="#5">Пенза</a></li>
+					<li><a href="#6">Волжский</a></li>
+				</ul>
+				<div class="mobile-city">
+					<div class="first-city"></div>
+					<a href="#" class="show-cities">Выбрать другой город</a>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end bottom-head -->
+	</header>
+
+	<!-- begin get-mobile-city -->
+	<div class="get-mobile-city">
+		<button class="close-cities"><svg class="i-svg icon-close"><use xlink:href="#icon-close"></use></svg></button>
+		<div class="cities-block">
+			<div class="first-city"></div>
+			<div class="get-city"></div>
+			<div class="cat-city"></div>
+		</div>
+	</div>
+	<!-- end get-mobile-city -->
+
+	<!-- begin banner-section -->
+	<div class="banner-section">
+		<div class="slider-pro" id="main-slider">
+			<div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="img/slider-img.jpg"/>
+					<div class="content">
+						<!-- begin container -->
+						<div class="container">
+							<div class="s-title">Art Family</div>
+							<div class="s-descr">Hotels and resorts</div>
+							<div class="s-more">
+								<a href="#" class="btn default-btn">Подробнее</a>
+							</div>
+						</div>
+						<!-- end container -->
+					</div>
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="img/slider-img.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class="features-list">
+			<!-- begin container -->
+			<div class="container">
+				<div class="carousel-wrap">
+					<div class="features-carousel">
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Скидки постоянным гостям</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Завтрак всегда включён</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Привычный сервис в 15</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="features-nav">
+					<button>next</button>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+	</div>
+	<!-- end banner-section -->
+
+	<!-- begin events-section -->
+	<div class="events-section">
+		<!-- begin container -->
+		<div class="container">
+			<div class="events-carousel">
+				<div class="item">
+					<div class="item-wrap">
+						<img src="img/event-img1.jpg" alt="event-img">
+						<a href="#"></a>
+						<div class="e-content">
+							<div class="e-title">Москва</div>
+							<div class="e-text">Уникальное Новогоднее предложение</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-wrap">
+						<img src="img/event-img2.jpg" alt="event-img">
+						<a href="#"></a>
+						<div class="e-content">
+							<div class="e-title">Москва</div>
+							<div class="e-text">Уникальное Новогоднее предложение</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-wrap">
+						<img src="img/event-img3.jpg" alt="event-img">
+						<a href="#"></a>
+						<div class="e-content">
+							<div class="e-title">Москва</div>
+							<div class="e-text">Уникальное Новогоднее предложение</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="events-nav">
+				<button class="prev"><svg class="i-svg icon-arr-left"><use xlink:href="#icon-arr-left"></use></svg></button>
+				<button class="next"><svg class="i-svg icon-arr-right"><use xlink:href="#icon-arr-right"></use></svg></button>
+			</div>
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end events-section -->
+
+	<!-- begin about-section -->
+	<div class="about-section">
+		<!-- begin container -->
+		<div class="container">
+			<div class="flex-row">
+				<div class="a-block">
+					<div class="a-title">Немного о нас</div>
+					<div class="text">Арт Отель был открыт в Переславле в 2004 году. Это уникальное место выступает в роли вдохновляющего пространства для жизни, работы и отдыха. Над его оформлением работала творческая семья художников, сумевших совместить русскую старину, живопись и уют.
+					Арт Отель является одним из лучших отелей в городе и удобно расположен поблизости от исторического центра. Номера и коттеджи оформлены в индивидуальном стиле с использованием старинной расписной мебели, живописных картин и уникальных деталей интерьера. </div>
+					<div class="a-more">
+						<a href="#" class="btn red-border-btn">Подробнее</a>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="b-title"><span>Блог</span></div>
+					<div class="blog-block">
+						<img src="img/blog-img.jpg" alt="blog-img">
+						<div class="blog-content">
+							<div class="b-name"><a href="#">Музей симпозиума</a></div>
+							<div class="b-text">Арт Отель был открыт в Переславле в 2004 году. Это уникальное место выступает в роли вдохновляющего пространства для жизни.</div>
+							<div class="b-more"><a href="#">Подробнее</a></div>
+						</div>
+						<div class="meta-row">
+							<div class="item">
+								<div class="cat">
+									<a href="#">Новосибирск</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="date-block">
+									<svg class="i-svg icon-calendar-icon"><use xlink:href="#icon-calendar-icon"></use></svg>
+									<span class="date">05.12.2017</span>
+									<span class="day">Вторник</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end about-section -->
+
+	<footer>
+		<div class="top-footer">
+			<!-- begin container -->
+			<div class="container">
+				<div class="footer-logo">
+					<a href="#"><img src="img/big-logo.png" alt="footer-logo"></a>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">правила проживания</a></li>
+						<li><a href="#">политика конфиденциальности</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<div class="text">Подписывайтесь на новости, будьте в курсе событий вместе с нами!</div>
+					<form action="/">
+						<div class="sub-form">
+							<div class="form-control">
+								<input type="text" placeholder="Введите email">
+							</div>
+							<input type="submit" value="Подписаться">
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<div class="bottom-footer">
+			<!-- begin container -->
+			<div class="container">
+				<div class="flex-row">
+					<div class="item">
+						Положение о конфиденциальности использование cookies
+					</div>
+					<div class="item">
+						(с) http://www.hotel.ru 2017 Официальный сайт
+					</div>
+					<div class="item">
+						Сайт разработан компанией <a href="#">DigitalWill</a>
+					</div>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+	</footer>
+
+	<!-- MODALS -->
+
+	<div class="modal fade login-modal-theme" tabindex="-1" role="dialog" id="login-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div data-dismiss="modal" class="close">
+					<span></span>
+					<span></span>
+				</div>
+				<ul id="tabs-collapse" class="nav nav-tabs">
+					<li class="active"><a href="#tab-log" data-toggle="tab">Войти</a></li>
+					<li><a href="#tab-reg" data-toggle="tab">Зарегистрироваться</a></li>
+				</ul>
+				<div id="login-area" class="tab-content">
+					<div class="tab-pane fade in active" id="tab-log">
+						<form action="/">
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Email<span>*</span></label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control error">
+								<label class="placeholder">Пароль<span>*</span></label>
+								<div class="error">Заполните поле</div>
+							</div>
+							<div class="forget-row">
+								<div class="login-auth">
+									<ul>
+										<li><a href="#"><svg class="i-svg icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+										<li><a href="#"><svg class="i-svg icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+										<li><a href="#"><svg class="i-svg icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a></li>
+										<li><a href="#"><svg class="i-svg icon-vk"><use xlink:href="#icon-vk"></use></svg></a></li>
+									</ul>
+								</div>
+								<div class="forget-pass"><a href="#" class="show-forget-modal">Забыли свой пароль?</a></div>
+							</div>
+							<div class="submit-control login-submit">
+								<input type="submit" class="btn red-border-btn filled-red-btn" value="Войти">
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane fade" id="tab-reg">
+						<form action="/">
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Фамилия<span>*</span></label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Имя<span>*</span></label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Отчество</label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Телефон</label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control error">
+								<label class="placeholder">Email<span>*</span></label>
+								<div class="error">Заполните поле</div>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Пароль<span>*</span></label>
+							</div>
+							<div class="modal-row">
+								<input type="text" class="default-control">
+								<label class="placeholder">Повторите пароль<span>*</span></label>
+							</div>
+							<div class="custom-checkbox">
+								<input id="custom-checkbox" type="checkbox">
+								<label for="custom-checkbox">
+									<span>Я согласен на обработку персональных данных</span>
+								</label>
+							</div>
+							<div class="login-auth">
+								<ul>
+									<li><a href="#"><svg class="i-svg icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+									<li><a href="#"><svg class="i-svg icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+									<li><a href="#"><svg class="i-svg icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a></li>
+									<li><a href="#"><svg class="i-svg icon-vk"><use xlink:href="#icon-vk"></use></svg></a></li>
+								</ul>
+							</div>
+							<div class="submit-control registr-submit">
+								<input type="submit" class="btn red-border-btn filled-red-btn" value="Зарегистрироваться">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+
+
+		<div class="modal fade login-modal-theme" tabindex="-1" role="dialog" id="forget-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div data-dismiss="modal" class="close">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="forget-area">
+					<div class="forget-description">Если Вы забыли пароль, введите Email. <br> Сообщение с паролем будет выслано Вам на Email.</div>
+					<form action="/">
+						<div class="modal-row">
+							<input type="text" class="default-control">
+							<label class="placeholder">Введите Email<span>*</span></label>
+						</div>
+						<div class="submit-control t-center">
+							<input type="submit" class="btn red-border-btn filled-red-btn" value="Выслать">
+						</div>
+					</form>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+
+
+
+	<!-- end MODALS -->
+
+	<!-- JS BEGIN -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.sliderPro.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/tabcollapse.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+.mobile-city {
+	@include media-up(md) {
+		display: none;
+	}
+	.first-city {
+		margin: 0;
+		a {
+			text-transform: uppercase;
+			color: #fff;
+			font-family: $main_medium;
+			font-size: 22px;
+			text-decoration: none;
+			transition: $d_transition;
+			letter-spacing: 0.075em;
+			&:hover {
+				color: #d4311c;
+			}
+		}
+	}
+	.show-cities {
+		text-decoration: none;
+		color: #fff;
+		font-size: 14px;
+		padding: 0 0 2px;
+		display: inline-block;
+		border-bottom: dashed 1px #fff;
+		position: relative;
+		transition: $d_transition;
+		&:after {
+			content: '';
+			position: absolute;
+			right: -20px;
+			top: 10px;
+			width: 0;
+			height: 0;
+			border-top: 4px solid #fff;
+			border-right: 4px solid transparent;
+			border-left: 4px solid transparent;
+			transition: $d_transition;
+		}
+		&:hover {
+			border-color: #d4311c;
+			color: #d4311c;
+			&:after {
+				border-top: 4px solid #d4311c;
+			}
+		}
+	}
+}
+.get-mobile-city {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: #000;
+	z-index: 1000;
+	opacity: 0;
+	transform: translateX(-100%);
+	visibility: hidden;
+	transition: all 0.4s ease;
+	padding: 80px 20px 20px;
+	&.opened {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.close-cities {
+		position: absolute;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		outline: none;
+		right: auto;
+		left: 18px;
+		top: 30px;
+		svg {
+			font-size: 20px;
+			fill: #fff;
+		}
+	}
+}
+.get-city {
+	.jq-selectbox {
+		li:first-child {
+			display: none;
+		}
+		li {
+			color: #fff;
+			padding: 0 !important;
+			font-size: 16px;
+			& + li {
+				padding-top: 20px !important;
+			}
+		}
+	}
+	.jq-selectbox__dropdown {
+		background: #000;
+	}
+	.jq-selectbox.custom-select li.selected {
+		background: none !important;
+		color: #b73423;
+	}
+	.jq-selectbox.custom-select li:hover {
+		background: none !important;
+		color: #b73423;
+	}
+}
+.cat-city {
+	.cat {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			padding-top: 25px;
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 16px;
+				display: block;
+				&:hover {
+					color: #b73423;
+				}
+			}
+		}
+	}
+}
+.cities-block {
+	min-height: 280px;
+	.first-city {
+		margin: 0 0 10px;
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 22px;
+			font-family: $main_medium;
+			text-transform: uppercase;
+			&:hover {
+				color: #b73423;
+			}
+		}
+	}
+}

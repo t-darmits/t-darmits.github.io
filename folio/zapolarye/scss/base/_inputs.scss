@@ -1,0 +1,27 @@
+::-moz-placeholder {
+	opacity: 1;
+}
+::-webkit-input-placeholder {
+	color: #666;
+}
+:-moz-placeholder {
+	color: #666;
+}
+::-moz-placeholder {
+	color: #666;
+}
+:-ms-input-placeholder {
+	color: #666;
+}
+::-ms-input-placeholder {
+	color: #666;
+}
+:placeholder-shown {
+	color: #666;
+}
+input:not([type="radio"]):not([type="checkbox"]),
+button,
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}

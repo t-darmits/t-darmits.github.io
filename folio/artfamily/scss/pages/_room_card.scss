@@ -1,0 +1,256 @@
+.room-card {
+	h1 {
+		text-align: center;
+	}
+	.info-text {
+		font-size: 15px;
+		margin: 0 0 25px;
+		line-height: 30px;
+		@include media-up(md) {
+			font-size: 16px;
+		}
+		@include media-up(lg) {
+			margin: 0 0 40px;
+		}
+	}
+	.room-row {
+		overflow: hidden;
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	.room-images {
+		margin: 0 0 20px;
+		position: relative;
+		@include media-up(md) {
+			margin: 0 30px 20px 0;
+			float: left;
+			width: 340px;
+		}
+		@include media-up(lg) {
+			width: 475px;
+		}
+		@include media-up(xl) {
+			width: 560px;
+		}
+		.room-nav {
+			top: 50%;
+			margin-top: -17px;
+			width: 100%;
+			z-index: 10;
+			position: absolute;
+			left: 0;
+			button {
+				width: 16px;
+				height: 34px;
+				background: none;
+				border: 0;
+				outline: none;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				cursor: pointer;
+				svg {
+					fill: #dfdfdf;
+				}
+				&.next {
+					right: 30px;
+				}
+				&.prev {
+					left: 30px;
+				}
+			}
+		}
+	}
+	.room-text {
+		font-size: 16px;
+		line-height: 30px;
+		@include media-down(sm) {
+			font-size: 15px;
+		}
+		&:before {
+			@include media-down(md) {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+		.hidden {
+			display: none;
+		}
+	}
+	.room-content {
+		.price {
+			font-family: $main_medium;
+			font-size: 18px;
+			color: #b09364;
+			margin: 0 0 10px;
+			@include media-up(xl) {
+				margin: 0 0 50px;
+			}
+			b {
+				font-family: $main_medium;
+				color: #084654;
+			}
+			span {
+				font-size: 30px;
+			}
+		}
+		.dop {
+			color: #b09364;
+			font-size: 15px;
+			margin: 0 0 15px;
+			@include media-up(md) {
+				font-size: 16px;
+			}
+		}
+		.rooms-equip {
+			background: #fcf8f7;
+			padding: 25px;
+			margin: 0 0 20px;
+			overflow: hidden;
+			.r-title {
+				color: #084654;
+				font-size: 16px;
+				font-family: $main_bold;
+				text-transform: uppercase;
+				margin: 0 0 20px;
+				letter-spacing: 0.075em;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					padding-left: 50px;
+					font-size: 16px;
+					margin: 0 0 15px;
+					position: relative;
+					i {
+						position: absolute;
+						left: 0;
+						top: -5px;
+						font-size: 25px;
+						color: #b09364;
+					}
+					@include media-down(xs) {
+						font-size: 15px;
+					}
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.more {
+		margin-top: 35px;
+		text-align: center;
+		a {
+			display: block;
+			@include media-down(xs) {
+				max-width: 290px;
+				margin: 0 auto;
+			}
+		}
+		@include media-up(sm) {
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		a + a {
+			@include media-down(xs) {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+.room-pagination {
+	margin-top: 50px;
+	padding: 35px 0;
+	position: relative;
+	@include media-up(sm) {
+		margin-top: 45px;
+	}
+	@include media-up(md) {
+		margin-top: 65px;
+	}
+	@include media-up(lg) {
+		margin-top: 90px;
+	}
+	&:before {
+		content: '';
+		width: 100vw;
+		height: 1px;
+		background: #cdd6da;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.flex-row {
+		justify-content: center;
+		@include media-down(sm) {
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.item {
+			&:first-child {
+				@include media-up(md) {
+					margin-right: 280px;
+				}
+				a {
+					span {
+						margin: 0 20px 0 0;
+					}
+				}
+			}
+			&:last-child {
+				a {
+					span {
+						margin: 0 0 0 20px;
+					}
+				}
+			}
+			a {
+				color: #000;
+				font-size: 14px;
+				text-decoration: none;
+				display: flex;
+				transition: $d_transition;
+				align-items: center;
+				@include media-up(sm) {
+					font-size: 16px;
+				}
+				span {
+					margin: 0 20px;
+					width: 47px;
+					flex-shrink: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 47px;
+					border: solid 2px #d4311c;
+					transition: $d_transition;
+					svg {
+						font-size: 16px;
+						fill: #d4311c;
+						transition: $d_transition;
+					}
+				}
+				&:hover {
+					color: #d4311c;
+					span {
+						background: #d4311c;
+						svg {
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

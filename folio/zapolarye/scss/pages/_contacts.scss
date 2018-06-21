@@ -1,0 +1,233 @@
+.contacts {
+	.cs-row {
+		@include media-up(lg) {
+			display: flex;
+			align-items: stretch;
+		}
+		.contact-info {
+			padding: 0 15px;
+			@include media-up(lg) {
+				width: 57%;
+				padding: 0 40px 0 60px;
+			}
+			@include media-up(lp) {
+				width: 57%;
+			}
+			@media all and (min-width: 1600px) {
+				padding: 0 rem(90) 0 rem(100);
+			}
+			h1 {
+				font-size: 24px;
+				color: #000;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin: 35px 0 25px;
+				@include media-up(lp) {
+					font-size: 48px;
+					margin: rem(60) 0 rem(50);
+				}
+			}
+			.cb-block {
+				padding: 0 0 0 30px;
+				position: relative;
+				margin: 0 0 30px;
+				color: #363636;
+				font-size: 15px;
+				@include media-up(sm) {
+					margin: 0 0 45px;
+				}
+				@include media-up(lg) {
+					margin: 0 0 65px;
+				}
+				@include media-up(lp) {
+					font-size: 18px;
+				}
+				&:before {
+					content: '';
+					display: block;
+					width: 3px;
+					height: 66px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					background: #9a7f45;
+				}
+				.c-title {
+					font-size: 18px;
+					color: #000;
+					margin: 0 0 18px;
+					@include media-up(lp) {
+						margin: 0 0 18px;
+						font-size: 24px;
+					}
+				}
+			}
+			.c-content {
+				line-height: 30px;
+			}
+			a {
+				color: #363636;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.tel-blocks {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -15px 0 0 0;
+			@include media-up(sm) {
+				margin: -40px 0 0 -45px;
+			}
+			.tel {
+				margin: 15px 0 0 0;
+				@include media-up(sm) {
+					margin: 40px 0 0 45px;
+				}
+				.i-title {
+					font-size: 15px;
+					color: #9a7f45;
+					margin: 0 0 5px;
+					font-weight: 500;
+					@include media-up(lp) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.links {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				margin-right: 20px;
+			}
+		}
+		.contact-area {
+			background: url(../img/pattern.png);
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			@include media-up(lg) {
+				width: 43%;
+			}
+			@include media-up(lp) {
+				width: 43%;
+			}
+			.contact-form {
+				padding: 35px 15px;
+				max-width: 635px;
+				@include media-up(lg) {
+					padding: 30px;
+					max-width: none;
+				}
+				@media all and (min-width: 1600px) {
+					padding: rem(70) rem(120);
+				}
+				.cf-title {
+					color: #fff;
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: 500;
+					font-size: 30px;
+					margin: 0 0 10px;
+					@include media-up(lp) {
+						font-size: 48px;
+					}
+				}
+				.cf-descr {
+					color: #fff;
+					text-align: center;
+					font-size: 14px;
+					line-height: 30px;
+					margin: 0 0 30px;
+				}
+			}
+			.contact-control {
+				position: relative;
+				label {
+					display: block;
+					text-align: center;
+					color: #fff;
+					font-size: 15px;
+					margin: 0 0 15px;
+				}
+				& + .contact-control {
+					margin-top: 25px;
+				}
+				input,
+				textarea {
+					width: 100%;
+					border: 0;
+					background: #fff;
+					padding: 0 0 0 20px;
+					height: 48px;
+					outline: none;
+				}
+				textarea {
+					resize: none;
+					padding-top: 20px;
+					min-height: 100px;
+				}
+			}
+			 .contact-control {
+			    position: relative;
+			    label {
+					&.error {
+						font-size: 14px;
+						color: #000 !important;
+						font-weight: 300;
+						background-color: #fff;
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						transform: translate(-50%,13px);
+						padding: 13px 13px 13px 45px;
+						border: solid 1px #a5803f;
+						display: block;
+						z-index: 1;
+						min-width: 208px;
+						background-image: url(../img/info-ico.png);
+						background-position: 12px center;
+						background-repeat: no-repeat;
+						display: none;
+						&:before,
+						&:after {
+							content: '';
+							position: absolute;
+							left: 50%;
+							margin-left: -10px;
+							top: -20px;
+							border: 10px solid transparent;
+							border-bottom: 10px solid #a5803f;
+						}
+						&:after {
+							border-bottom: 10px solid #fff;
+							top: -18px;
+						}
+					}
+		    	}
+		  	}
+			.custom-checkbox {
+				@include media-up(lp) {
+					margin: 30px 0;
+				}
+				label {
+					padding-left: 45px;
+					font-size: 15px;
+					color: rgba(#fff, 0.49);
+				}
+			}
+			.contact-submit {
+				margin-top: 40px;
+				@include media-up(lg) {
+					margin-top: 45px;
+				}
+			}
+		}
+	}
+}

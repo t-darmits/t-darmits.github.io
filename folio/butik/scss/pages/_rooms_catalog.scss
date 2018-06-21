@@ -1,0 +1,217 @@
+.rooms-catalog {
+	.room {
+		display: flex;
+		background: #fff;
+		align-items: center;
+		@include media-down(md) {
+			flex-wrap: wrap;
+		}
+		.r-info {
+			padding: 0 15px 30px;
+			@include media-up(lg) {
+				padding: 0 30px 0 30px;
+				order: -1;
+			}
+			@include media-up(nt) {
+				padding: 0 80px 0 30px;
+			}
+			@include media-up(lp) {
+				padding: 0 rem(30);
+			}
+			@media all and (min-width: 1600px) {
+				padding: 0 rem(130);
+			}
+		}
+		.r-img {
+			flex-shrink: 0;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 340px;
+			margin: 0 0 25px;
+			@include media-up(sm) {
+				height: 385px;
+				margin: 0 0 35px;
+			}
+			@include media-up(md) {
+				height: 520px;
+			}
+			@include media-up(lg) {
+				width: 52%;
+				margin: 0
+			}
+			@include media-up(lp) {
+				height: rem(635);
+				width: 55%;
+			}
+			img {
+				height: auto;
+				position: absolute;
+				min-width: 100%;
+				min-height: 100%;
+				max-width: none;
+				top: -100%;
+				left: -100%;
+				bottom: -100%;
+				right: -100%;
+				margin: auto;
+				max-height: 360px;
+				@include media-up(sm) {
+					max-height: 470px;
+				}
+				@include media-up(md) {
+					max-height: 600px;
+				}
+				@include media-up(lg) {
+					max-height: 520px;
+				}
+				@include media-up(xl) {
+					max-height: none;
+				}
+			}
+		}
+		.title-row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 0 20px;
+			@include media-up(sm) {
+				margin: 0 0 10px;
+			}
+			@include media-up(md) {
+				margin: 0 0 25px;
+			}
+			@include media-up(lp) {
+				margin: 0 0 rem(30);
+			}
+			@media all and (min-width: 1600px) {
+				margin: 0 0 rem(50);
+			}
+			.name {
+				text-transform: uppercase;
+				margin: 0 0 15px 0;
+				font-size: 24px;
+				width: 100%;
+				a {
+					font-weight: 500;
+					color: #000;
+					text-decoration: none;
+					transition: $d_transition;
+					&:hover {
+						color: #896e4a;
+					}
+				}
+				@include media-up(sm) {
+					margin: 0 80px 10px 0;
+					width: auto;
+				}
+				@include media-up(md) {
+					width: 100%;
+					font-size: 48px;
+					margin: 0 35px 10px 0;
+				}
+				@include media-up(lg) {
+					width: auto;
+					font-size: 36px;
+				}
+				@include media-up(nt) {
+					font-size: 48px;
+				}
+				@include media-up(lp) {
+					font-size: 36px;
+				}
+			}
+			.price {
+				font-size: 14px;
+				font-weight: 300;
+				@include media-up(lg) {
+					font-size: 18px;
+				}
+				span {
+					font-size: 24px;
+					font-weight: 500;
+					margin: 0 5px;
+					@include media-up(lg) {
+						font-size: 30px;
+					}
+				}
+				b {
+					font-weight: 500;
+				}
+			}
+		}
+		.text {
+			font-size: 14px;
+			color: #484747;
+			margin: 0 0 20px;
+			line-height: 30px;
+			@include media-up(md) {
+				font-size: 16px;
+				margin: 0 0 40px;
+			}
+			@include media-up(lg) {
+				margin: 0 0 30px;
+			}
+			@include media-up(lp) {
+				margin: 0 0 rem(40);
+			}
+		}
+		.more {
+			text-align: center;
+			@include media-up(sm) {
+				text-align: right;
+			}
+		}
+		.icons {
+			margin: 0 0 20px;
+			@include media-up(sm) {
+				margin: 0 0 30px;
+			}
+			@include media-up(lp) {
+				margin: 0 0 rem(50);
+			}
+			@media all and (min-width: 1600px) {
+				margin: 0 0 rem(90);
+			}
+			ul {
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				margin: 0 0 0 -20px;
+				padding: 0;
+				@include media-up(md) {
+					margin: 0 0 0 -30px;
+				}
+				li {
+					margin-left: 20px;
+					&:hover {
+						.tooltip {
+							// opacity: 1;
+						    // visibility: visible;
+						}
+					}
+					@include media-up(md) {
+						margin-left: 30px;
+					}
+					span {
+						font-size: 30px;
+						color: #896e4a;
+						@include media-up(md) {
+							font-size: 34px;
+						}
+					}
+				}
+			}
+		}
+		&:last-child {
+			.r-info {
+				padding-bottom: 0;
+			}
+		}
+		&:nth-child(even) {
+			.r-info {
+				order: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,520 @@
+.contact-information {
+	padding: 60px 0 30px;
+	background: url(../img/contacts-bg.jpg) no-repeat center center;
+	background-size: cover;
+	@include media-up(sm) {
+		padding: 40px 0 30px;
+	}
+	@include media-up(md) {
+		padding: 60px 0 55px;
+	}
+	@include media-up(lg) {
+		padding: 70px 0;
+	}
+	@include media-up(lp) {
+		padding: rem(180) 0;
+	}
+	.tab-title {
+		font-size: 24px;
+		line-height: 28px;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+		color: #fff;
+		@include media-up(sm) {
+			margin: 0 0 35px;
+		}
+		@include media-up(md) {
+			font-size: 36px;
+		}
+		@include media-up(lg) {
+			font-size: 48px;
+			margin: 0 0 60px;
+		}
+	}
+	.tab-text {
+		color: #fff;
+		line-height: 25px;
+		font-weight: 300;
+		font-size: 14px;
+		max-width: 260px;
+		@include media-up(md) {
+			max-width: 100%;
+			font-size: 18px;
+		}
+		@include media-up(lg) {
+			font-size: 24px;
+			line-height: 36px;
+		}
+		p {
+			margin: 0 0 10px;
+			@include media-up(md) {
+				margin: 0 0 20px;
+			}
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.nav-tabs {
+		list-style: none;
+		padding: 0;
+		margin: 45px 0 0;
+		display: flex;
+		@include media-up(lg) {
+			margin: 65px 0 0;
+		}
+		li {
+			margin-right: 15px;
+			@include media-up(md) {
+				margin-right: 75px;
+			}
+			@include media-up(lg) {
+				margin-right: 115px;
+			}
+			&:last-child {
+				margin: 0;
+			}
+			a {
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+				.t-title {
+					font-size: 12px;
+					font-weight: 300;
+					margin: 0 0 10px;
+					display: block;
+					@include media-up(md) {
+						font-size: 18px;
+						margin: 0 0 15px;
+					}
+					@include media-up(lg) {
+						font-size: 24px;
+						margin: 0 0 20px;
+					}
+				}
+				.t-icon {
+					width: 70px;
+					height: 70px;
+					border: solid 2px rgba(#fff, 0.52);
+					border-radius: 124px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin: auto;
+					transition: $d_transition;
+					@include media-up(md) {
+						width: 94px;
+						height: 94px;
+					}
+					@include media-up(lg) {
+						width: 124px;
+						height: 124px;
+					}
+					svg {
+						font-size: 30px;
+						fill: #fff;
+						opacity: 0.63;
+						transition: $d_transition;
+						@include media-up(md) {
+							font-size: 40px;
+						}
+						@include media-up(lg) {
+							font-size: 50px;
+						}
+					}
+				}
+				&:hover {
+					.t-icon {
+						background: #fff;
+						border-color: #fff;
+					}
+					svg {
+						fill: #000;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   STYLES FOR CONTACT SECTION
+   ========================================================================== */
+.contact-section {
+	padding: 35px 0;
+	@include media-up(md) {
+		padding: 40px 0;
+	}
+	@include media-up(lg) {
+		padding: 70px 0;
+		display: flex;
+		align-items: center;
+	}
+	@include media-up(lp) {
+		background: url(../img/contact-mramor.jpg) no-repeat left bottom;
+		padding: rem(100) 0;
+	}
+	.left-part {
+		padding: 0 15px 40px;
+		@include media-up(md) {
+			padding: 0 15px 60px;
+		}
+		@include media-up(lg) {
+			width: 51%;
+			padding: 0 20px 0 15px;
+		}
+		@include media-up(lp) {
+			padding: 0 rem(90) 0 rem(65);
+			width: 50%;
+		}
+		.contact-block {
+			position: relative;
+			@include media-up(lg) {
+				border: solid 2px #d8cfbf;
+				border-right: 0;
+				padding: 30px 0 30px 35px;
+			}
+			@include media-up(xl) {
+				border: solid 2px #d8cfbf;
+				border-right: 0;
+				padding: 50px 0 65px 25px;
+			}
+			@include media-up(nt) {
+				padding: 70px 0 85px 35px;
+			}
+			@include media-up(lp) {
+				padding: rem(120) rem(25) rem(120) rem(65);
+			}
+			.butik-dec {
+				position: absolute;
+				top: 0;
+				display: none;
+				font-size: 24px;
+				color: #816e4d;
+				font-family: $marena_font;
+				background: #fff;
+				padding: 0 20px;
+				z-index: 5;
+				transform: translateY(-50%);
+				@include media-up(lg) {
+					display: block;
+				}
+			}
+			.c-title {
+				font-size: 18px;
+				color: #000;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin: 0 0 20px;
+				@include media-up(sm) {
+					margin: 0 0 30px;
+				}
+				@include media-up(md) {
+					font-size: 36px;
+					margin: 0 0 20px;
+				}
+				@include media-up(lg) {
+					font-size: 24px;
+					margin: 0 0 20px;
+				}
+				@include media-up(xl) {
+					margin: 0 0 40px;
+				}
+				@include media-up(lp) {
+					font-size: rem(36);
+					margin: 0 0 rem(30);
+				}
+			}
+			.c-descr {
+				font-weight: 300;
+				font-size: 14px;
+				color: #484747;
+				line-height: 30px;
+				margin: 0 0 30px;
+				@include media-up(sm) {
+					margin: 0 0 40px;
+				}
+				@include media-up(md) {
+					font-size: 16px;
+					margin: 0 0 60px;
+				}
+				@include media-up(lg) {
+					margin: 0 0 35px;
+				}
+				@include media-up(xl) {
+					margin: 0 0 75px;
+				}
+				@include media-up(lp) {
+					margin: 0 0 rem(95);
+				}
+			}
+			.c-row {
+				display: flex;
+				margin: -30px 0 0;
+				flex-wrap: wrap;
+				@include media-up(lg) {
+					margin: -30px -15px 0 -15px;
+				}
+				@include media-up(xl) {
+					flex-wrap: unset;
+				}
+				@include media-up(lp) {
+					margin: 0 rem(-30);
+				}
+				.item {
+					padding: 0 30px 0 0;
+					margin-top: 30px;
+					@include media-up(md) {
+						padding: 0 70px 0 0;
+					}
+					@include media-up(lg) {
+						padding: 0 15px;
+					}
+					@include media-up(lp) {
+						padding: 0 rem(30);
+					}
+					&:last-child {
+						@include media-down(md) {
+							padding-right: 0;
+						}
+					}
+				}
+				.i-title {
+					color: #896e4a;
+					font-size: 14px;
+					font-weight: 500;
+					margin: 0 0 15px;
+					@include media-up(md) {
+						margin: 0 0 20px;
+						font-size: 16px;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					li {
+						& + li {
+							margin-top: 10px;
+							@include media-up(md) {
+								margin-top: 15px;
+							}
+						}
+						a {
+							font-size: 14px;
+							color: #474646;
+							text-decoration: none;
+							font-weight: 300;
+							@include media-up(md) {
+								font-size: 16px;
+							}
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.right-part {
+		position: relative;
+		overflow: hidden;
+		height: 345px;
+		@include media-up(sm) {
+			height: 380px;
+		}
+		@include media-up(md) {
+			height: 515px;
+		}
+		@include media-up(lg) {
+			width: 49%;
+			height: 505px;
+		}
+		@include media-up(lp) {
+			height: rem(635);
+			width: 50%;
+		}
+		img {
+			display: block;
+		    margin: auto;
+		    position: absolute;
+		    top: -100%;
+		    right: -100%;
+		    bottom: -100%;
+		    left: -100%;
+		    min-width: 100%;
+		    min-height: 100%;
+		    max-width: none;
+		    height: auto;
+		    max-height: 360px;
+		    @include media-up(sm) {
+		    	max-height: 490px;
+		    }
+		    @include media-up(md) {
+		    	max-height: 620px;
+		    }
+		    @include media-up(lg) {
+		    	max-height: 515px;
+		    }
+		    @include media-up(lp) {
+		    	max-height: rem(640);
+		    }
+		}
+	}
+}
+
+/* ==========================================================================
+   STYLES FOR TRANSPORT SECTION
+   ========================================================================== */
+.transport-section {
+	@include media-up(lg) {
+		padding: 0 0 40px;
+	}
+	@include media-up(lg) {
+		display: flex;
+		padding: 0 0 40px;
+		align-items: center;
+	}
+	@include media-up(lp) {
+		padding: 0 0 rem(100);
+	}
+	.img-block {
+		position: relative;
+		overflow: hidden;
+		height: 340px;
+		@include media-up(sm) {
+			height: 385px;
+		}
+		@include media-up(md) {
+			height: 515px;
+		}
+		@include media-up(lg) {
+			width: 48.5%;
+			height: 515px;
+			order: -1;
+		}
+		@include media-up(lp) {
+			height: rem(635);
+		}
+		img {
+			display: block;
+			margin: auto;
+			position: absolute;
+			top: -100%;
+			right: -100%;
+			bottom: -100%;
+			left: -100%;
+			min-width: 100%;
+			min-height: 100%;
+			max-width: none;
+			height: auto;
+			max-height: 390px;
+			@include media-up(sm) {
+				max-height: 515px;
+			}
+			@include media-up(md) {
+				max-height: 660px;
+			}
+			@include media-up(lg) {
+				max-height: 540px;
+			}
+			@include media-up(xl) {
+				max-height: none;
+			}
+		}
+	}
+	.text-area {
+		padding: 0 15px 45px;
+		@include media-up(lg) {
+			padding: 10px 40px;
+			width: 51.5%;
+		}
+		@media all and (min-width: 1600px) {
+			padding: 15px rem(130);
+		}
+		.t-title {
+			color: #000;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			margin: 0 0 20px;
+			@include media-up(md) {
+				font-size: 36px;
+			}
+			@include media-up(lg) {
+				margin: 0 0 30px;
+				font-size: 30px;
+			}
+			@include media-up(xl) {
+				font-size: 48px;
+			}
+			@include media-up(lp) {
+				margin: 0 0 rem(35);
+				font-size: rem(48);
+			}
+		}
+		.text {
+			font-weight: 300;
+		}
+		ul {
+			list-style: none;
+			margin: 30px 0;
+			padding: 0;
+			li {
+				font-size: 14px;
+				color: #363636;
+				line-height: 30px;
+				padding: 0 0 12px 25px;
+				position: relative;
+				font-weight: 300;
+				&:before {
+					content: '';
+					width: 7px;
+					height: 7px;
+					top: 11px;
+					position: absolute;
+					left: 0;
+					border: solid 1px #000;
+					border-radius: 10px;
+				}
+				@include media-up(md) {
+					font-size: 16px;
+				}
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   STYLES FOR MAP SECTION
+   ========================================================================== */
+.map-block {
+	height: 420px;
+	overflow: hidden;
+	@include media-up(sm) {
+		height: 435px;
+	}
+	@include media-up(md) {
+		height: 615px;
+	}
+	@include media-up(lg) {
+		height: 630px;
+	}
+	@include media-up(lp) {
+		height: 770px;
+	}
+	#map {
+		background: url(../img/map-sec.jpg) no-repeat center center;
+		background-size: cover;
+		height: 100%;
+	}
+}

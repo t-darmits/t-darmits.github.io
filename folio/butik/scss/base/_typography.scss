@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 25px;
+	font-weight: normal;
+	color: #253048;
+	line-height: normal;
+}
+.textpage {
+	h1 {
+		color: #000;
+		text-transform: uppercase;
+		font-size: 48px;
+		font-weight: 500;
+	}
+	h2 {
+		color: #000;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	h3 {
+		color: #000;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	h4 {
+		color: #000;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	h5 {
+		color: #896e4a;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+.main-content {
+	.page-title {
+		padding: 25px 15px;
+		color: #000;
+		font-size: 30px;
+		text-align: center;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin: 0;
+		@include media-up(sm) {
+			padding: 30px 15px;
+			background: url(../img/title-bg.jpg) no-repeat 0 0;
+			background-size: cover;
+		}
+		@include media-up(md) {
+			font-size: 48px;
+			padding: 35px 15px;
+		}
+		@include media-up(xl) {
+			padding: 55px 15px;
+		}
+		@include media-up(lp) {
+			padding: rem(65) 15px;
+		}
+		&.none-bg {
+			background: none;
+			padding-top: 25px;
+			@include media-up(md) {
+				padding-top: 0;
+			}
+		}
+	}
+}
+.text-title-row {
+	.container {
+		@include media-down(nt) {
+			width: 100%;
+		}
+	}
+	.page-title {
+		color: #000;
+		font-weight: 500;
+		font-size: 30px;
+		text-align: center;
+		padding: 25px 0;
+		text-transform: none;
+		background: none;
+		@include media-up(sm) {
+			padding: 35px 0;
+			text-align: left;
+		}
+		@include media-up(md) {
+			font-size: 48px;
+		}
+		@include media-up(lg) {
+			padding: 55px 0 35px;
+		}
+		@include media-up(lp) {
+			padding: 55px 0;
+		}
+	}
+}

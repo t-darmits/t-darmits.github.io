@@ -1,0 +1,311 @@
+.bottom-area {
+	padding: 0;
+	@include media-up(sm) {
+		display: flex;
+		align-items: flex-start;
+	}
+	@include media-up(lp) {
+		padding: 0 30px;
+	}
+	@include media-down(md) {
+		transition: all 0.3s ease;
+		opacity: 0;
+		z-index: -1;
+		visibility: hidden;
+		transform: translateY(-10px);
+		position: absolute;
+		background: #fff;
+		left: 0;
+		width: 100%;
+		top: 100%;
+		border-bottom: solid 1px #a7855c;
+		padding: 15px 45px 40px;
+
+	}
+	@include media-down(sm) {
+		padding: 15px 25px 40px;
+	}
+	@include media-down(xs) {
+		padding: 15px 15px 40px;
+	}
+	&.menu_is_show {
+		opacity: 1;
+		z-index: 100;
+		visibility: visible;
+		transform: translateY(0);
+		@include media-down(sm) {
+			transform: translateY(-42px);
+		}
+	}
+	.menu-block {
+		@include media-up(sm) {
+			width: 50%;
+		}
+		& > ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			@include media-up(lg) {
+				display: flex;
+				justify-content: space-around;
+				border-top: solid 1px rgba(#fff, 0.16);
+				border-bottom: solid 1px rgba(#fff, 0.16);
+				position: relative;
+			}
+			& > li {
+				@include media-down(md) {
+					margin-top: 30px;
+				}
+				&.has_drop {
+					@include media-down(md) {
+						position: relative;
+					}
+				}
+				a {
+					text-decoration: none;
+					color: #f5f5f5;
+					font-weight: 500;
+					font-size: 16px;
+					padding: 15px 10px;
+					display: block;
+					transition: color 0.3s ease;
+					@include media-up(lg) {
+						font-size: 14px;
+					}
+					@include media-up(xl) {
+						font-size: 16px;
+					}
+					@include media-down(md) {
+						color: #474646;
+						font-size: 18px;
+						border-bottom: solid 1px rgba(#484848, 0.32);
+						padding: 0 0 10px;
+					}
+					&:hover {
+						color: #896e4a;
+					}
+					@include media-up(xl) {
+						font-size: 18px;
+					}
+				}
+				&:hover {
+					@include media-up(lg) {
+						& > ul {
+							visibility: visible;
+							transform: translateY(0);
+							opacity: 1;
+							transition: all 0.3s ease;
+						}
+					}
+				}
+				& > ul {
+					list-style: none;
+					margin: 0;
+					transition: all 0.1s ease;
+					@include media-up(lg) {
+						position: absolute;
+						width: 100%;
+						background: #fff;
+						top: 100%;
+						left: 0;
+						display: flex;
+						visibility: hidden;
+						z-index: -1;
+						opacity: 0;
+						transform: translateY(-10px);
+						padding: 15px 15px 30px;
+					}
+					@include media-up(nt) {
+					    padding: 30px 25px 30px;
+					}
+					@include media-up(lp) {
+					    padding: rem(30) rem(60) rem(60);
+					}
+					@include media-down(md) {
+						padding-left: 20px;
+						display: none;
+					}
+					// mobile view
+					&.show {
+						@include media-down(md) {
+							display: block;
+						}
+					}
+					// styles for recomended area
+					// 
+					&.has_recomended {
+						@include media-up(lp) {
+							padding: rem(28) rem(65);
+						}
+						& > li {
+							display: block;
+							@include media-up(lg) {
+								width: 40%;
+							}
+							ul {
+								display: block;
+								margin: 0;
+								li {
+									width: 100%;
+									padding: 0;
+								}
+							}
+							&.recomended {
+								margin: 0;
+								width: 60%;
+								@include media-up(lg) {
+									padding: 0 0 0 15px;
+								}
+								@include media-up(nt) {
+									padding: 0 0 0 20px;
+								}
+								@include media-up(lp) {
+									padding: 0 0 0 rem(50);
+								}
+								@include media-down(md) {
+									display: none;
+								}
+								a {
+									padding-bottom: 0;
+									border: 0;
+									color: #474646;
+									font-size: 12px;
+									transition: $d_transition;
+									@include media-up(nt) {
+										font-size: 16px;
+									}
+									svg {
+										font-size: 10px;
+										fill: #474646;
+										margin-left: 10px;
+										transition: $d_transition;
+									}
+									&:hover {
+										color: #896e4a;
+										svg {
+											fill: #896e4a;
+										}
+									}
+								}
+								img {
+									width: 100%;
+									margin-bottom: 15px;
+								}
+							}
+						}
+					}
+					// end styles for recomended area
+					//
+					& > li {
+						width: 100%;
+						ul {
+							list-style: none;
+							padding: 0;
+							@include media-up(lg) {
+								margin: 0 -15px;
+								display: flex;
+								flex-wrap: wrap;
+							}
+							li {
+								@include media-up(lg) {
+									width: 50%;
+									padding: 0 15px;
+									margin-top: 15px;
+								}
+								@include media-up(nt) {
+									margin-top: 30px;
+								}
+								@include media-down(md) {
+									margin-top: 25px;
+									font-size: 17px;
+								}
+							}
+						}
+						a {
+							color: #474646;
+							font-size: 17px;
+							display: block;
+							padding: 0 0 10px;
+							border-bottom: solid 1px rgba(#474646, 0.32);
+							@include media-up(lg) {
+								font-size: 12px;
+								line-height: 20px;
+							}
+							@include media-up(nt) {
+								font-size: 16px;
+							}
+							@include media-up(lp) {
+								font-size: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.menu-right {
+			& > ul {
+				& > li {
+					& > ul {
+						&.has_recomended {
+							& > li {
+								&.recomended {
+									order: -1;
+									@include media-up(lg) {
+										padding: 0 15px 0 0;
+									}
+									@include media-up(nt) {
+										padding: 0 20px 0 0;
+									}
+									@include media-up(lp) {
+										padding: 0 rem(50) 0 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu-left {
+		@include media-up(sm) {
+			padding-right: 50px;
+		}
+		@include media-up(xl) {
+			padding-right: 95px;
+		}
+	}
+	.menu-right {
+		@include media-up(sm) {
+			padding-left: 50px;
+		}
+		@include media-up(xl) {
+			padding-left: 95px;
+		}
+	}
+}
+.toggle-child {
+	display: inline-block;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	position: absolute;
+	right: 0;
+	top: -4px;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.toggled {
+		svg {
+			transform: rotate(-180deg);
+		}
+	}
+	svg {
+		fill: #474646;
+	}
+	@include media-up(lg) {
+		display: none;
+	}
+}

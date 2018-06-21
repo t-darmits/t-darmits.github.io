@@ -1,0 +1,138 @@
+.tabs {
+	.controls {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 35px;
+		@include media-down(sm) {
+			flex-wrap: wrap;
+		}
+		.tab {
+			border-radius: 40px;
+			border: solid 2px #a69583;
+			color: #a69583;
+			text-transform: uppercase;
+			font-family: $main_bold;
+			font-size: 14px;
+			padding: 15px 20px;
+			cursor: pointer;
+			margin: 0 15px;
+			transition: $d_transition;
+			@include media-down(sm) {
+				width: 100%;
+				margin: 15px 0 0;
+				text-align: center;
+			}
+			&.active {
+				border-color: #ff5932;
+				background: #ff5932;
+				color: #fff;
+				box-shadow: 0 7px 25px 5px rgba(0,0,0,.1);
+			}
+			&:hover {
+				border-color: #ff5932;
+				background: #ff5932;
+				color: #fff;
+			}
+		}
+	}
+}
+.tab-block {
+	display: none;
+	&.active {
+		display: block;
+	}
+	.sp-image-container {
+		border-radius: 15px;
+	}
+	.sp-bottom-thumbnails {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.sp-bottom-thumbnails .sp-thumbnail-container {
+		margin: 0 8px;
+		border-radius: 15px;
+		border: solid 2px transparent;
+		transition: $d_transition;
+		&.sp-selected-thumbnail {
+			border-color: #ff5932;
+			box-shadow: 0 10px 15px 0px rgba(0,0,0,.1);
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.sp-thumbnails-container {
+		@include media-down(sm) {
+			display: none;
+		}
+	}
+	.sp-horizontal {
+		.sp-arrow {
+			display: block !important;
+			width: 45px;
+			height: 45px;
+			border-radius: 45px;
+			border: solid 2px #aa9a88;
+			transition: $d_transition;
+			transform: none;
+			@include media-down(lg){
+				border-color: #fff;
+			}
+			&:hover {
+				background: #ff5932;
+				border-color: #ff5932;
+			}
+			&:before {
+				display: none;
+			}
+			&:after {
+				transform: none;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				background-color: transparent;
+			}
+			&.sp-next-arrow {
+				right: -65px;
+				@include media-down(lg){
+					right: 20px;
+				}
+				&:after {
+					content: '';
+					display: block;
+					@include sprite($i-right-arr-hover);
+					@include media-down(lg){
+						@include sprite($i-right-arr);
+					}
+				}
+				&:hover {
+					&:after {
+						@include sprite($i-right-arr);
+					}
+				}
+			}
+			&.sp-previous-arrow {
+				left: -65px;
+				@include media-down(lg){
+					left: 20px;
+				}
+				&:after {
+					content: '';
+					display: block;
+					@include sprite($i-left-arr-hover);
+					@include media-down(lg){
+						@include sprite($i-left-arr);
+					}
+				}
+				&:hover {
+					&:after {
+						@include sprite($i-left-arr);
+					}
+				}
+			}
+		}
+	}
+}

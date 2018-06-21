@@ -1,0 +1,133 @@
+.tour-section {
+	.text-block {
+		line-height: 24px;
+		color: #666;
+		font-size: 15px;
+		text-align: center;
+		max-width: 990px;
+		margin: 0 auto;
+		@include respond-to($desktop) {
+			font-size: 16px;
+		}
+	}
+}
+
+.photo-tour {
+	padding: 60px 0 0;
+	@include respond-to($m-desktop) {
+		padding: 30px 0 0;
+	}
+	ul.photo-list {
+		list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    width: 67%;
+	    float: left;
+		li {
+			display: block;
+			float: left;
+			padding: 2px;
+			width: 25%;
+			height: 155px;
+			cursor: pointer;
+			@include respond-to($m-desktop) {
+				width: 33.333%;
+				height: 90px;
+			}
+			@include respond-to($m-tablet) {
+				width: 33.333%;
+				height: 115px;
+			}
+			@include respond-to($m-phone) {
+				width: 50%;
+			}
+			div {
+				position: relative;
+				overflow: hidden;
+				display: block;
+				height: 100%;
+				width: 100%;
+				outline: none;
+				img {
+					display: block;
+					min-width: 100%;
+					position: absolute;
+					max-height: 160px;
+					min-height: 100%;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		@include respond-to($m-desktop) {
+			width: 50%;
+		}
+		@include respond-to($m-tablet) {
+			width: 100%;
+			float: none;
+		}
+	}
+	.tour-block {
+	    width: 33%;
+	    float: left;
+	    padding: 2px;
+	    position: relative;
+	    @include respond-to($m-desktop) {
+			width: 50%;
+		}
+		@include respond-to($m-tablet) {
+			width: 100%;
+			float: none;
+		}
+		.main-frame {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: none;
+			z-index: 100;
+			border-radius: 50%;
+			background: #fff;
+			border: solid 1px #808080;
+			cursor: pointer;
+			outline: none;
+			width: 28px;
+			height: 28px;
+			padding: 0;
+			text-align: center;
+			span {
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 1;
+				color: #808080;
+			}
+		}
+	}
+}
+
+.show_tour {
+	> div {
+		position: relative;
+		&:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			display: block;
+			left: 0;
+			background: rgba(#000, 0.5);
+			opacity: 0;
+			transition: $d_transition;
+			border: 6px solid #e19d36;
+		}
+	}
+	&:hover {
+		> div {
+			&:after {
+				opacity: 1;
+			}
+			// box-shadow: ;
+		}
+	}
+}

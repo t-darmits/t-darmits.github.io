@@ -1,0 +1,376 @@
+.special-offers-list {
+	padding: 0 5px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 320px;
+	@include media-up(sm) {
+		max-width: 568px;
+	}
+	@include media-up(md) {
+		max-width: 768px;
+	}
+	@include media-up(lg) {
+		padding: 0 10px;
+		max-width: none;
+	}
+	@include media-up(lp) {
+		padding: 0 15px;
+	}
+	/* ==========================================================================
+	   DESKTOP GRID FOR BIG ELEMENTS
+	   ========================================================================== */
+	.offer {
+		width: 100%;
+		padding: 0 10px 20px;
+		@include media-up(lg) {
+			width: 50%;
+		}
+		@include media-up(lp) {
+			padding: 0 15px 30px;
+		}
+		/* ADAPTIVE STYLES
+		   ========================================================================== */
+		@include media-down(md) {
+			padding-bottom: 60px;
+		}
+		@include media-down(sm) {
+			padding-bottom: 65px;
+		}
+		@include media-down(xs) {
+			padding-bottom: 160px;
+		}
+		/* END ADAPTIVE STYLES
+		   ========================================================================== */
+		.offer-wrap {
+			position: relative;
+			.link {
+				display: block;
+			}
+		}
+		.img-block {
+			position: relative;
+			overflow: hidden;
+			height: 480px;
+			@include media-up(lp) {
+				height: rem(670);
+			}
+			/* ADAPTIVE STYLES
+		   ========================================================================== */
+			@include media-down(md) {
+				height: 605px;
+			}
+			@include media-down(sm) {
+				height: 440px;
+			}
+			@include media-down(xs) {
+				height: 240px;
+			}
+			/* END ADAPTIVE STYLES
+		   ========================================================================== */
+			img {
+				display: block;
+				margin: auto;
+				position: absolute;
+				top: -100%;
+				right: -100%;
+				bottom: -100%;
+				left: -100%;
+				min-width: 100%;
+				min-height: 100%;
+				max-width: none;
+				height: auto;
+				/* ADAPTIVE STYLES
+			   ========================================================================== */
+				@include media-down(md) {
+					max-height: 620px;
+				}
+				@include media-down(sm) {
+					max-height: 460px;
+				}
+				@include media-down(xs) {
+					max-height: 260px;
+				}
+				/* END ADAPTIVE STYLES
+			   ========================================================================== */
+			}
+		}
+		.offer-content {
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+			left: 15px;
+			z-index: 5;
+			background: #fff;
+			padding: 25px;
+			@include media-up(xl) {
+				width: 575px;
+				right: auto;
+			}
+			@include media-up(lp) {
+				width: rem(800);
+				left: 20px;
+			}
+			/* ==========================================================================
+			   ADAPTIVE STYLES
+			   ========================================================================== */
+			@include media-down(md) {
+				width: 575px;
+				right: auto;
+				left: 20px;
+				bottom: -30px;
+			}
+			@include media-down(sm) {
+				width: 420px;
+				bottom: -50px;
+				padding: 20px;
+				left: 15px;
+			}
+			@include media-down(xs) {
+				width: auto;
+				right: 10px;
+				left: 10px;
+				padding: 15px;
+				bottom: -140px;
+			}
+			/* ==========================================================================
+			   END ADAPTIVE STYLES
+			   ========================================================================== */
+		}
+		.o-butik {
+			font-family: $marena_font;
+			font-size: 16px;
+			color: #816e4d;
+			margin: 0 0 10px;
+			@include media-up(md) {
+				font-size: 24px;
+				margin: 0 0 20px;
+			}
+		}
+		.title {
+			font-size: 20px;
+			color: #000;
+			font-weight: 300;
+			margin: 0 0 15px;
+			@include media-up(md) {
+				font-size: 30px;
+			}
+		}
+		.text {
+			color: #484747;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 30px;
+			@include media-up(md) {
+				font-size: 16px;
+			}
+			/* ADAPTIVE STYLES
+			   ========================================================================== */
+			@include media-down(sm) {
+				max-height: 65px;
+				overflow: hidden;
+			}
+			@include media-down(xs) {
+				max-height: 125px;
+				overflow: hidden;
+			}
+			/* END ADAPTIVE STYLES
+			   ========================================================================== */
+		}
+		.more {
+			text-align: right;
+			margin-top: 10px;
+			@include media-up(md) {
+				margin-top: 20px;
+			}
+			@include media-down(xs) {
+				text-align: center;
+			}
+		}
+		&:nth-child(4n+1),
+		&:nth-child(4n+4) {
+			@include media-up(lg) {
+				width: 60%;
+			}
+		}
+		/* ==========================================================================
+		   DESKTOP GRID FOR SMALL ELEMENTS
+		   ========================================================================== */
+		&:nth-child(4n+2),
+		&:nth-child(4n+3) {
+			@include media-up(lg) {
+				width: 40%;
+			}
+			.img-block {
+				@include media-up(lg) {
+					&:after {
+						content: '';
+						position: absolute;
+						height: 475px;
+						background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+						width: 100%;
+						bottom: 0;
+						left: 0;
+					}
+				}
+				img {
+					/* ADAPTIVE STYLES
+				   ========================================================================== */
+					@include media-down(md) {
+						max-height: 400px;
+					}
+					@include media-down(sm) {
+						max-height: 530px;
+					}
+					@include media-down(xs) {
+						max-height: 410px;
+					}
+					/* END ADAPTIVE STYLES
+				   ========================================================================== */
+				}
+			}
+			.o-butik {
+				@include media-up(lg) {
+					color: #fff;
+					margin: 0 0 10px;
+					font-size: 20px;
+				}
+			}
+			.title {
+				@include media-up(lg) {
+					color: #fff;
+					font-size: 24px;
+					margin: 0 0 20px;
+				}
+			}
+			.offer-content {
+				@include media-up(lg) {
+					width: 100%;
+					background: none;
+					left: 0;
+				}
+				@include media-up(lp) {
+					padding: rem(45) rem(55);
+				}
+			}
+			.text {
+				@include media-up(lg) {
+					color: #fff;
+				}
+			}
+			.more {
+				@include media-up(lg) {
+					display: none;
+				}
+			}
+		}
+		/* ==========================================================================
+		   ADAPTIVE GRID
+		   ========================================================================== */
+		&:nth-child(3n),
+		&:nth-child(3n-1) {
+			@include media-down(md) {
+				width: 50%;
+				padding-bottom: 20px;
+			}
+			@include media-down(sm) {
+				width: 100%;
+			}
+			.img-block {
+				@include media-down(md) {
+					height: 375px;
+					&:after {
+						content: '';
+						position: absolute;
+						height: 375px;
+						background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+						width: 100%;
+						bottom: 0;
+						left: 0;
+					}
+				}
+				@include media-down(sm) {
+					height: 500px;
+					&:after {
+						height: 500px;
+					}
+				}
+				@include media-down(xs) {
+					height: 385px;
+					&:after {
+						height: 385px;
+					}
+				}
+			}
+			.offer-content {
+				@include media-down(md) {
+					width: 100%;
+					background: none;
+					left: 0;
+					bottom: 0;
+				}
+			}
+			.o-butik {
+				@include media-down(md) {
+					color: #fff;
+					margin: 0 0 10px;
+					font-size: 20px;
+				}
+				@include media-down(sm) {
+					font-size: 16px;
+				}
+			}
+			.title {
+				@include media-down(md) {
+					color: #fff;
+					font-size: 24px;
+				}
+				@include media-down(sm) {
+					font-size: 20px;
+				}
+			}
+			.offer-content {
+				@include media-down(md) {
+					width: 100%;
+					background: none;
+					left: 0;
+				}
+			}
+			.text {
+				@include media-down(md) {
+					color: #fff;
+				}
+			}
+			.more {
+				@include media-down(md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.show-more-offers {
+	text-align: center;
+	padding: 20px 15px 40px;
+	max-width: 320px;
+	margin: 0 auto;
+	@include media-up(sm) {
+		max-width: 568px;
+	}
+	@include media-up(md) {
+		padding: 35px 15px 55px;
+	}
+	@include media-up(lg) {
+		padding: 70px 15px 90px;
+	}
+	@include media-up(lp) {
+		padding: 105px 15px 125px;
+	}
+	a {
+		width: 100%;
+		min-width: 250px;
+		@include media-up(sm) {
+			width: auto;
+		}
+	}
+}

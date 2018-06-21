@@ -1,0 +1,50 @@
+.about-section {
+	.section-description {
+		margin-bottom: 0;
+	}
+}
+.about-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin: 0 -15px;
+	.about-item {
+		width: 100%;
+		padding: 0 15px;
+		margin-top: 30px;
+		font-size: 14px;
+		@include media-up(md) {
+			width: 50%;
+			font-size: 16px;
+			margin-top: 60px;
+		}
+		@include media-up(xl) {
+			width: 33.3333%;
+		}
+	}
+	.a-block {
+		position: relative;
+		img {
+			margin-right: 30px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.a-content {
+			padding-left: 100px;
+		}
+		.a-title {
+			color: #7f9f06;
+			font-family: $main_medium;
+			font-size: 16px;
+			padding: 5px 0 15px;
+			@include media-up(md) {
+				font-size: 18px;
+			}
+		}
+		.a-text {
+			color: #666;
+			line-height: 25px;
+		}
+	}
+}

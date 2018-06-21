@@ -1,0 +1,233 @@
+.business-page {
+	h1 {
+		text-align: center;
+		margin: 35px 0 10px;
+		@include media-up(md) {
+			margin: 35px 0 15px;
+		}
+		@include media-up(lg){
+			margin: 40px 0 17px;
+		}
+	}
+	.business-descr {
+		color: #084654;
+		font-size: 14px;
+		text-align: center;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		font-family: $main_bold;
+		margin: 0 auto 35px;
+		line-height: normal;
+		max-width: 220px;
+		@include media-up(sm) {
+			max-width: none;
+			margin: 0 0 35px;
+		}
+		@include media-up(md) {
+			font-size: 16px;
+		}
+		@include media-up(lg){
+			margin: 0 0 50px;
+		}
+	}
+}
+.conference-row {
+	margin: 40px 0;
+	@include media-up(sm) {
+		margin: 50px 0;
+	}
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.conf-block {
+		position: relative;
+		margin: 0 auto 30px;
+		width: 280px;
+		@include media-up(sm) {
+			margin: 0 auto 40px;
+			width: 460px
+		}
+		@include media-up(md) {
+			float: left;
+			width: 360px;
+			margin: 0 25px 0 0;
+		}
+		@include media-up(xl) {
+			width: 460px;
+			margin: 0 30px 0 0;
+		}
+	}
+	.conf-info {
+		.c-title {
+			color: #2a4854;
+			font-size: 30px;
+			line-height: 24px;
+			margin: 0 0 20px;
+			@include media-up(sm) {
+				margin: 0 0 25px;
+			}
+			@include media-up(md) {
+				font-size: 36px;
+				margin: 0 0 30px;
+			}
+		}
+	}
+	.book-row {
+		text-align: center;
+		margin: 35px 0 0;
+		@include media-up(sm) {
+			margin: 45px 0 0;
+			text-align: right;
+		}
+		@include media-up(lg) {
+			margin: 60px 0 0;
+		}
+		.btn {
+			width: 100%;
+			max-width: 290px;
+			@include media-up(sm) {
+				width: auto;
+			}
+		}
+	}
+}
+
+.promocode-section {
+	padding: 30px 0;
+	.promo-row {
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	.img-block {
+		width: 290px;
+		height: 160px;
+		position: relative;
+		margin: 0 auto 30px;
+		overflow: hidden;
+		@include media-up(sm) {
+			width: 490px;
+			height: 270px;
+			margin: 0 auto 40px;
+		}
+		@include media-up(md) {
+			width: 365px;
+			height: 200px;
+			margin: 0 30px 0 0;
+			float: left;
+		}
+		@include media-up(xl) {
+			width: 490px;
+			height: 270px;
+		}
+		img {
+			display: block;
+			height: auto;
+			position: absolute;
+			min-width: 100%;
+			min-height: 100%;
+			max-width: none;
+			top: -100%;
+			left: -100%;
+			bottom: -100%;
+			right: -100%;
+			margin: auto;
+			max-height: 200px;
+			@include media-up(sm) {
+				max-height: 330px;
+			}
+			@include media-up(md) {
+				max-height: 240px;
+			}
+			@include media-up(xl) {
+				max-height: 320px;
+			}
+		}
+	}
+	.promo-info {
+		color: #727983;
+		.p-title {
+			color: #2a4854;
+			text-transform: uppercase;
+			font-family: $main_medium;
+			font-size: 20px;
+			letter-spacing: 0.075em;
+			margin: 0 0 20px;
+			overflow: hidden;
+			@include media-up(md) {
+				font-size: 24px;
+				margin: 0 0 35px;
+			}
+			span {
+				position: relative;
+				padding-right: 23px;
+				&:after {
+					content: '';
+					width: 100vw;
+					height: 2px;
+					background: #e2ebed;
+					position: absolute;
+					bottom: 3px;
+					left: 100%;
+				}
+			}
+		}
+	}
+	.get-promo {
+		text-align: center;
+		margin: 35px 0 0;
+		@include media-up(sm) {
+			text-align: right;
+		}
+		@include media-up(xl) {
+			margin: 45px 0 0;
+		}
+		.btn {
+			width: 100%;
+			max-width: 290px;
+			@include media-up(sm) {
+				width: auto;
+				max-width: none;
+			}
+		}
+	}
+}
+
+.default-nav {
+	top: 50%;
+	margin-top: -17px;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	button {
+		width: 16px;
+		height: 34px;
+		background: none;
+		border: 0;
+		outline: none;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		cursor: pointer;
+		&:hover {
+			svg {
+				fill: #d4311c;
+			}
+		}
+		svg {
+			fill: #000;
+			transition: $d_transition;
+		}
+		&.next {
+			right: 30px;
+		}
+		&.prev {
+			left: 30px;
+		}
+	}
+}

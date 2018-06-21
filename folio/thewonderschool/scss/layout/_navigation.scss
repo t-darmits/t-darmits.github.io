@@ -1,0 +1,53 @@
+nav {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		@include media-up(lg) {
+			display: flex;
+			align-items: center;
+			height: 60px;
+			justify-content: flex-end;
+		}
+		li {
+			a {
+				display: block;
+				color: #fff;
+				text-decoration: none;
+				font-family: $main_medium;
+				padding: 10px 0;
+				border-top: solid 1px rgba(#fff,0.32);
+				transition: $d_transition;
+				&:hover {
+					color: #333;
+				}
+				@include media-up(lg) {
+					border: 0;
+					border-right: solid 1px rgba(#fff,0.32);
+					padding: 0 10px;
+					text-align: center;
+					font-size: 14px;
+				}
+				@include media-up(xl) {
+					font-size: 16px;
+					padding: 0 20px;
+				}
+			}
+			&:first-child {
+				a {
+					@include media-down(md) {
+						border: 0;
+					}
+				}
+			}
+			&:last-child {
+				a {
+					@include media-up(lg) {
+						padding-right: 0;
+						border: 0;
+					}
+				}
+			}
+		}
+	}
+}

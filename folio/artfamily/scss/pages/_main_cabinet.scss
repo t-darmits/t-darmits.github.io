@@ -1,0 +1,132 @@
+.main-cabinet {
+	padding-bottom: 40px;
+	@include media-up(sm) {
+		padding-bottom: 65px;
+	}
+	@include media-up(md) {
+		padding-bottom: 50px;
+	}
+	@include media-up(lg) {
+		padding-bottom: 80px;
+	}
+	h1 {
+		text-align: center;
+	}
+}
+.cabinet-area {
+	border: solid 2px #f4f3f5;
+	padding: 20px 10px;
+	@include media-up(sm){
+		padding: 30px 20px;
+	}
+	@include media-up(md){
+		padding: 35px;
+	}
+	.nav-tabs {
+		margin: 0 0 30px;
+		@include media-up(sm){
+			margin: 0 0 40px;
+			display: flex;
+		}
+		@include media-up(md){
+			margin: 0 0 50px;
+		}
+		li {
+			width: 100%;
+			@include media-up(sm) {
+				width: 50%;
+			}
+			@include media-up(md) {
+				width: auto;
+			}
+			& + li {
+				@include media-down(xs) {
+					margin-top: 10px;
+				}
+			}
+			&.active {
+				a {
+					background: #084654;
+					color: #fff;
+					border-color: #084654;
+					&:hover {
+						background: #084654;
+					}
+				}
+			}
+			a {
+				border: solid 2px #eee;
+				display: inline-flex;
+				text-decoration: none;
+				height: 47px;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				font-size: 13px;
+				font-family: $main_medium;
+				text-transform: uppercase;
+				color: #000;
+				transition: $d_transition;
+				width: 100%;
+				@include media-up(sm) {
+					font-size: 14px;
+				}
+				@include media-up(md) {
+					min-width: 260px;
+				}
+				&:hover {
+					background: rgba(#084654, 0.1);
+				}
+			}
+		}
+	}
+	.default-control {
+		color: #6f7a85;
+		font-family: $main_light;
+	}
+	.control-row {
+		margin: 0 -15px;
+		display: flex;
+		flex-wrap: wrap;
+		label {
+			color: #6f7a85;
+			font-size: 13px;
+			line-height: 1.2;
+			margin: 0 0 13px;
+			display: inline-block;
+			@include media-up(sm) {
+				font-size: 14px;
+			}
+		}
+		.input-control {
+			width: 100%;
+			padding: 0 15px;
+			position: relative;
+			margin: 0 0 25px;
+			@include media-up(md) {
+				width: 50%;
+				margin: 0 0 35px;
+			}
+			@include media-up(lg){
+				width: 33.333%;
+				margin: 0 0 30px;
+			}
+			.error {
+				right: 15px;
+			}
+		}
+	}
+	.submit-control {
+		margin: 5px 0 0;
+		@include media-up(sm){
+			margin: 30px 0 0;
+		}
+		.btn {
+			min-width: 230px;
+			width: 100%;
+			@include media-up(sm){
+				width: auto;
+			}
+		}
+	}
+}

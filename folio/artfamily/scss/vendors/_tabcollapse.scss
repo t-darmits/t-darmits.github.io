@@ -1,0 +1,56 @@
+.tab-content > .tab-pane {
+	display: none;
+}
+.tab-content > .active {
+	display: block;
+}
+.collapse {
+	display: none;
+}
+.collapse.in {
+	display: block;
+}
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition-timing-function: ease;
+	transition-duration: .35s;
+	transition-property: height, visibility;
+}
+.nav-tabs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.panel-title {
+	margin: 0;
+	a {
+		padding: 17px 0;
+		color: #000;
+		font-size: 16px;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		background: #fff;
+		font-family: $main_bold;
+		transition: $d_transition;
+		&.collapsed {
+			background: #2a4854;
+			color: #fff;
+		}
+	}
+}
+.hidden-xs-tabs {
+	@media (max-width: 567px) {
+		display: none !important;
+	}
+}
+.visible-xs-tabs {
+	display: none;
+	@media (max-width: 567px) {
+		display: block !important;
+	}
+}

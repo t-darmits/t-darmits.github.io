@@ -1,0 +1,266 @@
+.fade {
+	opacity: 0;
+	transition: opacity 0.15s linear;
+}
+.fade.in {
+	opacity: 1;
+}
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	.close {
+		display: block;
+		width: 14px;
+		height: 14px;
+		position: absolute;
+		transform: rotate(0deg);
+		transition: .5s ease-in-out;
+		cursor: pointer;
+		top: 10px;
+		right: 15px;
+		z-index: 10;
+		@include media-up(md) {
+			top: 20px;
+			right: 25px;
+		}
+		span {
+			display: block;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: #fff;
+			opacity: 1;
+			transform: rotate(0);
+			transition: .25s ease-in-out;
+		}
+		span:nth-child(1), span:nth-child(2) {
+			left: 0;
+			top: 50%;
+		}
+		span:nth-child(1) {
+			transform: rotate(45deg);
+		}
+		span:nth-child(2) {
+			transform: rotate(-45deg);
+		}
+	}
+	.form-section {
+		max-width: 500px;
+		margin: 0 auto 20px;
+		@include media-up(md) {
+			margin: 0 auto 40px;
+		}
+		.submit-control {
+			text-align: center;
+			margin-top: 30px;
+			@include media-up(md) {
+				margin-top: 40px;
+			}
+			.btn {
+				min-width: 240px;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.modal.fade .modal-dialog {
+	transform: translate(0, -25%);
+	transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+	transform: translate(0, 0);
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+.modal-content {
+	position: relative;
+	background-color: #084654;
+	outline: 0;
+	padding: 15px;
+	color: #fff;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+.modal-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: $main_medium;
+	text-align: center;
+	margin: 25px 0 20px;
+	letter-spacing: 0.075em;
+	@include media-up(md) {
+		font-size: 30px;
+		margin: 30px 0 40px;
+	}
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 610px;
+		margin: 50px auto;
+	}
+}
+// STYLES FOR PROMOCODE MODAL
+
+
+// STYLES FOR LOGIN MODAL 
+.login-modal-theme {
+	@include media-up(sm) {
+		font-size: 0 !important;
+		text-align: center;
+	}
+	&:before {
+		@include media-up(sm) {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -1px;
+		}
+	}
+	.modal-content {
+		background: #fff;
+		color: #084654;
+		padding: 0;
+		padding-top: 0;
+	}
+	.tab-content {
+		padding: 35px;
+		@include media-down(xs) {
+			padding: 15px 25px;
+		}
+	}
+	.modal-dialog {
+		width: auto;
+		margin: 40px 20px;
+		font-size: 14px;
+		background: #fff;
+		@include media-up(sm) {
+			width: 520px;
+			margin: 80px 0;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+		}
+	}
+	.close {
+		top: -30px;
+		right: -2px;
+	}
+	.modal-row {
+		margin: 0 0 20px;
+		position: relative;
+		.placeholder {
+			color: #181c21;
+		}
+	}
+	.nav-tabs {
+		display: flex;
+		li {
+			width: 50%;
+			@include media-down(xs) {
+				display: none;
+			}
+			&.active {
+				@include media-down(xs) {
+					display: block;
+					width: 100%;
+				}
+				a {
+					color: #084654;
+					background: #fff;
+				}
+			}
+			a {
+				display: block;
+				width: 100%;
+				padding: 17px 0;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				font-family: $main_bold;
+				background: #084654;
+				font-size: 16px;
+				transition: $d_transition;
+				@include media-down(xs) {
+					padding: 17px 0;
+					height: auto;
+				}
+			}
+		}
+	}
+	.login-submit {
+		text-align: right;
+		@include media-down(xs) {
+			text-align: center;
+			margin-bottom: 25px;
+		}
+		.btn {
+			width: 150px;
+		}
+	}
+	.registr-submit {
+		text-align: center;
+		@include media-down(xs) {
+			margin: 0 -25px;
+		}
+		.btn {
+			@include media-down(xs) {
+				width: 100%;
+			}
+		}
+	}
+	#tab-reg {
+		.login-auth {
+			ul {
+				justify-content: center;
+			}
+		}
+	}
+	.panel-body {
+		padding: 15px 25px 0;
+	}
+}

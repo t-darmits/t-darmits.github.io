@@ -1,0 +1,232 @@
+.main-navigation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #31303d;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	transform: translateX(-100px);
+	overflow: auto;
+	@include media-up(lg) {
+		width: 440px;
+		height: auto;
+		overflow: inherit;
+		background: #1e1c29;
+	}
+	/* STYLES FOR SHOWING MAIN NAVIGATION
+	   ========================================================================== */
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		transform: translateX(0);
+	}
+	.close-mobile-menu {
+		position: absolute;
+		z-index: 10;
+		cursor: pointer;
+		width: 64px;
+		height: 64px;
+		background: none;
+		border: 0;
+		outline: none;
+		top: 0;
+		left: 0;
+		@include media-up(lg) {
+			top: 40px;
+			left: 30px;
+		}
+		svg {
+			fill: #fff;
+			font-size: 16px;
+			@include media-up(lg) {
+				font-size: 25px;
+			}
+		}
+	}
+	.top-menu {
+		position: relative;
+	}
+	.main-nav {
+		list-style: none;
+		padding: 65px 0 0 0;
+		margin: 0;
+		position: relative;
+		@include media-up(lg) {
+			padding: 70px 10px 30px 175px;
+		}
+		& > li {
+			border-bottom: solid 1px rgba(#fff, 0.09);
+			@include media-up(lg) {
+				padding-bottom: 30px;
+				border-bottom: 0;
+			}
+			a {
+				color: rgba(#fff, 0.6);
+				font-size: 14px;
+				text-decoration: none;
+				transition: $d_transition;
+				display: block;
+				&:hover {
+					color: #a5803f;
+				}
+			}
+			& > a,
+			.caret-link a {
+				text-transform: uppercase;
+				font-weight: 500;
+				/* ==========================================================================
+				   STYLES FOR LINKS ADAPTIVE
+				   ========================================================================== */
+				@include media-down(md) {
+					color: #fff;
+					padding: 22px 15px;
+				}
+			}
+			&.has-dropdown {
+				ul {
+					overflow: auto;
+					top: 0;
+					list-style: none;
+					margin: 0;
+					transition: all .3s ease;
+					display: none;
+					padding: 0 0 0 45px;
+					@include media-up(lg) {
+						background: #1e1c29;
+						display: block;
+						position: absolute;
+						left: 100%;
+						height: 100%;
+						top: 0;
+						padding: 70px 15px 30px 60px;
+						width: 360px;
+						opacity: 0;
+						visibility: hidden;
+						transform: translateX(-50px);
+						z-index: -1;
+						&:before {
+							content: '';
+							width: 1px;
+							background: rgba(#fff, 0.09);
+							top: 70px;
+							bottom: 70px;
+							left: 0;
+							position: absolute;
+						}
+					}
+					li {
+						padding-bottom: 15px;
+						position: relative;
+						@include media-up(lg) {
+							padding-right: 45px;
+						}
+						/* STYLES FOR ADAPTIVE
+					    ========================================================================== */
+						@include media-down(md) {
+							&:before {
+								content: '';
+								width: 9px;
+								height: 9px;
+								border-radius: 20px;
+								border: solid 2px #a5803f;
+								display: block;
+								position: absolute;
+								left: -26px;
+								top: 5px;
+							}
+						}
+						a {
+							&.item-selected {
+								color: #a5803f;
+							}
+							/* STYLES FOR ADAPTIVE
+							   ========================================================================== */
+							@include media-down(md) {
+								color: rgba(#fff, 0.9);
+								font-size: 15px;
+								&:hover {
+									color: #a5803f;
+								}
+							}
+						}
+						@include media-up(lg) {
+							padding-bottom: 25px;
+						}
+					}
+					/* SHOWING SUB MENU
+					   ========================================================================== */
+					&.show {
+						display: block;
+						@include media-up(lg) {
+							opacity: 1;
+							visibility: visible;
+							transform: translateX(0);
+							z-index: 1;
+						}
+					}
+				}
+				/* STYLES FOR CUSTOM SCROLLBAR FOR DROPMENU
+				   ========================================================================== */
+				.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+					background: #a5803f;
+				}
+				.mCSB_scrollTools .mCSB_draggerRail {
+					background: rgba(255,255,255,.09);
+				}
+			}
+			&.active {
+				& > a, 
+				.caret-link > a {
+					color: #a5803f;
+				}
+			}
+		}
+		.caret-link {
+			position: relative;
+			.show-menu {
+				position: absolute;
+				cursor: pointer;
+				right: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 25px;
+				height: 25px;
+				display: flex;
+				align-items: center;
+				transform-origin: center center;
+				justify-content: center;
+				transition: all 0.2s ease;
+				/* STYLES FOR ADAPTIVE
+				   ========================================================================== */
+				@include media-down(md) {
+					width: 45px;
+					height: 45px;
+					right: 0;
+				}
+				&:hover {
+					svg {
+						fill: #a5803f;
+					}
+				}
+				svg {
+					width: 10px;
+					transition: $d_transition;
+					fill: rgba(#fff, 0.6);
+				}
+				&.highlight {
+					/* STYLES FOR ADAPTIVE
+					   ========================================================================== */
+					@include media-down(md) {
+						transform: translateY(-50%) rotate(90deg);
+					}
+				}
+			}
+		}
+	}
+}

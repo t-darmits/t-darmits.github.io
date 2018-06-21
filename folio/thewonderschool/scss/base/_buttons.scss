@@ -1,0 +1,39 @@
+.btn {
+	display: inline-block;
+	padding: 13px 35px;
+	text-decoration: none;
+	color: #a69583;
+	font-size: 14px;
+	font-family: $main_bold;
+	text-transform: uppercase;
+	border: 2px solid #a69583;
+	border-radius: 50px;
+	letter-spacing: 0.08em;
+	outline: none;
+	transition: $d_transition;
+	&:hover,
+	&:focus {
+		background: #a69583;
+		color: #fff;
+	}
+	&.orange-btn {
+		color: #fff;
+		border-color: #ff5932;
+		background: #ff5932;
+		&:hover,
+		&:focus {
+			background: #e2411b;
+			border-color: #e2411b;
+		}
+	}
+	&.ghost-btn {
+		color: #fff;
+		border-color: #fff;
+		&:hover,
+		&:focus {
+			background: #fff;
+			border-color: #fff;
+			color: #000;
+		}
+	}
+}

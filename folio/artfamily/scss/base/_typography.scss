@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 25px;
+	font-family: $main_bold;
+	font-weight: normal;
+	color: #253048;
+	line-height: normal;
+	letter-spacing: 0.075em;
+}
+h2 {
+	font-size: 30px;
+	font-family: $main_font;
+	margin: 0 0 20px;
+	color: #084654;
+	@include media-up(md) {
+		font-size: 36px;
+		margin: 0 0 25px;
+	}
+}
+h3 {
+	font-size: 20px;
+	color: #084654;
+	font-family: $main_medium;
+	text-transform: uppercase;
+	@include media-up(md) {
+		font-size: 24px;
+	}
+}
+.main-content {
+	overflow: hidden;
+	h1 {
+		color: #084654;
+		text-align: left;
+		font-family: $main_bold;
+		font-size: 24px;
+		margin: 25px 0;
+		text-transform: uppercase;
+		line-height: 30px;
+		@include media-up(md) {
+			font-size: 36px;
+			margin: 40px 0;
+		}
+	}
+}

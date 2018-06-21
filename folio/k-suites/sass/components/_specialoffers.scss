@@ -1,0 +1,184 @@
+.specials {
+	overflow: hidden;
+}
+.image-block {
+	flex-shrink: 0;
+	overflow: hidden;
+	position: relative;
+	@include respond-to($tablet) {
+		width: 365px;
+		height: 295px;
+	}
+	@include respond-to($desktop) {
+		width: 450px;
+    	height: 350px;
+	}
+	@include respond-to($lg-desktop) {
+		width: 550px;
+		height: 450px;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		@include respond-to($tablet) {
+			max-width: none;
+			min-height: 100%;
+			min-width: 100%;
+			max-height: 320px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		@include respond-to($desktop) {
+			max-height: none;
+		}
+	}
+}
+.special-info {
+	padding: 20px 0;
+	@include respond-to($tablet) {
+		padding: 0 0 0 15px;
+	}
+	@include respond-to($desktop) {
+		padding: 0 0 0 30px;
+	}
+	.s-title {
+		font-size: 18px;
+		margin: 0 0 10px;
+		color: #000;
+		font-weight: 700;
+		text-transform: uppercase;
+		@include respond-to($phone) {
+			margin: 0 0 10px;
+			font-size: 24px;
+		}
+		@include respond-to($desktop) {
+			margin: 0 0 20px;
+		}
+	}
+	.s-text {
+		line-height: 30px;
+		font-size: 14px;
+		@include respond-to($phone) {
+			font-size: 16px;
+		}
+		@include respond-to($tablet) {
+			font-size: 14px;
+		}
+		@include respond-to($desktop) {
+			font-size: 16px;
+		}
+	}
+}
+.special-slider {
+	@include respond-to($m-tablet) {
+		max-width: 530px;
+		margin: 0 auto;
+	}
+	@include respond-to($m-lg-desktop) {
+		padding-top: 60px;
+	}
+	.sp-slide {
+		@include respond-to($tablet) {
+			display: flex;
+		}
+	}
+	.controls {
+		margin-top: 40px;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		@include respond-to($tablet) {
+			margin-top: 0;
+		}
+		@include respond-to($desktop) {
+			margin-top: 40px;
+		}
+		.more {
+			color: #e19d36;
+			font-weight: 600;
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		.btn {
+			background: #ae8f60;
+			&:hover, &:focus {
+				background: #e19d36;
+			}
+			@include respond-to($m-tablet) {
+				padding: 10px 15px;
+			}
+		}
+	}
+	.sp-horizontal {
+		.sp-arrows {
+			z-index: 10;
+			margin-top: -23px;
+			@include respond-to($m-lg-desktop) {
+				top: -60px;
+				margin-top: 0;
+			}
+			.sp-arrow {
+				&:before, &:after {
+					display: none;
+				}
+				transform: none;
+				display: block !important;
+				width: 46px;
+				height: 46px;
+				border: solid 1px #a48e62;
+				@include respond-to($lg-desktop) {
+					width: 70px;
+					height: 70px;
+				}
+				&.sp-previous-arrow {
+					left: 0;
+					&:after {
+						background: none;
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						display: block;
+						transform: translate(-50%,-50%);
+						@include sprite($i-arr-left-b);
+					}
+					@include respond-to($lg-desktop) {
+						left: -100px;
+					}
+					@include respond-to($m-tablet) {
+						left: auto;
+						right: 60px;
+					}
+				}
+				&.sp-next-arrow {
+					right: 0;
+					&:after {
+						background: none;
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						display: block;
+						transform: translate(-50%,-50%);
+						@include sprite($i-arr-right-b);
+					}
+					@include respond-to($lg-desktop) {
+						right: -100px;
+					}
+					@include respond-to($m-lg-desktop) {
+						right: auto;
+						left: 60px;
+					}
+					@include respond-to($m-tablet) {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

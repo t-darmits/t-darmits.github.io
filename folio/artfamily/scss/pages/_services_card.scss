@@ -1,0 +1,79 @@
+.table-section {
+	border: 0;
+	margin: 40px 0;
+	min-width: 100%;
+	@include media-down(md) {
+		margin: 25px 0;
+	}
+	.table__td_selected, 
+	.table__tr:hover {
+	    background: #fefcf9;
+	}
+	.table__td:hover {
+	    background: #f4eee4;
+	    cursor: pointer;
+	}
+	.table__th {
+	    text-align: center;
+	    vertical-align: middle;
+	    background: #fdf8ef;
+	    color: #084654;
+	    font-family: $main_bold;
+	    padding: 20px 15px;
+	    border: solid 1px #e5dbcc;
+	    line-height: 22px;
+	}
+	.table__td {
+		border: 0;
+		font-size: 16px;
+		color: #084654;
+	    text-align: center;
+    	vertical-align: middle;
+		line-height: 22px;
+		border-bottom: solid 2px #e2d8c7;
+		@include media-down(md) {
+			display: block;
+			cursor: auto!important;
+			text-align: right;
+			font-size: 14px;
+			padding: 15px 0;
+		}
+		&:before {
+			@include media-down(md) {
+				content: attr(data-label);
+    			float: left;
+    			color: #aa8c5e;
+    			font-size: 14px;
+    			font-family: $main_medium;
+			}
+		}
+	}
+	.table__th_name {
+		font-family: $main_font;
+		color: #a88752;
+		line-height: 22px;
+	}
+	.table__thead {
+		@include media-down(md) {
+			display: none;
+		}
+	}
+	.table__td, .table__td_left, .table__tr {
+	    @include media-down(md) {
+	    	background: #fff!important;
+	    }
+	}
+	.table__td_left {
+		@include media-down(md) {
+	    	text-align: center;
+	    	font-family: $main_medium;
+	    	font-size: 16px;
+	    }
+	    @include media-down(sm) {
+	    	font-size: 15px;
+	    }
+	    @include media-down(xs) {
+	    	font-size: 14px;
+	    }
+	}
+}

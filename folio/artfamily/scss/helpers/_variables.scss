@@ -1,0 +1,22 @@
+// grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 568px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+// main font variables
+$main_fontsize:  				14px;
+$main_font:      				"GothamProRegular", sans-serif;
+$main_medium:					"GothamProMedium", sans-serif;
+$main_bold:						"GothamProBold", sans-serif;
+$main_italic: 					"GothamProItalic", sans-serif;
+$main_light: 					"GothamProLight", sans-serif;
+
+// default transition
+$d_transition:   				all 0.3s linear 0s;
+
+// default color
+$main_color: 					#6f7a85;

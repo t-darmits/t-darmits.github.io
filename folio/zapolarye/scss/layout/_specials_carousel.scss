@@ -1,0 +1,281 @@
+.specoffers-section {
+    @include media-up(lg) {
+        padding: 50px 0 0;
+    }
+	.special-title {
+		font-size: 24px;
+		color: #000;
+		font-weight: 500;
+		margin: 0 0 25px;
+		@include media-up(md) {
+			font-size: 30px;
+			margin: 0 0 55px;
+		}
+		@include media-up(lg) {
+			margin: 0 0 30px;
+		}
+		@include media-up(lp) {
+			font-size: 48px;
+			margin: 0 0 40px;
+		}
+	}
+	.slick-slide {
+		width: 320px;
+		padding: 0 0 35px 0;
+		outline: none;
+		background: #fff;
+        @include media-up(sm) {
+            width: 568px;
+            padding: 0 15px 40px 25px;
+        }
+        @include media-up(md) {
+            width: 525px;
+            padding: 0 15px 50px;
+        }
+        @include media-up(lg) {
+            width: 700px;
+        }
+		@include media-up(lp) {
+			width: 780px;
+		}
+		&.slick-center,
+        &.slick-current {
+			.slick-img {
+				opacity: 1;
+                height: 235px;
+                @include media-up(sm) {
+                    height: 385px;
+                }
+                @include media-up(md) {
+                    height: 350px;
+                }
+				@include media-up(lg) {
+                    height: 470px;            
+                }
+				@include media-up(lp) {
+					height: 550px;
+				}
+			}
+			.slick-info {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			.non-title {
+				opacity: 0;
+				visibility: hidden;
+				transition: none;
+			}
+			.slick-wrap {
+				opacity: 1;
+			}
+            .sp-nav {
+                opacity: 1;
+            }
+		}
+	}
+	.slick-img {
+		position: relative;
+		overflow: hidden;
+		height: 235px;
+		transition: all 0.3s ease;
+        @include media-up(sm) {
+            height: 385px;
+        }
+        @include media-up(md) {
+            height: 210px;
+        }
+        @include media-up(lg) {
+            height: 275px;
+        }
+		@include media-up(lp) {
+			height: 325px;
+		}
+		img {
+			display: block;
+			height: auto;
+			position: absolute;
+			min-width: 100%;
+			min-height: 100%;
+			max-width: none;
+			top: -100%;
+			left: -100%;
+			bottom: -100%;
+			right: -100%;
+			margin: auto;
+		}
+	}
+    .sp-nav {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        @include media-up(md) {
+            bottom: 40px;
+            width: 205px;
+        }
+        @include media-up(lg) {
+            width: 280px;
+            bottom: 60px;
+        }
+        @include media-up(lp) {
+           width: 290px;
+           bottom: 80px;
+        }
+        span {
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border: solid 2px rgba(#916d2d, 0.6);
+            transition: $d_transition;
+            cursor: pointer;
+            &:hover {
+                background: #a5803f;
+                border-color: #a5803f;
+                svg {
+                    fill: #fff;
+                }
+            }
+            & + span {
+                margin-left: 40px;
+                @include media-up(lg) {
+                    margin-left: 65px;
+                }
+            }
+            svg {
+                fill: #916d2d;
+                font-size: 10px;
+                transition: $d_transition;
+            }
+        }
+    }
+	.slick-wrap {
+		position: relative;
+		height: 670px;
+		transition: all 0.3s ease;
+		opacity: 0.6;
+        @include media-up(sm) {
+            height: 600px;
+        }
+        @include media-up(md) {
+            height: 470px;
+        }
+        @include media-up(lg) {
+            height: 630px;
+        }
+		@include media-up(lp) {
+			height: 745px;
+		}
+		.slick-info {
+			position: absolute;
+			width: 100%;
+			bottom: 70px;
+			left: 0;
+			background: url(../img/childrens-pattern.png);
+			min-height: 400px;
+			padding: 30px 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			opacity: 0;
+			transform: translateY(0);
+			transition: all 0.3s ease;
+            box-shadow: 0px 0px 40px 20px rgba(0,0,0,0.1);
+            @include media-up(sm) {
+                transform: translateY(-50px);
+                padding: 35px 55px 55px 30px;
+                min-height: 400px;
+                left: -10px;
+                width: 490px;
+                transform: translateY(-100px);
+            }
+            @include media-up(md) {
+                padding: 35px 30px;
+                min-height: 255px;
+                width: 310px;
+                bottom: 0;
+                padding: 25px;
+                left: -20px;
+            }
+            @include media-up(lg) {
+                padding: 35px 30px;
+                left: -30px;
+                min-height: 340px;
+                width: 420px;
+            }
+			@include media-up(lp) {
+				width: 485px;
+				padding: 35px 30px 50px;
+				min-height: 400px;
+			}
+		}
+	}
+	.slick-title {
+        color: #fff;
+        font-weight: 500;
+		font-size: 18px;
+        margin: 0 0 20px;
+		@include media-up(md) {
+            margin: 0 0 10px;      
+        }
+        @include media-up(lg) {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+	}
+	.slick-text {
+		font-size: 14px;
+		color: rgba(#fff, 0.75);
+		line-height: 30px;
+		overflow: hidden;
+        @include media-up(md) {
+            max-height: 90px;
+        }
+		@include media-up(lg) {
+            font-size: 15px;
+            max-height: 180px;      
+        }
+	}
+	.non-title {
+		font-size: 14px;
+		color: #000;
+		margin: 25px 0 0;
+		padding: 20px 0 0;
+		font-weight: 500;
+		position: relative;
+		opacity: 1;
+		transition: $d_transition;
+        @include media-up(lg) {
+            font-size: 16px;
+            margin: 25px 0 0;
+            padding: 20px 0 0;
+        }
+		&:before {
+			content: '';
+			width: 20px;
+			height: 2px;
+			background: #a5803f;
+			position: absolute;
+			top: 0;
+			left: 0;
+            @include media-up(lg) {
+                width: 30px;
+                height: 3px;
+            }
+		}
+	}
+	.slick-link {
+		margin-top: 30px;
+        text-align: center;
+        @include media-up(sm) {
+            text-align: left;
+        }
+	}
+}

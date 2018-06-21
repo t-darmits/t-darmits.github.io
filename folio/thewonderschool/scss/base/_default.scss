@@ -1,0 +1,300 @@
+// default styles
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// body styles 
+body {
+	font-family: $main_font;
+	font-size: $main_fontsize;
+	color: #666;
+}
+// styles for 
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+	@include media-up(sm) {
+		width: 550px;
+	}
+	@include media-up(md) {
+		width: 750px;
+	}
+	@include media-up(lg) {
+		width: 970px;
+	}
+	@include media-up(xl) {
+		width: 1170px;
+	}
+}
+.flex-row {
+	display: flex;
+}
+.t-right {
+	text-align: right;
+}
+.t-center {
+	text-align: center;
+}
+
+section.s-white {
+	padding: 30px 0;
+	@include media-up(md) {
+		padding: 80px 0 70px;
+	}
+}
+
+.section-title {
+	font-size: 26px;
+	text-align: center;
+	color: #333;
+	margin: 0 0 30px;
+	font-family: $main_medium;
+	@include media-up(md) {
+		font-size: 40px;
+	}
+}
+.section-description {
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 0 30px;
+	@include media-up(md) {
+		font-size: 16px;
+		margin: 0 0 60px;
+	}
+}
+// styles for modal
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity 0.15s linear;
+	-o-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+.fade.in {
+	opacity: 1;
+}
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+.modal.fade .modal-dialog {
+	transform: translate(0, -25%);
+	transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+	transform: translate(0, 0);
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+	color: #fff;
+}
+.modal-content {
+	position: relative;
+	background-color: #9ec01a;
+	border-radius: 15px;
+	outline: 0;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+.modal-header {
+	padding: 20px 20px 0;
+	text-align: center;
+	max-width: 420px;
+	margin: 0 auto;
+	@include media-up(md) {
+		padding: 40px 15px 30px;
+	}
+	.close {
+		width: 45px;
+		height: 45px;
+		border-radius: 45px;
+		background: #ff5932;
+		color: #fff;
+		position: absolute;
+		border: 0;
+		font-size: 30px;
+		outline: none;
+		cursor: pointer;
+		right: -5px;
+		top: -5px;
+		@include media-up(md) {
+			right: -20px;
+			top: -20px;
+		}
+	}
+	.modal-title {
+		font-size: 28px;
+		font-family: $main_medium;
+		@include media-up(md) {
+			font-size: 48px;
+		}
+	}
+	.modal-description {
+		line-height: 24px;
+		font-size: 14px;
+		@include media-up(md) {
+			font-size: 16px;
+		}
+	}
+}
+.modal-header .close {
+	margin-top: -2px;
+}
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+.modal-body {
+	position: relative;
+	padding: 15px 15px 40px;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	.modal-tel {
+		padding-left: 45px;
+		position: relative;
+		b {
+			font-family: $main_bold;
+			font-size: 20px;
+		}
+		.icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	.form-control {
+		margin: 0 0 20px;
+		input[type="text"],
+		input[type="tel"] {
+			width: 100%;
+			background: transparent;
+			border: solid 2px #d1e193;
+			width: 100%;
+			height: 46px;
+			color: #fff;
+			padding: 0 0 0 20px;
+			outline: none;
+			border-radius: 40px;
+			font-family: $main_medium;
+		}
+	}
+	input[type="submit"] {
+		width: 203px;
+		height: 45px;
+		border: none;
+		background: #ff5932;
+		-webkit-border-radius: 40px;
+		border-radius: 40px;
+		outline: 0;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: GothamProBold,sans-serif;
+		-webkit-transition: all .3s linear 0s;
+		transition: all .3s linear 0s;
+		margin-top: 20px;
+		cursor: pointer;
+		-webkit-box-shadow: 0 7px 40px 18px rgba(93,115,7,.24);
+		box-shadow: 0 7px 40px 18px rgba(93,115,7,.24);
+		@include media-up(md) {
+			margin-top: 40px;
+		}
+		&:hover {
+			background: #e2411b;
+		}
+	}
+}
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 620px;
+		margin: 60px auto;
+	}
+}
+// sprite icons 
+.icon {
+	display: inline-block;
+}
+.icon-tel {
+	@include sprite($i-tel);
+}
+.icon-clock {
+	@include sprite($i-time);
+}
+.icon-envelope {
+	@include sprite($i-envelope);
+}
+.icon-white-tel {
+	@include sprite($i-white-tel);
+}
+.icon-red-tel {
+	@include sprite($i-red-tel);
+}
+.icon-red-envelope {
+	@include sprite($i-red-envelope);
+}
+.icon-point {
+	@include sprite($i-point);
+}
+.icon-metro {
+	@include sprite($i-metro);
+}
+.icon-group-small {
+	@include sprite($i-group-small);
+}
+.icon-group-medium {
+	@include sprite($i-group-medium);
+}
+.icon-group-big {
+	@include sprite($i-group-big);
+}

@@ -1,0 +1,61 @@
+.breadcrumbs {
+	border-bottom: solid 1px #e7e7e7;
+	.container {
+		@include media-down(md) {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		li {
+			margin-right: 40px;
+			a, span {
+				color: #084654;
+				text-decoration: none;
+				font-size: 16px;
+				padding: 15px 0;
+				display: block;
+				position: relative;
+			}
+			a {
+				svg {
+					position: absolute;
+					right: 0;
+					fill: #6f7a85;
+					font-size: 12px;
+					right: -24px;
+					top: 20px;
+					@include media-down(md) {
+						right: 15px;
+					}
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			span {
+				color: #a5abb2;
+			}
+			@include media-down(md) {
+				display: none;
+			}
+			&.prev {
+				@include media-down(md) {
+					display: block;
+					width: 100%;
+					text-align: center;
+					margin: 0;
+					a {
+						color: #a5aab0;
+					}
+				}
+			}
+		}
+	}
+}

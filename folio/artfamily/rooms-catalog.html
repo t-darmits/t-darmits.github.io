@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main Page</title>
+	<!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body class="inner-page">
+	<svg width="0" height="0" style="position:absolute"><symbol viewBox="0 0 18 34" id="icon-arr-left"><path d="M.278 17.68l16.074 16.04a.977.977 0 0 0 1.364 0 .957.957 0 0 0 0-1.36L2.328 17 17.716 1.65a.969.969 0 0 0 0-1.37.99.99 0 0 0-.678-.28.948.948 0 0 0-.679.28L.285 16.32a.964.964 0 0 0-.007 1.36z"/></symbol><symbol viewBox="0 0 18 34" id="icon-arr-right"><path d="M17.72 16.32L1.65.28a.984.984 0 0 0-1.37 0 .972.972 0 0 0 0 1.36L15.67 17 .28 32.35A.97.97 0 0 0 .96 34a.9.9 0 0 0 .68-.29l16.07-16.03a.963.963 0 0 0 .01-1.36z"/></symbol><symbol viewBox="0 0 17 17" id="icon-calendar-icon"><path d="M15.58 1.59h-2.3V.53a.53.53 0 1 0-1.06 0v1.06H9.03V.53a.53.53 0 1 0-1.06 0v1.06H4.78V.53a.53.53 0 1 0-1.06 0v1.06h-2.3A1.419 1.419 0 0 0 0 3.01v12.57A1.413 1.413 0 0 0 1.42 17h14.16A1.413 1.413 0 0 0 17 15.58V3.01a1.419 1.419 0 0 0-1.42-1.42zm.36 13.99a.359.359 0 0 1-.36.36H1.42a.359.359 0 0 1-.36-.36V3.01a.35.35 0 0 1 .36-.35h2.3v1.06a.53.53 0 1 0 1.06 0V2.66h3.19v1.06a.53.53 0 1 0 1.06 0V2.66h3.19v1.06a.53.53 0 1 0 1.06 0V2.66h2.3a.35.35 0 0 1 .36.35v12.57zM3.72 6.37h2.12v1.6H3.72v-1.6zm0 2.66h2.12v1.59H3.72V9.03zm0 2.66h2.12v1.59H3.72v-1.59zm3.72 0h2.12v1.59H7.44v-1.59zm0-2.66h2.12v1.59H7.44V9.03zm0-2.66h2.12v1.6H7.44v-1.6zm3.72 5.32h2.12v1.59h-2.12v-1.59zm0-2.66h2.12v1.59h-2.12V9.03zm0-2.66h2.12v1.6h-2.12v-1.6z"/></symbol><symbol viewBox="0 0 14 13" id="icon-close"><path d="M14 .753L13.19 0 7 5.746.81 0 0 .754l6.19 5.747L0 12.246.81 13 7 7.254 13.19 13l.81-.754L7.81 6.5z"/></symbol><symbol viewBox="0 0 19 19" id="icon-exit-icon"><path d="M18.21 0H3.96a.788.788 0 0 0-.79.792v5.542a.79.79 0 1 0 1.58 0v-4.75h12.67v15.832H4.75v-4.75a.79.79 0 1 0-1.58 0v5.542a.788.788 0 0 0 .79.792h14.25a.788.788 0 0 0 .79-.792V.792A.788.788 0 0 0 18.21 0zM7.36 12.107a.792.792 0 0 0 1.12 1.12l3.16-3.166.06-.061a.05.05 0 0 1 .02-.028.062.062 0 0 1 .02-.034.062.062 0 0 0 .02-.035.057.057 0 0 0 .02-.032c.01-.012.01-.024.02-.036s.01-.023.01-.034.01-.023.02-.036.01-.025.01-.037.01-.024.01-.036.01-.026.01-.039a.066.066 0 0 1 .01-.042v-.033a.41.41 0 0 0 0-.156v-.035a.065.065 0 0 1-.01-.042c0-.014-.01-.026-.01-.039s-.01-.024-.01-.036-.01-.025-.01-.038-.01-.024-.02-.035-.01-.023-.01-.034-.01-.024-.02-.036a.056.056 0 0 0-.02-.032.062.062 0 0 0-.02-.035.061.061 0 0 1-.02-.034A.05.05 0 0 1 11.7 9l-.06-.058-3.16-3.167a.792.792 0 0 0-1.12 1.12L9.17 8.71H.79a.792.792 0 0 0 0 1.583h8.38z"/></symbol></svg>
+	<header>
+		<!-- begin top-head -->
+		<div class="top-head">
+			<!-- begin container -->
+			<div class="container">
+				<div class="flex-row">
+					<div class="item">
+						<button class="toggle-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="logo">
+							<a href="#">
+								<img class="main-logo" src="img/big-logo.png" alt="logo">
+							</a>
+							<a href="#">
+								<img class="fixed-logo" src="img/small-logo.png" alt="small-logo">
+							</a>
+						</div>
+						<div class="head-links">
+							<a href="#" class="hotels">ART-Отели</a>
+							<a href="#" class="rating">Рейтинг <br> на booking</a>
+						</div>
+						<div class="head-menu">
+							<ul id="headMenu">
+								<li><a href="#
+								">ДЛЯ БИЗНЕСА</a></li>
+								<li><a href="#">ДЛЯ СЕМЬИ</a></li>
+								<li><a href="#">МЕРОПРИЯТИЯ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="controls">
+							<div class="entrance"><a href="#"><svg class="i-svg icon-exit-icon"><use xlink:href="#icon-exit-icon"></use></svg></a></div>
+							<div class="lang"><a href="#">En</a></div>
+						</div>
+						<div class="booking-block">
+							<a href="#" class="btn red-border-btn show-booking">Забронировать</a>
+							<div class="booking-form">
+								<button class="close-booking"><svg class="i-svg icon-close"><use xlink:href="#icon-close"></use></svg></button>
+								<form action="/">
+									<div class="booking-control">
+										<select class="custom-select">
+											<option>Выберите отель</option>
+											<option value="1">Lorem</option>
+											<option value="2">Lorem Lorem Lorem</option>
+											<option value="3">Lorem Lorem</option>
+										</select>
+									</div>
+									<div class="booking-control">
+										<div class="date-block">
+											<input id="firstDate" data-auto-close="true" type="text" placeholder="Дата заезда" class="datepicker-here">
+											<svg class="i-svg icon-calendar-icon"><use xlink:href="#icon-calendar-icon"></use></svg>
+										</div>
+									</div>
+									<div class="booking-control">
+										<div class="date-block">
+											<input id="secondDate" data-auto-close="true" type="text" placeholder="Дата выезда" class="datepicker-here">
+											<svg class="i-svg icon-calendar-icon"><use xlink:href="#icon-calendar-icon"></use></svg>
+										</div>
+									</div>
+									<div class="booking-row">
+										<div class="booking-control">
+											<select class="custom-select">
+												<option value="1">1 взрослый</option>
+												<option value="2">2 взрослых</option>
+												<option value="3">3 взрослых</option>
+											</select>
+										</div>
+										<div class="booking-control">
+											<select class="custom-select">
+												<option value="1">0 детей</option>
+												<option value="2">1 ребенок</option>
+												<option value="3">2 ребенка</option>
+											</select>
+										</div>
+									</div>
+									<div class="booking-submit">
+										<div class="booking-row">
+											<div class="booking-control">
+												<input type="submit" value="Забронировать">
+											</div>
+										</div>
+									</div>
+									<!-- end booking-submit -->
+								</form>
+							</div>
+						</div>
+						<!-- end booking-block -->
+					</div>
+					<!-- end item -->
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end top-head -->
+		<!-- begin inner-nav -->
+		<div class="inner-nav page-nav">
+			<!-- begin container -->
+			<div class="container">
+				<ul class="inner-navigation" id="bottomMenu">
+					<li class="has-child">
+						<a href="#">Об отеле</a>
+						<ul>
+							<li><a href="#">Рубрика_1</a></li>
+							<li><a href="#">Рубрика_2</a></li>
+							<li><a href="#">Рубрика_3</a></li>
+							<li><a href="#">Рубрика_4</a></li>
+						</ul>
+					</li>
+					<li class="has-child">
+						<a href="#">Номера</a>
+						<ul>
+							<li><a href="#">Рубрика_1</a></li>
+							<li><a href="#">Рубрика_2</a></li>
+							<li><a href="#">Рубрика_3</a></li>
+							<li><a href="#">Рубрика_4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Ресторан</a></li>
+					<li><a href="#">Конференц-зал</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">спецпредложения</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end inner-nav -->
+	</header>
+
+	<!-- begin get-mobile-city -->
+	<div class="get-mobile-city">
+		<button class="close-cities"><svg class="i-svg icon-close"><use xlink:href="#icon-close"></use></svg></button>
+		<div class="cities-block">
+			<div class="first-city"></div>
+			<div class="get-city"></div>
+			<div class="cat-city"></div>
+		</div>
+	</div>
+	<!-- end get-mobile-city -->
+
+	<!-- begin banner-section -->
+	<div class="banner-section">
+		<div class="slider-pro" id="inner-slider">
+			<div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="img/slider-img.jpg"/>
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="img/slider-img.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class="features-list">
+			<!-- begin container -->
+			<div class="container">
+				<div class="carousel-wrap">
+					<div class="features-carousel">
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Скидки постоянным гостям</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Завтрак всегда включён</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-wrap">
+								<div class="align">
+									<div class="item-title">Привычный сервис в 15</div>
+									<div class="item-text">Арт Отель был открыт в 2004 году</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="features-nav">
+					<button>next</button>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+
+	</div>
+	<!-- end banner-section -->
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li class="prev"><a href="#">Главная <svg class="i-svg icon-arr-right"><use xlink:href="#icon-arr-right"></use></svg></a></li>
+				<li><span>Каталог номеров</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<div class="rooms-catalog">
+			<h1>Номера</h1>
+			<div class="rooms-list">
+				<div class="room">
+					<div class="room-row container">
+						<div class="img">
+							<img src="img/room-img-cat.jpg" alt="img">
+						</div>
+						<div class="info">
+							<div class="main-info">
+								<div class="price">от <span>3 500 руб.</span></div>
+								<div class="title">Номер Family</div>
+								<ul class="eqp">
+									<li>Площадь номера: 33 кв. м.</li>
+									<li>Двуспальная кровать + диван</li>
+									<li>Есть балкон</li>
+								</ul>
+							</div>
+							<div class="text">Номер Family рассчитан на 4-х человек и представляет собой студию с кухней. Здесь есть двуспальная кровать и двуспальный диван. </div>
+							<div class="controls">
+								<div class="more">
+									<a href="#"><span><svg class="i-svg icon-arr-right"><use xlink:href="#icon-arr-right"></use></svg></span> Подробнее</a>
+								</div>
+								<a href="#" class="btn red-border-btn">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="room">
+					<div class="room-row container">
+						<div class="img">
+							<img src="img/room-img-cat.jpg" alt="img">
+						</div>
+						<div class="info">
+							<div class="main-info">
+								<div class="price">от <span>3 500 руб.</span></div>
+								<div class="title">Номер Family</div>
+								<ul class="eqp">
+									<li>Площадь номера: 33 кв. м.</li>
+									<li>Двуспальная кровать + диван</li>
+									<li>Есть балкон</li>
+								</ul>
+							</div>
+							<div class="text">Номер Family рассчитан на 4-х человек и представляет собой студию с кухней. Здесь есть двуспальная кровать и двуспальный диван. </div>
+							<div class="controls">
+								<div class="more">
+									<a href="#"><span><svg class="i-svg icon-arr-right"><use xlink:href="#icon-arr-right"></use></svg></span> Подробнее</a>
+								</div>
+								<a href="#" class="btn red-border-btn">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-us-block">
+				<div class="container">
+					<div class="a-title">Немного о нас</div>
+					Арт Отель был открыт в Переславле в 2004 году. Это уникальное место выступает в роли вдохновляющего пространства для жизни, работы и отдыха. Над его оформлением работала творческая семья художников, сумевших совместить русскую старину, живопись и уют.Арт Отель является одним из лучших отелей в городе и удобно расположен поблизости от исторического центра. Номера и коттеджи оформлены в индивидуальном стиле с использованием старинной расписной мебели, живописных картин и уникальных деталей интерьера. 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="top-footer">
+			<!-- begin container -->
+			<div class="container">
+				<div class="footer-logo">
+					<a href="#"><img src="img/big-logo.png" alt="footer-logo"></a>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">правила проживания</a></li>
+						<li><a href="#">политика конфиденциальности</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<div class="text">Подписывайтесь на новости, будьте в курсе событий вместе с нами!</div>
+					<form action="/">
+						<div class="sub-form">
+							<div class="form-control">
+								<input type="text" placeholder="Введите email">
+							</div>
+							<input type="submit" value="Подписаться">
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<div class="bottom-footer">
+			<!-- begin container -->
+			<div class="container">
+				<div class="flex-row">
+					<div class="item">
+						Положение о конфиденциальности использование cookies
+					</div>
+					<div class="item">
+						(с) http://www.hotel.ru 2017 Официальный сайт
+					</div>
+					<div class="item">
+						Сайт разработан компанией <a href="#">DigitalWill</a>
+					</div>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+	</footer>
+
+	<!-- JS BEGIN -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.sliderPro.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
